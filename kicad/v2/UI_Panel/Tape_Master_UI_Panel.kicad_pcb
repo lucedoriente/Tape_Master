@@ -1685,7 +1685,18 @@
 			(uuid "a850ebcc-016d-42fd-858e-6cd2f91056ae")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step"
+		(model "\\/../common/3dmodels/OLED_0.96_I2C.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 0.39370079 0.39370079 0.39370079)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "\\/../common/3dmodels/OLED_0.96_I2C.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4471,7 +4482,18 @@
 			(uuid "f5d36748-b5f7-4ae8-9013-65df11044dde")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Rotary_Encoder.3dshapes/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.step"
+		(model "\\/../common/3dmodels/EC11_Encoder.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "\\/../common/3dmodels/EC11_Encoder.step"
 			(offset
 				(xyz 0 0 0)
 			)

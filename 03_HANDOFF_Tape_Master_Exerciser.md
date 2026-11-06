@@ -119,20 +119,21 @@ Il dettaglio completo dei pin e delle specifiche costruttive è documentato in:
   - Validazione `kicad-cli sch erc`: **0 errori, 0 avvisi (0 violazioni ERC)**.
   - Componenti integrati:
     - **MCU Core**: Raspberry Pi Pico (RP2040) con connettore micro-USB e piedinatura THT (`Tape-Master:RaspberryPi_Pico_Common_THT`).
-    - **Power Stage Ultra-Low Noise**: USB-C GCT USB4105-xx-A con fusibile autoripristinante Polyfuse 1.1A, diodo Schottky di protezione e regolatore LDO a basso rumore AP2112K-3.3V filtrato con perla di ferrite e condensatori al tantalio/ceramici.
-    - **Storage**: Slot MicroSD Hirose push-pull alimentato a 3.3V con terminazioni di pull-up e bus SPI hardware dedicato.
+    - **Power Stage Ultra-Low Noise**: USB-C GCT USB4105-xx-A a filo bordo sinistro con fusibile autoripristinante Polyfuse 1.1A, diodo Schottky di protezione e regolatore LDO a basso rumore AP2112K-3.3V filtrato con perla di ferrite e condensatori al tantalio/ceramici.
+    - **Storage**: Slot MicroSD Hirose DM3D-SF push-pull a filo bordo sinistro alimentato a 3.3V con terminazioni di pull-up e bus SPI hardware dedicato.
     - **Front-End Analogico & Azimut**: Stadio preamplificatore a basso rumore con rail-to-rail op-amp TLV2372, trimmer di guadagno multigiro, circuito raddrizzatore/peak-detector con diodo Schottky e costante di tempo RC calibrata, canale ADC RP2040 per visualizzazione dinamica del picco di azimut, comparatore rapido LM393 con trimmer di soglia e isteresi per digitalizzazione diretta del segnale tape audio. Test point THT per PREAMP, FILTERED, DIGITIZED e AGND.
-    - **Header Connessione UI Panel**: Header maschio IDC-20 pin polarizzato con alimentazione 3.3V, bus I2C, SPI e linee tasti di trasporto.
-    - **Slot Cartuccia Connettore 40 Pin**: Header a $90^\circ$ ad alta densità a due file passo 2.54 mm con pinout standardizzato comprensivo di alimentazioni protette, bus analogico differenziale, bus digitale tape, bus smart I2C/SPI/UART e 5 linee di espansione libera.
+    - **Header Connessione UI Panel**: Header maschio IDC-20 pin polarizzato (J4) con corrispondenza 1:1 pin-to-pin con la UI Daughterboard (alimentazione 3.3V, bus I2C, SPI, linee tasti di trasporto e linea `/RESET_L` su Pin 20). Il pulsante di Reset locale (SW1) è stato rimosso dalla Mainboard ed è delegato unicamente al tasto Reset SW6 sul pannello frontale.
+    - **Slot Cartuccia Connettore 40 Pin (J5)**: Boxed Header a $90^\circ$ ad alta densità a due file passo 2.54 mm, orientato verso il bordo posteriore e a filo scheda per consentire l'inserimento orizzontale e l'uso agevole con case/enclosure. Pinout standardizzato comprensivo di alimentazioni protette, bus analogico differenziale, bus digitale tape, bus smart I2C/SPI/UART e 5 linee di espansione libera.
 * **Layout e Routing PCB (`Tape_Master_Mainboard.kicad_pcb`)**:
   - Dimensioni: $125.0\text{ mm} \times 95.0\text{ mm}$, 2 layer FR4 con piani di massa continui F.Cu e B.Cu e 4 fori di fissaggio M3 agli angoli.
-  - Routing automatico completato al 100% in modalità headless tramite Freerouting (725 tracce e vie, 0 net incomplete, score di sbroglio 974.06).
+  - Connettori a filo scheda: USB-C (J1) e MicroSD (J2) sporgenti/a filo su bordo sinistro ($X = 0$), Slot Cartuccia 40 pin (J5) ad angolo retto a filo bordo posteriore ($Y = 0$).
+  - Routing automatico completato al 100% in modalità headless tramite Freerouting (690 tracce e vie, 0 net incomplete, score di sbroglio 973.82) con micro-accordatura per clearance ottimale ($> 0.24\text{ mm}$).
   - Validazione `kicad-cli pcb drc --schematic-parity`: **0 violazioni DRC, 0 unconnected, 0 parity issues**.
 * **Deliverable di Produzione**:
   - Schema vettoriale: `Tape_Master_Mainboard.pdf`
   - Render 3D Top: `Tape_Master_Mainboard_Top.png` (1920x1080)
   - Render 3D Bottom: `Tape_Master_Mainboard_Bottom.png` (1920x1080)
-  - Modello solido CAD 3D: `Tape_Master_Mainboard.step`
+  - Modello solido CAD 3D: `Tape_Master_Mainboard.step` (con modello 3D Pico integrato)
 
 ---
 
