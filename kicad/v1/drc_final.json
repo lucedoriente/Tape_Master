@@ -1,0 +1,56 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-05T08:04:11+0100",
+    "kicad_version": "9.0.6",
+    "schematic_parity": [],
+    "source": "Tape-Master.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "PTH pad 10 [Net-(D18-K)] of U7",
+                    "pos": {
+                        "x": 93.32,
+                        "y": 63.88
+                    },
+                    "uuid": "dcd34fd6-a7ed-46f4-b19d-81a3e2e73d11"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "PTH pad 9 [+5V] of U7",
+                    "pos": {
+                        "x": 93.32,
+                        "y": 71.5
+                    },
+                    "uuid": "5ffc1cd9-e826-45e2-8700-d91b75c7c102"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "PTH pad 10 [Net-(D18-K)] of U7",
+                    "pos": {
+                        "x": 93.32,
+                        "y": 63.88
+                    },
+                    "uuid": "dcd34fd6-a7ed-46f4-b19d-81a3e2e73d11"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        }
+    ]
+}

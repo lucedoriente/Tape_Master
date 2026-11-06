@@ -1,0 +1,1752 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-05T15:20:37+0100",
+    "kicad_version": "9.0.6",
+    "schematic_parity": [],
+    "source": "Tape-Master.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [+3V3] on B.Cu, length 6.9787 mm",
+                    "pos": {
+                        "x": 66.54,
+                        "y": 15.0213
+                    },
+                    "uuid": "bac55f5b-9a45-4b2b-9809-cd8d1eaa502b"
+                },
+                {
+                    "description": "Pad 2 [+3V3] of R7 on F.Cu",
+                    "pos": {
+                        "x": 67.4125,
+                        "y": 16.0
+                    },
+                    "uuid": "a90a7676-d201-4289-9468-a92fa17c1e24"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/02_MCU_Core/SD_MISO] of R7 on F.Cu",
+                    "pos": {
+                        "x": 65.5875,
+                        "y": 16.0
+                    },
+                    "uuid": "c760fea1-3c85-4c2e-93b6-b929f23fd6c0"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on F.Cu, length 6.9961 mm",
+                    "pos": {
+                        "x": 56.575,
+                        "y": 9.5267
+                    },
+                    "uuid": "d80cf4f9-5212-4199-8fda-0cf6fb5ea644"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 0.2,
+                        "y": 0.2
+                    },
+                    "uuid": "e035cc36-8630-4ca8-8476-ea5fbbe06346"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 50.0
+                    },
+                    "uuid": "bf41f251-d048-4d1e-b6e0-a85348ec1694"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [REMOTE_DRIVE] of R48 on F.Cu",
+                    "pos": {
+                        "x": 104.0875,
+                        "y": 38.0
+                    },
+                    "uuid": "b141b8d9-f1fd-4cf3-9745-0d4ce2001060"
+                },
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 14.6800 mm",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 53.0
+                    },
+                    "uuid": "230670fb-4347-4fd8-a2df-2a474083c3a7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Items not allowed (keepout area 'Antenna Copper Keep Out')",
+            "items": [
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 23.7800 mm",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 66.26
+                    },
+                    "uuid": "f9cfa944-6aef-4c5e-9769-90b8295ea11f"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0750 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 55.0859,
+                        "y": 35.5
+                    },
+                    "uuid": "1500f85f-1e56-42f0-a820-9fc94736ac81"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets AUDIO_OUT_PWM and GND)",
+            "items": [
+                {
+                    "description": "Track [AUDIO_OUT_PWM] on B.Cu, length 15.9348 mm",
+                    "pos": {
+                        "x": 127.4286,
+                        "y": 45.94
+                    },
+                    "uuid": "2ab693a9-f84a-4c93-b0d9-48a7a3332ffe"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 125.0,
+                        "y": 48.48
+                    },
+                    "uuid": "2ce5f1b1-0cbe-4bad-b741-56d527f156c7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0750 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 93.7703,
+                        "y": 35.5
+                    },
+                    "uuid": "2f91f49c-37bd-43fb-99e2-e7e6791b185b"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1555 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 65.8879,
+                        "y": 35.4195
+                    },
+                    "uuid": "ae9bebcc-3a02-4fad-b5fd-856e346d45ed"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets Net-(J1-CC1) and /02_MCU_Core/SD_MISO)",
+            "items": [
+                {
+                    "description": "Track [Net-(J1-CC1)] on F.Cu, length 16.9455 mm",
+                    "pos": {
+                        "x": 53.142,
+                        "y": 16.0
+                    },
+                    "uuid": "84dbc06f-e041-4604-9568-3c827c41f7fd"
+                },
+                {
+                    "description": "Pad 1 [/02_MCU_Core/SD_MISO] of R7 on F.Cu",
+                    "pos": {
+                        "x": 65.5875,
+                        "y": 16.0
+                    },
+                    "uuid": "c760fea1-3c85-4c2e-93b6-b929f23fd6c0"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets TAPE_FILTERED and GND)",
+            "items": [
+                {
+                    "description": "Track [TAPE_FILTERED] on F.Cu, length 41.7999 mm",
+                    "pos": {
+                        "x": 88.2744,
+                        "y": 49.7474
+                    },
+                    "uuid": "4c61abb8-688f-4ff1-a15b-59942468b00d"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 50.0
+                    },
+                    "uuid": "bf41f251-d048-4d1e-b6e0-a85348ec1694"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /02_MCU_Core/SD_MOSI and GND)",
+            "items": [
+                {
+                    "description": "Track [/02_MCU_Core/SD_MOSI] on B.Cu, length 11.4803 mm",
+                    "pos": {
+                        "x": 93.244,
+                        "y": 53.7224
+                    },
+                    "uuid": "a7d19366-71c3-4d61-9f3b-abded9920810"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 50.0
+                    },
+                    "uuid": "bf41f251-d048-4d1e-b6e0-a85348ec1694"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [+3V3] on B.Cu, length 6.6357 mm",
+                    "pos": {
+                        "x": 46.2585,
+                        "y": 47.4583
+                    },
+                    "uuid": "3a2ba663-d04f-4d9c-84fd-e16634f48d96"
+                },
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [/02_MCU_Core/BTN_REW_PREV] on B.Cu, length 24.3789 mm",
+                    "pos": {
+                        "x": 94.7615,
+                        "y": 58.0985
+                    },
+                    "uuid": "277fbe7b-5511-4dde-a09a-22c0495e021a"
+                },
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 30.2600 mm",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 36.0
+                    },
+                    "uuid": "0100c580-a519-4675-975e-c377816c5e64"
+                },
+                {
+                    "description": "Track [GND] on B.Cu, length 6.8165 mm",
+                    "pos": {
+                        "x": 109.32,
+                        "y": 61.18
+                    },
+                    "uuid": "50714090-3d44-4062-9675-a01cf6e1aaf7"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 23.7800 mm",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 38.32
+                    },
+                    "uuid": "4a309922-3850-470e-a743-e93a6b9b176e"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_CS] on B.Cu, length 2.4998 mm",
+                    "pos": {
+                        "x": 114.1344,
+                        "y": 38.8853
+                    },
+                    "uuid": "7bea00bb-ce65-4e83-b578-88d514ecb937"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets LEDBAR_DATA and REMOTE_DRIVE)",
+            "items": [
+                {
+                    "description": "Via [LEDBAR_DATA] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 90.1859,
+                        "y": 53.1207
+                    },
+                    "uuid": "06fbb887-f26f-4b08-aa0f-3bbfe7671575"
+                },
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [Net-(U7-R-EXT)] on B.Cu, length 14.1897 mm",
+                    "pos": {
+                        "x": 47.156,
+                        "y": 43.3435
+                    },
+                    "uuid": "982e1492-fb9e-4142-84f4-b1a1084249d9"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [Net-(U7-R-EXT)] on B.Cu, length 24.8696 mm",
+                    "pos": {
+                        "x": 56.2242,
+                        "y": 77.2813
+                    },
+                    "uuid": "c8c15bf8-f07c-470a-814b-2b43e4d1b0d1"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [TAPE_FILTERED] on B.Cu, length 18.6299 mm",
+                    "pos": {
+                        "x": 36.3046,
+                        "y": 64.5862
+                    },
+                    "uuid": "625bc53a-014e-4992-a826-5bff2e85a826"
+                },
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [LEDBAR_DATA] on B.Cu, length 14.5012 mm",
+                    "pos": {
+                        "x": 79.932,
+                        "y": 42.8668
+                    },
+                    "uuid": "426f687a-d46f-44b5-a19b-52aade7e9308"
+                },
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on F.Cu, length 2.0000 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 55.0
+                    },
+                    "uuid": "0895ca47-5852-40aa-951f-7f8ddec1dcb9"
+                },
+                {
+                    "description": "Track [GND] on F.Cu, length 2.4158 mm",
+                    "pos": {
+                        "x": 27.4967,
+                        "y": 53.9878
+                    },
+                    "uuid": "b5d65b6a-c6fd-48f5-bfc7-af66ee969154"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                },
+                {
+                    "description": "Track [LEDBAR_DATA] on B.Cu, length 9.5129 mm",
+                    "pos": {
+                        "x": 79.932,
+                        "y": 33.3539
+                    },
+                    "uuid": "f83ae590-b4ea-46fb-822b-a7bb29253155"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 30.2600 mm",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 36.0
+                    },
+                    "uuid": "0100c580-a519-4675-975e-c377816c5e64"
+                },
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MOSI] on B.Cu, length 3.8390 mm",
+                    "pos": {
+                        "x": 54.8021,
+                        "y": 36.1184
+                    },
+                    "uuid": "f7cdcd79-2ba9-4e72-9647-c0e011e97e2e"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets C64_READ and /02_MCU_Core/SD_MISO)",
+            "items": [
+                {
+                    "description": "PTH pad 20 [C64_READ] of U3",
+                    "pos": {
+                        "x": 112.0,
+                        "y": 66.26
+                    },
+                    "uuid": "e4923a6c-5a8e-47f1-bb32-5ea5139599fc"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 23.7800 mm",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 66.26
+                    },
+                    "uuid": "f9cfa944-6aef-4c5e-9769-90b8295ea11f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [C2N_5V_IN] on B.Cu, length 28.6505 mm",
+                    "pos": {
+                        "x": 47.7765,
+                        "y": 14.6727
+                    },
+                    "uuid": "4568055a-26f1-4f8f-9e9a-7f9729b7d93c"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets  and GND)",
+            "items": [
+                {
+                    "description": "Pad 11 [<no net>] of J2 on F.Cu",
+                    "pos": {
+                        "x": 65.975,
+                        "y": -0.025
+                    },
+                    "uuid": "99974b7d-7ce7-4319-aa62-593545c69b73"
+                },
+                {
+                    "description": "Track [GND] on F.Cu, length 3.9500 mm",
+                    "pos": {
+                        "x": 65.575,
+                        "y": -2.45
+                    },
+                    "uuid": "c798d7c2-3767-4850-8d06-b07372401dd9"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [C2N_5V_IN] on B.Cu, length 25.0556 mm",
+                    "pos": {
+                        "x": 56.9503,
+                        "y": 52.497
+                    },
+                    "uuid": "e2cb99d6-bb6e-4fe4-9033-95373faadf51"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets +5V and /02_MCU_Core/SD_MISO)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 83.5879,
+                        "y": 35.7286
+                    },
+                    "uuid": "8dc1c340-b2e5-4ebb-95cf-f2156ff11a27"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets REMOTE_DRIVE and +5V)",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 47.8552,
+                        "y": 52.8009
+                    },
+                    "uuid": "9ea957cd-2f0f-4681-b83c-c68bcfbcdee3"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [Net-(U11-R-EXT)] on B.Cu, length 10.2984 mm",
+                    "pos": {
+                        "x": 65.5226,
+                        "y": 38.5878
+                    },
+                    "uuid": "a9da2a60-699e-4374-83b9-ba8a8e706072"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [LEDBAR_LE] on B.Cu, length 15.0874 mm",
+                    "pos": {
+                        "x": 90.1986,
+                        "y": 54.2074
+                    },
+                    "uuid": "4e8551af-60ff-454d-9d7e-d313ca7dc8a9"
+                },
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [Net-(J6-PadR)] on B.Cu, length 4.5317 mm",
+                    "pos": {
+                        "x": 52.3907,
+                        "y": 52.3131
+                    },
+                    "uuid": "4c6bdec9-88a1-413a-9253-9acdb0e4f320"
+                },
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [LEDBAR_LE] on B.Cu, length 9.9700 mm",
+                    "pos": {
+                        "x": 79.5302,
+                        "y": 43.539
+                    },
+                    "uuid": "a3eac5c4-bb4b-4ae0-b229-9f86840a47a9"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [+5V] on B.Cu, length 3.7489 mm",
+                    "pos": {
+                        "x": 83.5879,
+                        "y": 35.7286
+                    },
+                    "uuid": "6c7b3d8f-a342-46f5-81e6-aa278714a315"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MOSI] on B.Cu, length 11.4803 mm",
+                    "pos": {
+                        "x": 93.244,
+                        "y": 53.7224
+                    },
+                    "uuid": "a7d19366-71c3-4d61-9f3b-abded9920810"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [/02_MCU_Core/SD_MOSI] on B.Cu, length 7.5392 mm",
+                    "pos": {
+                        "x": 71.8883,
+                        "y": 30.7874
+                    },
+                    "uuid": "bff580f2-9254-4cb1-b7d5-9e8729a4d194"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0630 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [VBIAS] of C21 on F.Cu",
+                    "pos": {
+                        "x": 28.95,
+                        "y": 52.5
+                    },
+                    "uuid": "198d2223-261e-48d1-921c-711606342ddf"
+                },
+                {
+                    "description": "Via [REMOTE_DRIVE] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d81a3c7-2772-46d8-8e4a-4144d04bb3fa"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [Net-(J6-PadR)] on B.Cu, length 0.4742 mm",
+                    "pos": {
+                        "x": 36.8063,
+                        "y": 52.6677
+                    },
+                    "uuid": "947d89f2-065e-4736-8fd9-bb624597ebc6"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0464 mm)",
+            "items": [
+                {
+                    "description": "Track [+5V] on B.Cu, length 17.6175 mm",
+                    "pos": {
+                        "x": 83.5879,
+                        "y": 35.7286
+                    },
+                    "uuid": "9e0e47f5-a5d6-4455-bd98-1f466fde442e"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /02_MCU_Core/SD_MOSI and /02_MCU_Core/SD_MISO)",
+            "items": [
+                {
+                    "description": "Track [/02_MCU_Core/SD_MOSI] on B.Cu, length 11.7552 mm",
+                    "pos": {
+                        "x": 66.5573,
+                        "y": 36.1184
+                    },
+                    "uuid": "d71c8b21-eeaa-4c2d-a192-68493df6dcff"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 14.6800 mm",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 53.0
+                    },
+                    "uuid": "230670fb-4347-4fd8-a2df-2a474083c3a7"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/BTN_FFWD_NEXT] on B.Cu, length 22.9808 mm",
+                    "pos": {
+                        "x": 112.0,
+                        "y": 43.4
+                    },
+                    "uuid": "f3477c43-b662-416a-b12e-0450e06247e8"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 23.7800 mm",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 38.32
+                    },
+                    "uuid": "4a309922-3850-470e-a743-e93a6b9b176e"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/BTN_REC_DUMP] on B.Cu, length 20.9202 mm",
+                    "pos": {
+                        "x": 97.2072,
+                        "y": 53.1128
+                    },
+                    "uuid": "eaee68b6-6286-45e5-a2be-a30911b8c28b"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0113 mm)",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/BTN_PLAY_STOP] on B.Cu, length 9.7726 mm",
+                    "pos": {
+                        "x": 45.2216,
+                        "y": 45.8534
+                    },
+                    "uuid": "a72dc445-c886-4e48-a2d6-e92d6b46732d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1073 mm)",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [Net-(J6-PadR)] on B.Cu, length 7.1390 mm",
+                    "pos": {
+                        "x": 36.8063,
+                        "y": 45.5287
+                    },
+                    "uuid": "9916a6cf-a55a-47a3-a929-0dfe7be907d5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MOSI] on B.Cu, length 9.4844 mm",
+                    "pos": {
+                        "x": 80.3339,
+                        "y": 42.6712
+                    },
+                    "uuid": "e480ef46-6eec-4f87-b802-927fb5a151ed"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [Net-(U3-RUN)] on B.Cu, length 9.9476 mm",
+                    "pos": {
+                        "x": 104.5,
+                        "y": 69.5517
+                    },
+                    "uuid": "bcba3e18-5d5f-4256-bf25-b22750597378"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 23.7800 mm",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 66.26
+                    },
+                    "uuid": "f9cfa944-6aef-4c5e-9769-90b8295ea11f"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [Net-(J6-PadR)] on B.Cu, length 0.5644 mm",
+                    "pos": {
+                        "x": 37.6107,
+                        "y": 53.003
+                    },
+                    "uuid": "b15182fd-c96c-4f92-8e1c-db98bd9d17ce"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [+5V] on B.Cu, length 2.6546 mm",
+                    "pos": {
+                        "x": 47.8552,
+                        "y": 55.4555
+                    },
+                    "uuid": "df1de037-d6a0-4bbe-a630-1d609c592076"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1711 mm)",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [Net-(J6-PadR)] on B.Cu, length 1.2202 mm",
+                    "pos": {
+                        "x": 38.0098,
+                        "y": 52.6039
+                    },
+                    "uuid": "e3da1cba-e2d1-4f93-be20-52abaad66ec4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [Net-(C19-Pad1)] on B.Cu, length 10.4729 mm",
+                    "pos": {
+                        "x": 35.6813,
+                        "y": 46.5165
+                    },
+                    "uuid": "0924b56e-dd5e-4168-9bef-0e0d96a8c996"
+                },
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets REMOTE_DRIVE and Net-(J6-PadR))",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [Net-(J6-PadR)] on B.Cu, length 0.4691 mm",
+                    "pos": {
+                        "x": 37.1416,
+                        "y": 53.003
+                    },
+                    "uuid": "edaa175b-46e7-42ce-9388-dcae6ce826d3"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/BTN_FFWD_NEXT] on B.Cu, length 22.9808 mm",
+                    "pos": {
+                        "x": 112.0,
+                        "y": 43.4
+                    },
+                    "uuid": "f3477c43-b662-416a-b12e-0450e06247e8"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [Net-(C29-Pad1)] on B.Cu, length 38.0618 mm",
+                    "pos": {
+                        "x": 96.0328,
+                        "y": 17.0795
+                    },
+                    "uuid": "2ce3f720-ccc3-467c-be9b-9eac0738dca9"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [/02_MCU_Core/BTN_PLAY_STOP] on B.Cu, length 21.6015 mm",
+                    "pos": {
+                        "x": 63.1105,
+                        "y": 48.5496
+                    },
+                    "uuid": "1a59573d-95aa-4412-9d21-98719c6d3fb6"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/BTN_PLAY_STOP] on B.Cu, length 19.3399 mm",
+                    "pos": {
+                        "x": 63.1105,
+                        "y": 67.8895
+                    },
+                    "uuid": "bbc9491e-ac15-410d-a13e-e2e90beed087"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [Net-(U4A-+)] on B.Cu, length 5.7245 mm",
+                    "pos": {
+                        "x": 84.7118,
+                        "y": 49.5715
+                    },
+                    "uuid": "dc464254-431c-4421-922a-6a1ece8a08ad"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/BTN_PLAY_STOP] on B.Cu, length 15.8682 mm",
+                    "pos": {
+                        "x": 52.1319,
+                        "y": 52.7637
+                    },
+                    "uuid": "fd55f761-dce3-4271-9cf4-a33260599680"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBIAS] on B.Cu, length 11.6355 mm",
+                    "pos": {
+                        "x": 84.2119,
+                        "y": 25.4532
+                    },
+                    "uuid": "0f031354-2808-4d9c-8523-50c6f27fd068"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 59.9100 mm",
+                    "pos": {
+                        "x": 46.09,
+                        "y": 36.0
+                    },
+                    "uuid": "d8ed2756-a5a3-4c21-8c10-ce0de73b6022"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets REMOTE_DRIVE and /02_MCU_Core/BTN_REC_DUMP)",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/BTN_REC_DUMP] on B.Cu, length 1.7554 mm",
+                    "pos": {
+                        "x": 97.2072,
+                        "y": 54.8682
+                    },
+                    "uuid": "d4d997eb-d4c8-44bc-afb6-a997d947225f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [VBIAS] on B.Cu, length 7.0514 mm",
+                    "pos": {
+                        "x": 32.0715,
+                        "y": 51.6906
+                    },
+                    "uuid": "731f9119-7f45-4bfb-aa75-75e3d7c07093"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [Net-(Q1-G)] on B.Cu, length 11.3485 mm",
+                    "pos": {
+                        "x": 37.19,
+                        "y": 55.2901
+                    },
+                    "uuid": "55950600-52b6-4419-af13-ef2fa627001d"
+                },
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 77.9125 mm",
+                    "pos": {
+                        "x": 28.0875,
+                        "y": 53.0
+                    },
+                    "uuid": "6d0abbb8-a623-4286-8e5c-7d2679b1579f"
+                },
+                {
+                    "description": "Track [/02_MCU_Core/BTN_REC_DUMP] on B.Cu, length 20.9202 mm",
+                    "pos": {
+                        "x": 97.2072,
+                        "y": 53.1128
+                    },
+                    "uuid": "eaee68b6-6286-45e5-a2be-a30911b8c28b"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/02_MCU_Core/SD_MISO] of R7 on F.Cu",
+                    "pos": {
+                        "x": 65.5875,
+                        "y": 16.0
+                    },
+                    "uuid": "c760fea1-3c85-4c2e-93b6-b929f23fd6c0"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 0.2,
+                        "y": 0.2
+                    },
+                    "uuid": "e035cc36-8630-4ca8-8476-ea5fbbe06346"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [+3V3] of R7 on F.Cu",
+                    "pos": {
+                        "x": 67.4125,
+                        "y": 16.0
+                    },
+                    "uuid": "a90a7676-d201-4289-9468-a92fa17c1e24"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 0.2,
+                        "y": 0.2
+                    },
+                    "uuid": "e035cc36-8630-4ca8-8476-ea5fbbe06346"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [REMOTE_DRIVE] of R48 on F.Cu",
+                    "pos": {
+                        "x": 104.0875,
+                        "y": 38.0
+                    },
+                    "uuid": "b141b8d9-f1fd-4cf3-9745-0d4ce2001060"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 0.2,
+                        "y": 0.2
+                    },
+                    "uuid": "e035cc36-8630-4ca8-8476-ea5fbbe06346"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 0.2,
+                        "y": 0.2
+                    },
+                    "uuid": "e035cc36-8630-4ca8-8476-ea5fbbe06346"
+                },
+                {
+                    "description": "PTH pad 28 [GND] of U3",
+                    "pos": {
+                        "x": 129.78,
+                        "y": 48.48
+                    },
+                    "uuid": "bb515f01-6cdc-4715-8fcf-04b27e3c9fe5"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/02_MCU_Core/SD_MISO] on B.Cu, length 23.7800 mm",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 66.26
+                    },
+                    "uuid": "f9cfa944-6aef-4c5e-9769-90b8295ea11f"
+                },
+                {
+                    "description": "PTH pad 20 [C64_READ] of U3",
+                    "pos": {
+                        "x": 112.0,
+                        "y": 66.26
+                    },
+                    "uuid": "e4923a6c-5a8e-47f1-bb32-5ea5139599fc"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 3.9500 mm",
+                    "pos": {
+                        "x": 65.575,
+                        "y": -2.45
+                    },
+                    "uuid": "c798d7c2-3767-4850-8d06-b07372401dd9"
+                },
+                {
+                    "description": "Pad 11 [<no net>] of J2 on F.Cu",
+                    "pos": {
+                        "x": 65.975,
+                        "y": -0.025
+                    },
+                    "uuid": "99974b7d-7ce7-4319-aa62-593545c69b73"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(J1-CC1)] on F.Cu, length 16.9455 mm",
+                    "pos": {
+                        "x": 53.142,
+                        "y": 16.0
+                    },
+                    "uuid": "84dbc06f-e041-4604-9568-3c827c41f7fd"
+                },
+                {
+                    "description": "Pad 1 [/02_MCU_Core/SD_MISO] of R7 on F.Cu",
+                    "pos": {
+                        "x": 65.5875,
+                        "y": 16.0
+                    },
+                    "uuid": "c760fea1-3c85-4c2e-93b6-b929f23fd6c0"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(J1-CC1)] on F.Cu, length 16.9455 mm",
+                    "pos": {
+                        "x": 53.142,
+                        "y": 16.0
+                    },
+                    "uuid": "84dbc06f-e041-4604-9568-3c827c41f7fd"
+                },
+                {
+                    "description": "Pad 2 [+3V3] of R7 on F.Cu",
+                    "pos": {
+                        "x": 67.4125,
+                        "y": 16.0
+                    },
+                    "uuid": "a90a7676-d201-4289-9468-a92fa17c1e24"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [REMOTE_DRIVE] on B.Cu, length 23.7800 mm",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 38.32
+                    },
+                    "uuid": "4a309922-3850-470e-a743-e93a6b9b176e"
+                },
+                {
+                    "description": "PTH pad 9 [/02_MCU_Core/BTN_REC_DUMP] of U3",
+                    "pos": {
+                        "x": 112.0,
+                        "y": 38.32
+                    },
+                    "uuid": "602d285e-2d71-46df-b35a-3170c61d8f59"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 1 [/02_MCU_Core/SD_MISO] of R7 on F.Cu",
+                    "pos": {
+                        "x": 65.5875,
+                        "y": 16.0
+                    },
+                    "uuid": "c760fea1-3c85-4c2e-93b6-b929f23fd6c0"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 0.2,
+                        "y": 0.2
+                    },
+                    "uuid": "e035cc36-8630-4ca8-8476-ea5fbbe06346"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 2 [+3V3] of R7 on F.Cu",
+                    "pos": {
+                        "x": 67.4125,
+                        "y": 16.0
+                    },
+                    "uuid": "a90a7676-d201-4289-9468-a92fa17c1e24"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 0.2,
+                        "y": 0.2
+                    },
+                    "uuid": "e035cc36-8630-4ca8-8476-ea5fbbe06346"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 1 [REMOTE_DRIVE] of R48 on F.Cu",
+                    "pos": {
+                        "x": 104.0875,
+                        "y": 38.0
+                    },
+                    "uuid": "b141b8d9-f1fd-4cf3-9745-0d4ce2001060"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 0.2,
+                        "y": 0.2
+                    },
+                    "uuid": "e035cc36-8630-4ca8-8476-ea5fbbe06346"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        }
+    ]
+}

@@ -1,0 +1,4711 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (generator_version "9.0")
+  (uuid "a1000000-0000-4000-8000-000000000003")
+  (paper "A3")
+  (title_block
+    (title "Analog Ingest, Active Sallen-Key Filter, Peak Detector & Digitizer")
+    (date "2026-11-04")
+    (rev "1.0")
+    (company "Alessio Iodice")
+    (comment 1 "Author / Hardware Designer: Alessio Iodice <alessio67@gmail.com>")
+    (comment 2 "TLV2372 RRIO Low-Noise Preamp, 300Hz-12kHz Active Bandpass, Dual TLC5916 LED Drivers & LM393 Digitizer")
+    (comment 3 "License: CC BY-NC-SA 4.0")
+    (comment 4 "Validated on KiCad 9.0 — 0 ERC / 0 DRC violations")
+  )
+  (lib_symbols
+(symbol "Tape-Master:+3V3"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 0 3.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "+3V3_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "+3V3_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Tape-Master:+5V"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 0 3.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "+5V_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "+5V_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Tape-Master:AudioJack3"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AudioJack3"
+			(at 0 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "audio jack receptacle stereo headphones phones TRS connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Jack*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "AudioJack3_0_1"
+			(rectangle
+				(start -5.08 -5.08)
+				(end -6.35 -2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.905 -2.54) (xy -1.27 -3.175) (xy -0.635 -2.54) (xy -0.635 0) (xy 2.54 0)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0.635 -3.175) (xy 1.27 -2.54) (xy 2.54 -2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 3.81)
+				(end -5.08 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy -3.175 -3.175) (xy -3.81 -2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "AudioJack3_1_1"
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "S"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Tape-Master:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Tape-Master:Conn_01x02"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x02_1_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Tape-Master:D_Schottky"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Schottky"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "diode Schottky"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D_Schottky_0_1"
+			(polyline
+				(pts
+					(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 0) (xy -1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "D_Schottky_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Tape-Master:D_Schottky_Dual_Series_ACK"
+		(pin_names
+			(offset 0.762)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 1.27 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Schottky_Dual_Series_ACK"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Schottky diode, anode/center/cathode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D_Schottky_Dual_Series_ACK_0_1"
+			(polyline
+				(pts
+					(xy -3.81 1.27) (xy -1.27 0) (xy -3.81 -1.27) (xy -3.81 1.27) (xy -3.81 1.27) (xy -3.81 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 1.016) (xy -1.778 1.27) (xy -1.27 1.27) (xy -1.27 1.27) (xy -1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -1.27) (xy -1.27 1.27) (xy -1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -1.27) (xy -0.762 -1.27) (xy -0.762 -1.016) (xy -0.762 -1.016)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 0)
+				(radius 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 1.27) (xy 3.81 0) (xy 1.27 -1.27) (xy 1.27 1.27) (xy 1.27 1.27) (xy 1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.81 1.27) (xy 3.81 -1.27) (xy 3.81 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.81 1.27) (xy 3.302 1.27) (xy 3.302 1.016) (xy 3.302 1.016)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.81 0) (xy -3.81 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.81 -1.27) (xy 4.318 -1.27) (xy 4.318 -1.016) (xy 4.318 -1.016)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.35 0) (xy 7.62 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -7.62 0 0)
+				(length 3.81)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 2.54)
+				(name "common"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 0 180)
+				(length 3.81)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Tape-Master:GND"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "GND_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "GND_1_1"
+			(pin power_in line
+				(at 0 0 270)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Tape-Master:LED"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "LED diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "LED_0_1"
+			(polyline
+				(pts
+					(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 0) (xy 1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -1.27) (xy -1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "LED_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Tape-Master:LM393"
+		(property "Reference" "U"
+			(at 3.81 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM393"
+			(at 6.35 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm393.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "cmp open collector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* SOP*5.28x5.23mm*P1.27mm* VSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	
+		(symbol "LM393_1_1"
+			(polyline
+				(pts
+					(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.302 -0.508) (xy 2.794 -0.508) (xy 3.302 0) (xy 2.794 0.508) (xy 2.286 0) (xy 2.794 -0.508)
+					(xy 2.286 -0.508)
+				)
+				(stroke
+					(width 0.127)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "LM393_2_1"
+			(polyline
+				(pts
+					(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.302 -0.508) (xy 2.794 -0.508) (xy 3.302 0) (xy 2.794 0.508) (xy 2.286 0) (xy 2.794 -0.508)
+					(xy 2.286 -0.508)
+				)
+				(stroke
+					(width 0.127)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "LM393_3_1"
+			(pin power_in line
+				(at -2.54 7.62 270)
+				(length 3.81)
+				(name "V+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 -7.62 90)
+				(length 3.81)
+				(name "V-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+(symbol "Tape-Master:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Tape-Master:R_Potentiometer"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "RV"
+			(at -4.445 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_Potentiometer"
+			(at -2.54 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "resistor variable"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Potentiometer*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R_Potentiometer_0_1"
+			(rectangle
+				(start 1.016 2.54)
+				(end -1.016 -2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 0) (xy 1.524 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_Potentiometer_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 1.27)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Tape-Master:TLC5916"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLC5916"
+			(at -7.62 -16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlc5916.pdf"
+			(at 1.27 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8-Channel Constant-Current LED Sink Driver"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "LED Constant-Current Driver"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TLC5916_1_0"
+			(pin input line
+				(at -10.16 10.16 0)
+				(length 2.54)
+				(name "SDI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 7.62 0)
+				(length 2.54)
+				(name "CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "LE(ED1)"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "~{OE}(ED2)"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -7.62 0)
+				(length 2.54)
+				(name "R-EXT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 15.24 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -17.78 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 10.16 10.16 180)
+				(length 2.54)
+				(name "~{OUT0}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 10.16 7.62 180)
+				(length 2.54)
+				(name "~{OUT1}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 10.16 5.08 180)
+				(length 2.54)
+				(name "~{OUT2}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "~{OUT3}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "~{OUT4}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "~{OUT5}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 10.16 -5.08 180)
+				(length 2.54)
+				(name "~{OUT6}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 10.16 -7.62 180)
+				(length 2.54)
+				(name "~{OUT7}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 -12.7 180)
+				(length 2.54)
+				(name "SDO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TLC5916_1_1"
+			(rectangle
+				(start -7.62 12.7)
+				(end 7.62 -15.24)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Tape-Master:TLV2372"
+		(property "Reference" "U"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TLV2372"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv2375.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Rail-to-Rail Input/Output Operational Amplifier, DIP-8/SOIC-8/VSSOP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "dual opamp"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	
+		(symbol "TLV2372_1_1"
+			(polyline
+				(pts
+					(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TLV2372_2_1"
+			(polyline
+				(pts
+					(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TLV2372_3_1"
+			(pin power_in line
+				(at -2.54 7.62 270)
+				(length 3.81)
+				(name "V+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 -7.62 90)
+				(length 3.81)
+				(name "V-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+(symbol "Tape-Master:Conn_01x06"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x06"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x06_1_1"
+			(rectangle
+				(start -1.27 6.35)
+				(end 1.27 -8.89)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 5.207)
+				(end 0 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -7.493)
+				(end 0 -7.747)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 5.08 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -7.62 0)
+				(length 3.81)
+				(name "Pin_6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+  )
+
+  (symbol (lib_id "Tape-Master:AudioJack3") (at 39.37 69.85 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "a0ce9176-796d-4cf2-8192-5c7e4208819f")
+    (property "Reference" "J3" (at 39.37 64.77 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "HEAD_IN / LINE_IN" (at 39.37 74.93 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Tape-Master:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal" (at 39.37 69.85 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "S" (uuid "4dc1c8e7-cb0e-4764-9229-2aa84ac5c1b0"))
+    (pin "R" (uuid "29d76a75-2fa1-4ba1-8d79-5883b90c7d0d"))
+    (pin "T" (uuid "c7d78d26-979c-470d-b2c6-4dbb3cca3ffe"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "J3") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:Conn_01x02") (at 59.69 69.85 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "e1d1004d-be2c-4e05-bdb0-d0085a314e32")
+    (property "Reference" "JP2" (at 59.69 64.77 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "HEAD_BOOST" (at 59.69 74.93 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 59.69 69.85 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "53c38b45-2071-4a79-8403-a5f64efff420"))
+    (pin "2" (uuid "dd47c57c-782e-458d-820b-8084d50559d9"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "JP2") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:D_Schottky_Dual_Series_ACK") (at 74.93 67.31 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "f99984c4-0732-4436-8a7d-7963070f369b")
+    (property "Reference" "D7" (at 74.93 62.23 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "BAT54S" (at 74.93 72.39 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 74.93 67.31 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "8e47c7c6-7e6f-4835-bdd1-dc2c0065c85d"))
+    (pin "2" (uuid "7a9698be-0141-4f26-82aa-ad07dc4de306"))
+    (pin "3" (uuid "22c642e5-b08f-470e-b8e1-04a3cbd0d463"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D7") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 90.17 67.31 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "8c93b79b-7793-4a85-90ce-86aef8e3e1b4")
+    (property "Reference" "C15" (at 90.17 62.23 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1uF" (at 90.17 72.39 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 90.17 67.31 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "081e03af-91ce-4dc6-97b7-6b062df203a0"))
+    (pin "2" (uuid "24065a07-d49d-49b8-bc62-8469f4d004a3"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "C15") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R") (at 105.41 80.01 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "60d3f40a-ffa4-42c6-869b-21cb484b2d0c")
+    (property "Reference" "R24" (at 105.41 74.93 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100k" (at 105.41 85.09 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 105.41 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "5f63102f-3380-425a-9171-65a64f39a8fc"))
+    (pin "2" (uuid "41375295-f1ce-4c25-98ee-0af727fd27ec"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "R24") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:TLV2372") (at 124.46 64.77 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b8d1d975-abc5-4baa-b1c7-cb66f2674161")
+    (property "Reference" "U4" (at 124.46 59.69 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TLV2372" (at 124.46 69.85 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 124.46 64.77 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "3" (uuid "9489475e-6fdd-488d-9ce8-bdf58007df40"))
+    (pin "2" (uuid "35ad7c2b-556c-41c9-a430-cb0eb69ca1e6"))
+    (pin "1" (uuid "e599f8b4-cd1d-4b09-b1dc-e0a6224be5d6"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "U4") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R") (at 115.57 80.01 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "1a0c38a5-6d01-4351-a914-46d0858564a7")
+    (property "Reference" "R25" (at 115.57 74.93 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1k" (at 115.57 85.09 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 115.57 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "f0628d2c-e92d-439e-bf82-834a44758ebb"))
+    (pin "2" (uuid "203b8ea0-ca28-480d-a8c3-e7e5349077c9"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "R25") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R") (at 124.46 52.07 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "a6b52061-9a79-4f16-8900-6b88b9b2476b")
+    (property "Reference" "R26" (at 124.46 46.99 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "9.1k" (at 124.46 57.15 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 124.46 52.07 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "20427d9a-7b56-4a9b-8383-4b8c8a9ef97c"))
+    (pin "2" (uuid "298a474c-8479-48b3-9db0-647d0c6fd08b"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "R26") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R_Potentiometer") (at 137.16 52.07 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "579db2f1-259a-4afd-ae38-42410d19e923")
+    (property "Reference" "RV1" (at 137.16 46.99 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100k TRIM" (at 137.16 57.15 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" (at 137.16 52.07 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "a4f3c219-f0ff-4316-8ce2-2709caba78a3"))
+    (pin "3" (uuid "09b6b166-c6ed-4aa4-8610-5c4cc79c8509"))
+    (pin "2" (uuid "f1768f1b-6a63-47f2-ba96-9f01f86173ac"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "RV1") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 124.46 44.45 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b79fbe19-39c4-42af-9f93-6f2c5b248cf9")
+    (property "Reference" "C16" (at 124.46 39.37 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "47pF" (at 124.46 49.53 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 124.46 44.45 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "2c7beb55-f76d-4a07-bfce-84327a2f2e1d"))
+    (pin "2" (uuid "8175b729-aa39-44cd-88f6-876f479d0364"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "C16") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:TLV2372") (at 124.46 100.33 0) (unit 2)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "04e44ecc-db20-4f7a-9a66-f94e146c68ca")
+    (property "Reference" "U4" (at 124.46 95.25 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TLV2372" (at 124.46 105.41 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 124.46 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "5" (uuid "7fda470d-efd1-408e-8391-d02a23ef38d0"))
+    (pin "6" (uuid "64325f27-df90-4a7a-9ced-cbb54e506a99"))
+    (pin "7" (uuid "976aef62-6f29-4978-9511-e39f62f16104"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "U4") (unit 2))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:TLV2372") (at 124.46 119.38 0) (unit 3)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "f3e313ac-e172-4375-92a4-aa061ef0b3fe")
+    (property "Reference" "U4" (at 124.46 114.30 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TLV2372" (at 124.46 124.46 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 124.46 119.38 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "8" (uuid "0e85303b-57f0-4f09-99e0-71c0ad4e95a4"))
+    (pin "4" (uuid "ada183ea-084c-44ec-9f68-f7be67009433"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "U4") (unit 3))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 134.62 119.38 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "9b59fd66-b29d-4cb3-877b-d80719d3a804")
+    (property "Reference" "C22" (at 134.62 114.30 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100nF" (at 134.62 124.46 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 134.62 119.38 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "084c38c0-53e5-4c2c-b21a-e9bc42dec700"))
+    (pin "2" (uuid "a2e1d338-981d-4e1d-b47b-e92fb3d46658"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "C22") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 165.10 64.77 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "d6f6ed47-b71f-4ea8-a42c-83a9ad558ef1")
+    (property "Reference" "C17" (at 165.10 59.69 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "47nF" (at 165.10 69.85 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 165.10 64.77 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "70190343-cf1b-4e58-8e6c-a496252260cf"))
+    (pin "2" (uuid "408341fb-5215-4c30-b330-522d656846fa"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "C17") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 180.34 64.77 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "175753d2-9768-4824-b704-a8b71c976385")
+    (property "Reference" "C18" (at 180.34 59.69 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "47nF" (at 180.34 69.85 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 180.34 64.77 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "249f6b0c-854a-4129-a668-b71b80993c1d"))
+    (pin "2" (uuid "59b96548-0104-4bc9-b8c7-73dc639e7f54"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "C18") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:TLV2372") (at 199.39 64.77 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "eab3181e-7aaf-4312-9cb7-e608536266e1")
+    (property "Reference" "U5" (at 199.39 59.69 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TLV2372" (at 199.39 69.85 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 199.39 64.77 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "3" (uuid "b4c9467c-8f06-4da8-bd5a-c3a91cbfc0a8"))
+    (pin "2" (uuid "af237c54-51f4-4ace-a3b9-0c542b5453fd"))
+    (pin "1" (uuid "51fd4267-4d0c-477f-b2e2-4c718be07de7"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "U5") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R") (at 190.50 80.01 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "bf3c1279-0c35-4089-992d-1ea9df5185e8")
+    (property "Reference" "R28" (at 190.50 74.93 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "16k 1%" (at 190.50 85.09 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 190.50 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "3a2e60e4-017b-44df-880c-678992cc7159"))
+    (pin "2" (uuid "d95da91e-85a5-46df-8072-785aeb26edf8"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "R28") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R") (at 180.34 52.07 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "9de9a3b2-4f43-4c84-8eb8-0aabce797139")
+    (property "Reference" "R27" (at 180.34 46.99 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "8.2k 1%" (at 180.34 57.15 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 180.34 52.07 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "dd2a500a-d5fb-4402-827b-b7e3a6aaf7b4"))
+    (pin "2" (uuid "aa90fed3-3d07-4d12-84c5-17c57789e214"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "R27") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R") (at 39.37 139.70 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "db0944d1-8bb8-4e66-a6b2-88c760f86221")
+    (property "Reference" "R29" (at 39.37 134.62 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "12k 1%" (at 39.37 144.78 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 39.37 139.70 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "beb57f36-ef6b-4a87-8fd8-5c03986975a7"))
+    (pin "2" (uuid "80630572-eee8-472c-9350-7732edd31834"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "R29") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R") (at 54.61 139.70 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "0384e253-dc8c-4f62-9d17-984fa124a1ca")
+    (property "Reference" "R30" (at 54.61 134.62 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "12k 1%" (at 54.61 144.78 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 54.61 139.70 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "38fac0c2-b731-4e55-a07a-f98e9ed3197d"))
+    (pin "2" (uuid "67623045-d5e6-4314-aa19-03f66c1e33f4"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "R30") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:TLV2372") (at 74.93 139.70 0) (unit 2)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "d13914ee-ebfd-4a29-b3bf-67d8ae43ebdf")
+    (property "Reference" "U5" (at 74.93 134.62 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TLV2372" (at 74.93 144.78 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 74.93 139.70 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "5" (uuid "366c2c72-614d-45b6-a2fc-cccfe246d49a"))
+    (pin "6" (uuid "2e73e057-8518-443c-acac-c199e11d9981"))
+    (pin "7" (uuid "1bf9cfd9-d5b7-42e8-95c4-ff0fe4891afa"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "U5") (unit 2))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 64.77 154.94 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "a455644c-a9ae-4d59-9c2c-e877283a3470")
+    (property "Reference" "C20" (at 64.77 149.86 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "680pF" (at 64.77 160.02 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 64.77 154.94 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "9ea6bf8c-628c-4b20-8635-1afaa5db6735"))
+    (pin "2" (uuid "d436da61-3230-41fa-9468-cf8baf041510"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "C20") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 59.69 128.27 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "704ba681-0094-488f-be17-e417e3a070fa")
+    (property "Reference" "C19" (at 59.69 123.19 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1.5nF" (at 59.69 133.35 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 59.69 128.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "1d6d2405-1249-4e46-bfb0-61a001273904"))
+    (pin "2" (uuid "2597da75-4365-4725-9e59-2ce72fdb8350"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "C19") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:TLV2372") (at 105.41 180.34 0) (unit 3)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "409e8242-f916-4242-ba4e-981be2479d51")
+    (property "Reference" "U5" (at 105.41 175.26 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TLV2372" (at 105.41 185.42 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 105.41 180.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "8" (uuid "3caf36a6-630c-41db-b63c-6617a2792dbe"))
+    (pin "4" (uuid "86d2f33f-889d-4de2-b250-ffbdcd91bb0b"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "U5") (unit 3))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 115.57 180.34 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "cfac3e8c-e6c8-449d-9b9e-f3efe5cd7cf8")
+    (property "Reference" "C23" (at 115.57 175.26 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100nF" (at 115.57 185.42 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 115.57 180.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "a6e9e37d-e302-4f15-b135-081a00bc863e"))
+    (pin "2" (uuid "35c46222-e60b-4450-9733-b69e88c9cc5e"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "C23") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:TLV2372") (at 129.54 139.70 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "5b1d8c05-df9d-40bb-bedb-988d7720d077")
+    (property "Reference" "U6" (at 129.54 134.62 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TLV2372" (at 129.54 144.78 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 129.54 139.70 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "3" (uuid "0552fa6d-ef8e-4aeb-a519-4aa51adf874a"))
+    (pin "2" (uuid "42593c69-b668-45c3-b98f-ab5479d08b9d"))
+    (pin "1" (uuid "43781fa9-b0ac-4bec-86a2-cd87b9565955"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "U6") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:D_Schottky") (at 144.78 139.70 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "1ffd43f6-1dbb-4975-8055-4f450b81bc59")
+    (property "Reference" "D8" (at 144.78 134.62 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "BAT54" (at 144.78 144.78 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 144.78 139.70 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "d2760a08-1d34-4728-bdda-753ee5513fa8"))
+    (pin "2" (uuid "83da2c8d-03bf-4a12-88c7-e00ea0112b96"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D8") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 154.94 154.94 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "fe149bb8-f5de-4f68-8895-d5a0da4cfd84")
+    (property "Reference" "C21" (at 154.94 149.86 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1uF" (at 154.94 160.02 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 154.94 154.94 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "7028e62b-a64b-4a0c-b7ef-1574ac73ef42"))
+    (pin "2" (uuid "6dc31aee-3ac5-458e-9c4e-cef229dea2b3"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "C21") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R") (at 165.10 154.94 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "322bab41-40c5-4630-93bb-7814ff4ced18")
+    (property "Reference" "R31" (at 165.10 149.86 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100k" (at 165.10 160.02 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 165.10 154.94 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "9a8a41f5-ef6c-4d0e-9c58-476271f6c712"))
+    (pin "2" (uuid "61e73f18-a4e7-4210-9281-ef4a968c1c23"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "R31") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:TLV2372") (at 185.42 139.70 0) (unit 2)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c1f20df6-67aa-499c-b1b0-12e5a9feb1ee")
+    (property "Reference" "U6" (at 185.42 134.62 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TLV2372" (at 185.42 144.78 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 185.42 139.70 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "5" (uuid "c32fd1ef-f866-4afd-a892-f849d32625e2"))
+    (pin "6" (uuid "fb821b50-eec6-4ac3-aae7-c6cc880c7644"))
+    (pin "7" (uuid "339158fc-83c7-4448-97aa-db4de7a31bea"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "U6") (unit 2))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R") (at 209.55 139.70 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "7ffc6f93-fd87-42ef-b6da-15fe36aade07")
+    (property "Reference" "R32" (at 209.55 134.62 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10k 1%" (at 209.55 144.78 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 209.55 139.70 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "a83b32f7-4bac-446f-87ec-b6342d4a2aaa"))
+    (pin "2" (uuid "cefa85e9-0a4e-4be2-83f8-889e2ba01107"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "R32") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R") (at 224.79 139.70 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "055859e1-a8b8-4f00-9127-a1abadd95661")
+    (property "Reference" "R33" (at 224.79 134.62 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "18k 1%" (at 224.79 144.78 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 224.79 139.70 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "63ba9bd6-7ae2-40c0-a01e-4875928cfc16"))
+    (pin "2" (uuid "4d97b3bf-a56b-4258-a166-63a02e1ce5a6"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "R33") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:D_Schottky") (at 240.03 134.62 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "3a142471-fbe3-46fb-a8fa-8ada77c0a85b")
+    (property "Reference" "D9" (at 240.03 129.54 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "BAT54" (at 240.03 139.70 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 240.03 134.62 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "31582777-2eff-4c78-8cc2-8cb13aef2531"))
+    (pin "2" (uuid "e3e515c5-0a18-480c-a675-599790c192ab"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D9") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 240.03 149.86 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "ffee7ddc-ae69-492f-9b77-0c8f465a03f5")
+    (property "Reference" "C32" (at 240.03 144.78 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100nF" (at 240.03 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 240.03 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "4f0c72f0-ef8d-4810-8583-28a0bcc9d431"))
+    (pin "2" (uuid "a3bff9a2-4377-4596-8554-bb0fc7b1e853"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "C32") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:TLV2372") (at 185.42 170.18 0) (unit 3)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "2541d882-f2e9-4e4d-a242-f7f11267b32c")
+    (property "Reference" "U6" (at 185.42 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TLV2372" (at 185.42 175.26 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 185.42 170.18 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "8" (uuid "09209689-1ac8-4fd2-b49d-3b90754e6940"))
+    (pin "4" (uuid "4886db4e-a2ca-4b5c-b950-9daeecb35c34"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "U6") (unit 3))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 195.58 170.18 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "2edd69ce-83e7-4e22-81dc-59ae7b3bf3c5")
+    (property "Reference" "C24" (at 195.58 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100nF" (at 195.58 175.26 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 195.58 170.18 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "3bd2abf3-22b8-4a27-9d4f-4bd40795d931"))
+    (pin "2" (uuid "3f4bc6f3-d690-4c96-a3a2-4c64484d88ce"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "C24") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LM393") (at 59.69 204.47 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "bb1880ca-da84-4279-8772-daa2556f2df1")
+    (property "Reference" "U8" (at 59.69 199.39 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "LM393" (at 59.69 209.55 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 59.69 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "3" (uuid "2d05a714-d2b8-40e5-b602-3272b61d6a96"))
+    (pin "2" (uuid "d5387cab-8d21-4946-b029-9efb2624aafd"))
+    (pin "1" (uuid "8a2fd6a6-50e7-47ad-9d81-974a9eb60c00"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "U8") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R") (at 39.37 199.39 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "1875b65b-909f-4b57-b3ac-8cf6df1eb859")
+    (property "Reference" "R34" (at 39.37 194.31 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10k" (at 39.37 204.47 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 39.37 199.39 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "b26d8a5d-5f08-4dce-b595-3d740f926763"))
+    (pin "2" (uuid "f7a1b26b-c194-4443-9632-95de350efd51"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "R34") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R") (at 59.69 191.77 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "201c2fb3-79ef-4260-8a0b-615cad55c308")
+    (property "Reference" "R35" (at 59.69 186.69 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "470k" (at 59.69 196.85 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 59.69 191.77 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "1fa4b036-8a3f-47ff-bc65-51062dd71aff"))
+    (pin "2" (uuid "291033f1-a929-4d05-9766-7cc83fcc7f5b"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "R35") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R_Potentiometer") (at 72.39 191.77 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "859fd813-76c4-4d3a-9023-1e4216c3b405")
+    (property "Reference" "RV3" (at 72.39 186.69 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "50k HYST" (at 72.39 196.85 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" (at 72.39 191.77 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "6d4acfca-cce5-4b09-a094-4d7a8dde2a01"))
+    (pin "3" (uuid "7bdcd78d-3c39-4dc9-9d79-4b137e4a77d7"))
+    (pin "2" (uuid "8f076846-4cee-4607-a704-97c705b5c10f"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "RV3") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R") (at 85.09 214.63 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "9a133347-967b-45a3-ba04-c3de0fa3d1cb")
+    (property "Reference" "R36" (at 85.09 209.55 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "2.2k" (at 85.09 219.71 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 85.09 214.63 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "1a634097-327d-4a20-acbf-604220676fa0"))
+    (pin "2" (uuid "6aa0f8f2-f313-417f-8f60-e6965fa50ba1"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "R36") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LM393") (at 59.69 234.95 0) (unit 2)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "acc78e1b-7086-4a99-b07d-8cead1dfa5d6")
+    (property "Reference" "U8" (at 59.69 229.87 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "LM393" (at 59.69 240.03 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 59.69 234.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "5" (uuid "7022e7c3-b93a-492a-9dd9-0c58e66bcdfb"))
+    (pin "6" (uuid "afa6e052-3713-4ba2-8c21-29a47373609d"))
+    (pin "7" (uuid "060749ff-3bba-4b08-a885-9a897d46170a"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "U8") (unit 2))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LM393") (at 59.69 255.27 0) (unit 3)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "7885bc7e-de58-4c52-942f-7b08aca32a1c")
+    (property "Reference" "U8" (at 59.69 250.19 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "LM393" (at 59.69 260.35 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 59.69 255.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "8" (uuid "5140b506-3278-4aea-b09a-3aa700fd1fbf"))
+    (pin "4" (uuid "67d4c11d-bced-4b17-ac93-6a7d220ab835"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "U8") (unit 3))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 74.93 255.27 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "ef9ea0bf-74f1-4aa3-b2e9-ba69bbeaf3fd")
+    (property "Reference" "C26" (at 74.93 250.19 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100nF" (at 74.93 260.35 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 74.93 255.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "465685d1-ced8-46ff-8cb3-ee2e3e814a2e"))
+    (pin "2" (uuid "50c1ac30-e3c1-491a-b81d-22299057c837"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "C26") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:TLC5916") (at 129.54 219.71 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "40e54686-597e-46d5-b757-804c2824e238")
+    (property "Reference" "U7" (at 129.54 214.63 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TLC5916" (at 129.54 224.79 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" (at 129.54 219.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "2" (uuid "ae1a7327-ccd0-4311-89b3-a9ecb82df690"))
+    (pin "3" (uuid "791664b2-986e-4d5d-9442-844fe90635a2"))
+    (pin "4" (uuid "e7fa3272-e76f-4767-a2d4-de66c24116bb"))
+    (pin "13" (uuid "3107ea67-466b-473f-9725-79802ebae49a"))
+    (pin "15" (uuid "d0a4609e-e8f0-4f1d-b8a3-5cb62aababf0"))
+    (pin "16" (uuid "170e8a02-367d-41bd-9b3f-0032224a3dbb"))
+    (pin "1" (uuid "26862609-69f8-4c41-b594-67174443868b"))
+    (pin "5" (uuid "6c34aa9f-3e4c-47e8-8c07-5ae55e653787"))
+    (pin "6" (uuid "3bf98a4f-e107-4b4c-9e79-54e6a008776b"))
+    (pin "7" (uuid "abf572e9-7607-4908-8845-7266c481d919"))
+    (pin "8" (uuid "2fc14c2f-3d54-4cbc-911c-71cd45a229b3"))
+    (pin "9" (uuid "42a936e4-b211-4431-a8ed-3eadc5e9f8b2"))
+    (pin "10" (uuid "4f19996d-593e-467d-9739-b7e569df8c63"))
+    (pin "11" (uuid "f103746c-307d-423e-9b2a-66b7171c93d4"))
+    (pin "12" (uuid "61c21ca1-9f2a-4824-a72c-0fa930ed7eea"))
+    (pin "14" (uuid "6467b273-ddf6-491b-b342-3378835bf1b3"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "U7") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R") (at 115.57 240.03 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "16dff12c-55a9-416f-9de0-71ce6756e6c5")
+    (property "Reference" "R18" (at 115.57 234.95 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1.2k" (at 115.57 245.11 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 115.57 240.03 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "ff3c0e37-c141-4b4e-a904-1757181dc2da"))
+    (pin "2" (uuid "580dd2ab-df9f-4249-b5ea-8c84a758e0d3"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "R18") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 129.54 245.11 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "aa95d313-e3e1-4112-8ef3-20740b9368a4")
+    (property "Reference" "C25" (at 129.54 240.03 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100nF" (at 129.54 250.19 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 129.54 245.11 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "22a8f6db-36c2-4d14-a8b6-33098e1d9b40"))
+    (pin "2" (uuid "67d544fa-a171-4c6a-882d-a8e0b44d47ef"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "C25") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:TLC5916") (at 195.58 219.71 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c92b4a2c-57ae-4815-a6f6-65184bcf2aef")
+    (property "Reference" "U11" (at 195.58 214.63 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TLC5916" (at 195.58 224.79 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" (at 195.58 219.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "2" (uuid "8d92cd42-726a-49fe-896a-b4cf65502a9f"))
+    (pin "3" (uuid "c58003ea-508b-4cbb-a88b-1fb7163e3139"))
+    (pin "4" (uuid "32712fd8-c1bf-4c3f-827a-23ed4d2fe9b0"))
+    (pin "13" (uuid "c5504684-d065-4346-b436-3e928a928129"))
+    (pin "15" (uuid "7fffc581-25b2-410f-9bb0-341ccb154829"))
+    (pin "16" (uuid "1d09857c-c632-41a9-94bd-a76015d05a0f"))
+    (pin "1" (uuid "84a16db0-d619-49d7-adfa-211ec10988c0"))
+    (pin "5" (uuid "05e73b57-bf73-40cd-9d03-07600fb6a53b"))
+    (pin "6" (uuid "9850b963-3d65-4955-876d-406d3cc97922"))
+    (pin "7" (uuid "567da809-6fac-477d-a8b4-30aa9e7300f1"))
+    (pin "8" (uuid "81beaa71-033a-4d79-81f3-c3b53c9aed9d"))
+    (pin "9" (uuid "efcdff51-0276-4b2c-82ee-3ecee51d5bce"))
+    (pin "10" (uuid "574f0d97-1745-4c5a-a66c-3b7233c5f79d"))
+    (pin "11" (uuid "0fb92de4-b248-4ce4-91cd-3cad6eb8e2c2"))
+    (pin "12" (uuid "b5bf337f-5983-4db0-90b7-c89f64ec8c73"))
+    (pin "14" (uuid "f60509ce-ff90-43f9-931c-1bc2800160ff"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "U11") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:R") (at 180.34 240.03 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "86c626ed-0fb4-45ba-b06d-61decd58b509")
+    (property "Reference" "R20" (at 180.34 234.95 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1.2k" (at 180.34 245.11 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 180.34 240.03 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "4ed10b9a-64b0-40c3-a6d7-6d796ee349dd"))
+    (pin "2" (uuid "86a42f33-fb14-4a4d-8f15-b85931224aba"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "R20") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 195.58 245.11 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "21add102-1513-42df-a1c8-de2472f2910c")
+    (property "Reference" "C27" (at 195.58 240.03 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100nF" (at 195.58 250.19 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 195.58 245.11 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "b07dccf6-eb71-4da9-ab5b-b1c0bcc9c287"))
+    (pin "2" (uuid "cc5c2f6d-3d8c-4a50-9f6e-7f6cef5202bf"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "C27") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LED") (at 160.02 190.50 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "4e5e7351-7257-42b7-984a-a58f790a4c00")
+    (property "Reference" "D10" (at 160.02 185.42 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "VU_Green" (at 160.02 195.58 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 160.02 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "60c575de-8b3f-43b4-b040-06d6bd887139"))
+    (pin "2" (uuid "04144f5e-aa86-4b20-bc52-dc46dabe5c89"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D10") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LED") (at 160.02 195.58 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "33ca6876-cfd4-4942-a862-674f4090329d")
+    (property "Reference" "D11" (at 160.02 190.50 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "VU_Green" (at 160.02 200.66 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 160.02 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "359f6838-5639-4d71-aa49-684922ab66fb"))
+    (pin "2" (uuid "4bd4246d-8d1f-465a-aa19-9f9962785824"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D11") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LED") (at 160.02 199.39 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "35241432-4845-46f1-a611-223c2cf7e6de")
+    (property "Reference" "D12" (at 160.02 194.31 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "VU_Green" (at 160.02 204.47 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 160.02 199.39 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "6fb274a8-5b90-40d2-8838-dd83acdb5aab"))
+    (pin "2" (uuid "d1e86252-e173-48a1-8df1-b74cf48b07ef"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D12") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LED") (at 160.02 204.47 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "24371d47-4cd0-439a-9190-96e85313f1d7")
+    (property "Reference" "D13" (at 160.02 199.39 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "VU_Green" (at 160.02 209.55 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 160.02 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "2b0303fe-9a08-4bb2-89c3-d6cf80a9083a"))
+    (pin "2" (uuid "d5de7b21-969e-40ba-afa9-b8320ab00fd8"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D13") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LED") (at 160.02 209.55 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "5545c386-9d05-45d8-8861-8c7942c47d67")
+    (property "Reference" "D14" (at 160.02 204.47 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "VU_Green" (at 160.02 214.63 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 160.02 209.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "4289972f-d21d-4d47-903d-ed24405b3467"))
+    (pin "2" (uuid "3090d116-619f-43b2-a574-d7d72d59c061"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D14") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LED") (at 160.02 214.63 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "a393b494-55ea-451d-a49d-f83364355c65")
+    (property "Reference" "D15" (at 160.02 209.55 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "VU_Green" (at 160.02 219.71 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 160.02 214.63 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "d21cd126-a11b-45bc-8718-12ce29542fdf"))
+    (pin "2" (uuid "6c7c6033-fc40-418c-a99b-973c3ac6f273"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D15") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LED") (at 160.02 219.71 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "76adad0e-32af-4e94-b5df-f5121090e2a0")
+    (property "Reference" "D16" (at 160.02 214.63 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "VU_Green" (at 160.02 224.79 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 160.02 219.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "6e660c0a-c233-4bdf-a857-803321fde40a"))
+    (pin "2" (uuid "59b0a5fd-93ed-4dc5-9742-5921524dde61"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D16") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LED") (at 160.02 224.79 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "f8d28c08-3858-4a5e-bd3d-ab899f6f8a30")
+    (property "Reference" "D17" (at 160.02 219.71 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "VU_Green" (at 160.02 229.87 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 160.02 224.79 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "1d68104a-22d9-47ff-9343-a07a49d599ef"))
+    (pin "2" (uuid "c583eeab-6116-49ae-a6a4-166dedc9a003"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D17") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LED") (at 160.02 229.87 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "334c5738-b623-4874-824a-b0c0f48463ce")
+    (property "Reference" "D18" (at 160.02 224.79 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "VU_Yellow" (at 160.02 234.95 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 160.02 229.87 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "1aa1828f-643c-45bd-adcc-c5d53467bda9"))
+    (pin "2" (uuid "0e3231bb-97d6-4695-96e7-01a6d378073e"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D18") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LED") (at 160.02 234.95 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "e4538994-70e2-4a13-925b-e5f63a362831")
+    (property "Reference" "D19" (at 160.02 229.87 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "VU_Red" (at 160.02 240.03 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 160.02 234.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "0582785d-ce93-40e0-90b8-77dbeb0171b5"))
+    (pin "2" (uuid "8a218fa7-43f3-446e-8a3d-d9aea54f72ef"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D19") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LED") (at 224.79 245.11 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "2a822163-389d-4d8b-9cdd-8cd500ee3648")
+    (property "Reference" "D2" (at 224.79 240.03 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "LED_READ_Green" (at 224.79 250.19 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 224.79 245.11 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "91685d4a-30eb-4c49-b111-80278e3b9715"))
+    (pin "2" (uuid "1d5e32c1-86f0-4bd2-9640-92a29184fd10"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D2") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LED") (at 224.79 250.19 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "a4885de3-1cfa-4f71-8f74-868eb4ea0b33")
+    (property "Reference" "D3" (at 224.79 245.11 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "LED_WRITE_Red" (at 224.79 255.27 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 224.79 250.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "7837fbb4-1334-4e69-9193-ffd97df9f946"))
+    (pin "2" (uuid "fab9d4e4-0830-46e1-8b12-2661edc0c0be"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D3") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LED") (at 224.79 255.27 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "7eeefda0-20ba-4e16-bcdb-14af4fa45f21")
+    (property "Reference" "D4" (at 224.79 250.19 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "LED_MOTOR_Yellow" (at 224.79 260.35 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 224.79 255.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "4c3b399d-27ec-4221-9282-433a26bf029a"))
+    (pin "2" (uuid "07b1fc6b-4b3e-45a7-91db-780b7d08c27c"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D4") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:LED") (at 224.79 260.35 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "9058e128-dad8-4271-b853-d8949299a198")
+    (property "Reference" "D5" (at 224.79 255.27 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "LED_SIGNAL_Blue" (at 224.79 265.43 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 224.79 260.35 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "55f8e50c-261a-4226-be73-c04e424fecb7"))
+    (pin "2" (uuid "65376cfe-ab01-42ee-ae39-fc6262a4efb8"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "D5") (unit 1))
+      )
+    )
+  )
+
+  (symbol (lib_id "Tape-Master:GND") (at 49.53 67.31 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "547bd1eb-3302-42e7-a7b0-242b4bd34e8e")
+    (property "Reference" "#GND" (at 49.53 67.31 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 49.53 64.77 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 49.53 67.31 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "d14875a3-4e83-4ea5-bb6c-9d6b39292702"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 62.23 67.31 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "efabc649-409c-4045-8bef-cf1ae07c340d")
+    (property "Reference" "#GND" (at 62.23 67.31 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 62.23 64.77 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 62.23 67.31 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "1aacefb3-e1cc-443a-b9ee-84548f7e9d74"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+3V3") (at 74.93 77.47 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "06207045-1130-460e-a9a8-21e8a5cdb671")
+    (property "Reference" "#+3V3" (at 74.93 77.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+3V3" (at 74.93 74.93 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 74.93 77.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "2fe3ed3b-9e25-4081-bc7e-3ab52b18956c"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+3V3") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 121.92 106.68 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "3571c22c-02cc-4faa-9078-a3bafba95775")
+    (property "Reference" "#+5V" (at 121.92 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 121.92 104.14 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 121.92 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "8fafaf88-6e23-44af-9719-0ebef95c9852"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 121.92 132.08 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "ed22d9f3-5cff-4db3-a852-22a8b7c1a7d6")
+    (property "Reference" "#GND" (at 121.92 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 121.92 129.54 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 121.92 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "b99dee83-801d-4ef9-8845-566f25832762"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 134.62 110.49 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "fe3d1186-a26f-4100-9203-a8cb176021ce")
+    (property "Reference" "#+5V" (at 134.62 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 134.62 107.95 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 134.62 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "46a0a276-f137-45ff-a979-2296b203dcdb"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 134.62 128.27 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "78596b13-b469-4c86-97df-53f634b76293")
+    (property "Reference" "#GND" (at 134.62 128.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 134.62 125.73 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 134.62 128.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "a0873f18-f30d-4333-9a10-2da6b81582ec"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 102.87 167.64 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "5747bd34-3f09-466f-a533-85c0205b94d0")
+    (property "Reference" "#+5V" (at 102.87 167.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 102.87 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 102.87 167.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "445f1de6-8f57-400e-bf76-701524602ff3"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 102.87 193.04 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "2c6077b3-951e-456f-a405-0e3a566aa3f2")
+    (property "Reference" "#GND" (at 102.87 193.04 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 102.87 190.50 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 102.87 193.04 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "16c74d15-0626-47a9-8cd3-f09ae47a947e"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 115.57 171.45 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "5ac536e2-6877-464a-bf35-e5e236646443")
+    (property "Reference" "#+5V" (at 115.57 171.45 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 115.57 168.91 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 115.57 171.45 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "078c3414-73a7-4b37-82b6-050d9629cbc8"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 115.57 189.23 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "56581ce1-1c46-43ad-8c4a-70049b99b1c5")
+    (property "Reference" "#GND" (at 115.57 189.23 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 115.57 186.69 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 115.57 189.23 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "5128463e-778e-4fd0-9204-44c81d753392"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 233.68 139.70 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "3f101886-92ad-4990-b626-b3602f08e6a2")
+    (property "Reference" "#GND" (at 233.68 139.70 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 233.68 137.16 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 233.68 139.70 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "14a1228a-1b4d-4323-8dce-7b76b7ac6be7"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+3V3") (at 248.92 134.62 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c33144e6-acd1-4394-9769-7cb9993c23ff")
+    (property "Reference" "#+3V3" (at 248.92 134.62 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+3V3" (at 248.92 132.08 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 248.92 134.62 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "77594052-d7c1-4c55-bf3f-fbde5ae06d00"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+3V3") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 240.03 158.75 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "a0c55575-befe-4a61-ae55-bab01946de32")
+    (property "Reference" "#GND" (at 240.03 158.75 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 240.03 156.21 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 240.03 158.75 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "ed927caf-67a0-4c5d-90e0-5bdd137c10c3"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 182.88 157.48 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "67f740c0-82db-49db-8fae-921e1526c161")
+    (property "Reference" "#+5V" (at 182.88 157.48 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 182.88 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 182.88 157.48 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "bc6848c6-7680-48c7-91fc-7e34dcc534dc"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 182.88 182.88 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "3254a377-bfb7-4249-98e9-1641b571c9a7")
+    (property "Reference" "#GND" (at 182.88 182.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 182.88 180.34 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 182.88 182.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "28ddb99c-6035-4d17-afa9-c15c3feb61e7"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 195.58 161.29 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "9ecddbdf-74ed-49a1-9075-77be8fb14c07")
+    (property "Reference" "#+5V" (at 195.58 161.29 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 195.58 158.75 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 195.58 161.29 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "81f9cbb8-bb45-4e65-b44a-de0fb35d6dde"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 195.58 179.07 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "fa9a2320-b2dc-4350-91d1-0e3979916ea8")
+    (property "Reference" "#GND" (at 195.58 179.07 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 195.58 176.53 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 195.58 179.07 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "e3be6550-a2b6-496b-9379-2fae633e9136"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+3V3") (at 85.09 223.52 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "f630c7e8-490f-4fdc-a8c9-cc3d3af6b3b3")
+    (property "Reference" "#+3V3" (at 85.09 223.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+3V3" (at 85.09 220.98 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 85.09 223.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "a52e7da7-7375-4ffc-8a22-3bb675c144a0"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+3V3") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 46.99 237.49 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "19a49b87-b5db-4e11-a3de-5ffcb4330c00")
+    (property "Reference" "#GND" (at 46.99 237.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 46.99 234.95 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 46.99 237.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "7cab8c1d-28d0-40bf-9921-b1254259b4dd"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 57.15 242.57 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "490041ee-feb9-43f6-a160-b0f9b32c0676")
+    (property "Reference" "#+5V" (at 57.15 242.57 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 57.15 240.03 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 57.15 242.57 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "336292d0-58b9-4598-9aac-3d57bf69cccd"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 57.15 267.97 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "92ed6252-07b9-4eba-ac2d-a6a0a4385393")
+    (property "Reference" "#GND" (at 57.15 267.97 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 57.15 265.43 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 57.15 267.97 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "af850945-f297-4947-9eed-4e85b49d09f6"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 74.93 246.38 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "cb87ea13-c368-4258-8ac8-ecdf0b04862f")
+    (property "Reference" "#+5V" (at 74.93 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 74.93 243.84 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 74.93 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "53d172ac-7f4c-425b-b984-b72f04ccebbc"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 74.93 264.16 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "f21a6227-bf7a-4385-88a3-cd8772e0f844")
+    (property "Reference" "#GND" (at 74.93 264.16 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 74.93 261.62 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 74.93 264.16 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "c467a892-2713-47b8-ab1d-fa9b466e8730"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 129.54 242.57 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "31d8b6b2-51c1-4c35-8f61-940903c6c219")
+    (property "Reference" "#GND" (at 129.54 242.57 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 129.54 240.03 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 129.54 242.57 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "9a2779a5-47d7-43ca-b311-376873c24b6e"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 114.30 219.71 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "af5d3402-1fc3-43ba-b616-ac3ed2768f64")
+    (property "Reference" "#GND" (at 114.30 219.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 114.30 217.17 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 114.30 219.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "e6c6deb7-03c7-49b4-b2e4-be147e284a03"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+3V3") (at 129.54 199.39 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "8861631f-fc99-41ec-9993-e851305e17cc")
+    (property "Reference" "#+3V3" (at 129.54 199.39 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+3V3" (at 129.54 196.85 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 129.54 199.39 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "ed10309b-212a-49c1-a13c-bc2ad86efbf3"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+3V3") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 124.46 240.03 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "2bea1bfc-3d17-4518-a43f-8872e47873f3")
+    (property "Reference" "#GND" (at 124.46 240.03 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 124.46 237.49 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 124.46 240.03 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "b9ef101d-d4a2-477b-a397-7a97f328fe81"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+3V3") (at 129.54 236.22 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "a790f4b7-fcae-426f-9741-3e7d54a041a6")
+    (property "Reference" "#+3V3" (at 129.54 236.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+3V3" (at 129.54 233.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 129.54 236.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "554e4f53-1c18-4418-9eff-f76d46c697fa"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+3V3") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 129.54 254.00 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "67b58860-5ff3-4efa-9cf9-e70aa938e477")
+    (property "Reference" "#GND" (at 129.54 254.00 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 129.54 251.46 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 129.54 254.00 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "ed551e12-5280-4362-b82e-67576e89aef1"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 195.58 242.57 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "d306471c-627c-497b-9c19-3d4c08ce26ff")
+    (property "Reference" "#GND" (at 195.58 242.57 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 195.58 240.03 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 195.58 242.57 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "319a204b-3b6d-4920-9880-99afe310580e"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 180.34 219.71 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b63c9cc8-2456-450c-9f7e-e4e380316eec")
+    (property "Reference" "#GND" (at 180.34 219.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 180.34 217.17 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 180.34 219.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "ca1650e1-ec41-434d-bff1-e5c529a5ec7b"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+3V3") (at 195.58 199.39 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b203e31c-6eb9-4eae-891b-df62adef9c5e")
+    (property "Reference" "#+3V3" (at 195.58 199.39 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+3V3" (at 195.58 196.85 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 195.58 199.39 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "444becc9-949e-41d8-a29d-434e27adb44a"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+3V3") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 189.23 240.03 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "e9e53fa4-c15a-4c99-bfae-ec20ea469691")
+    (property "Reference" "#GND" (at 189.23 240.03 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 189.23 237.49 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 189.23 240.03 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "0d823980-4b85-4f40-a16c-6c2747c4257a"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+3V3") (at 195.58 236.22 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "73a1b7cd-64d3-4db6-af27-f5daa20dc42d")
+    (property "Reference" "#+3V3" (at 195.58 236.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+3V3" (at 195.58 233.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 195.58 236.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "372ff6d4-ca55-4ad3-b358-4ebd17705358"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+3V3") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:GND") (at 195.58 254.00 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "7c21e731-3da3-44fd-98ac-138d28bd22fc")
+    (property "Reference" "#GND" (at 195.58 254.00 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 195.58 251.46 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 195.58 254.00 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "b68b7e0d-0d06-4746-855e-e636c0970e4c"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 168.91 190.50 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "a9efefee-00af-4548-93c9-435f820a8ce3")
+    (property "Reference" "#+5V" (at 168.91 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 168.91 187.96 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 168.91 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "4e1584d2-3362-4d9b-9441-41cf2f4820f8"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 168.91 195.58 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "f5109989-36c0-474d-9f00-4cb8826fb60e")
+    (property "Reference" "#+5V" (at 168.91 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 168.91 193.04 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 168.91 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "dfe20870-31ba-4e20-a06d-e99df0b18db3"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 168.91 199.39 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c2be7c1c-bf09-454e-9e9a-325c50fea9ed")
+    (property "Reference" "#+5V" (at 168.91 199.39 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 168.91 196.85 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 168.91 199.39 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "cc400593-9e91-4eae-b4a5-ee701ef64d4d"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 168.91 204.47 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "1edf6c0f-01c5-4199-8abc-3dae3839c159")
+    (property "Reference" "#+5V" (at 168.91 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 168.91 201.93 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 168.91 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "5d366b80-1ed7-40d5-9f29-d676441de79d"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 168.91 209.55 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "ce504d5d-2331-4054-a60a-97ffaa7af265")
+    (property "Reference" "#+5V" (at 168.91 209.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 168.91 207.01 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 168.91 209.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "5d80f577-0ef0-492e-9665-34dfdc4c3372"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 168.91 214.63 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "42ea9028-7ec5-4fe9-beeb-4624ce6579d7")
+    (property "Reference" "#+5V" (at 168.91 214.63 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 168.91 212.09 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 168.91 214.63 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "b1a559cb-0a81-4b5f-8709-004c6ef61130"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 168.91 219.71 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "03ef1391-5186-4c29-a514-f53913f5a10b")
+    (property "Reference" "#+5V" (at 168.91 219.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 168.91 217.17 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 168.91 219.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "d6f67f8b-e9f0-47aa-a399-a8fbae0c01d5"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 168.91 224.79 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "12d0536a-904c-4d21-bdfe-1366e628e86b")
+    (property "Reference" "#+5V" (at 168.91 224.79 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 168.91 222.25 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 168.91 224.79 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "ed080078-2d80-4781-bb5f-77dcbfad3ac5"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 168.91 229.87 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "08d755c5-de75-4356-8ced-5ffee30f1991")
+    (property "Reference" "#+5V" (at 168.91 229.87 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 168.91 227.33 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 168.91 229.87 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "c075a327-5ebc-46b0-89aa-fa5f240bc14f"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 168.91 234.95 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "96589f13-3f05-4326-b2e6-ca9b61f0bc5c")
+    (property "Reference" "#+5V" (at 168.91 234.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 168.91 232.41 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 168.91 234.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "5b7ebfce-3f19-49be-9bbd-5806b942da03"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 233.68 245.11 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "f18dd284-0011-4f4a-b570-3217a86b2737")
+    (property "Reference" "#+5V" (at 233.68 245.11 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 233.68 242.57 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 233.68 245.11 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "3b55efba-96c8-4538-8270-68e5d2ad45c6"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 233.68 250.19 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "61add706-e327-408c-b1d2-b5a4750d004d")
+    (property "Reference" "#+5V" (at 233.68 250.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 233.68 247.65 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 233.68 250.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "69f18889-d376-46c2-a6bd-ad17b8fd531c"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 233.68 255.27 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "89ee9594-6d81-457e-b053-d5463f6a3c02")
+    (property "Reference" "#+5V" (at 233.68 255.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 233.68 252.73 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 233.68 255.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "138f47a3-144c-4efe-9fb7-f515e2767875"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:+5V") (at 233.68 260.35 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "8ac6bbf4-4fa9-4be9-ba6f-266d52790475")
+    (property "Reference" "#+5V" (at 233.68 260.35 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 233.68 257.81 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 233.68 260.35 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "426369d0-0567-4d4d-bb4c-118b8ce0193c"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+
+  (wire (pts (xy 30.48 139.70) (xy 35.56 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 30.48 199.39) (xy 35.56 199.39)) (stroke (width 0) (type default)))
+  (wire (pts (xy 43.18 139.70) (xy 50.80 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 43.18 139.70) (xy 55.88 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 43.18 199.39) (xy 52.07 199.39)) (stroke (width 0) (type default)))
+  (wire (pts (xy 44.45 67.31) (xy 49.53 67.31)) (stroke (width 0) (type default)))
+  (wire (pts (xy 44.45 69.85) (xy 54.61 69.85)) (stroke (width 0) (type default)))
+  (wire (pts (xy 44.45 72.39) (xy 54.61 72.39)) (stroke (width 0) (type default)))
+  (wire (pts (xy 46.99 207.01) (xy 52.07 207.01)) (stroke (width 0) (type default)))
+  (wire (pts (xy 46.99 232.41) (xy 52.07 232.41)) (stroke (width 0) (type default)))
+  (wire (pts (xy 46.99 237.49) (xy 52.07 237.49)) (stroke (width 0) (type default)))
+  (wire (pts (xy 52.07 199.39) (xy 52.07 201.93)) (stroke (width 0) (type default)))
+  (wire (pts (xy 52.07 201.93) (xy 55.88 201.93)) (stroke (width 0) (type default)))
+  (wire (pts (xy 54.61 69.85) (xy 54.61 72.39)) (stroke (width 0) (type default)))
+  (wire (pts (xy 54.61 69.85) (xy 82.55 69.85)) (stroke (width 0) (type default)))
+  (wire (pts (xy 55.88 128.27) (xy 55.88 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 55.88 191.77) (xy 55.88 201.93)) (stroke (width 0) (type default)))
+  (wire (pts (xy 57.15 242.57) (xy 57.15 247.65)) (stroke (width 0) (type default)))
+  (wire (pts (xy 57.15 262.89) (xy 57.15 267.97)) (stroke (width 0) (type default)))
+  (wire (pts (xy 58.42 139.70) (xy 64.77 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 58.42 139.70) (xy 67.31 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 62.23 67.31) (xy 67.31 67.31)) (stroke (width 0) (type default)))
+  (wire (pts (xy 63.50 128.27) (xy 82.55 128.27)) (stroke (width 0) (type default)))
+  (wire (pts (xy 63.50 191.77) (xy 68.58 191.77)) (stroke (width 0) (type default)))
+  (wire (pts (xy 64.77 139.70) (xy 64.77 151.13)) (stroke (width 0) (type default)))
+  (wire (pts (xy 64.77 158.75) (xy 64.77 163.83)) (stroke (width 0) (type default)))
+  (wire (pts (xy 67.31 137.16) (xy 67.31 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 67.31 142.24) (xy 82.55 142.24)) (stroke (width 0) (type default)))
+  (wire (pts (xy 67.31 187.96) (xy 67.31 204.47)) (stroke (width 0) (type default)))
+  (wire (pts (xy 67.31 187.96) (xy 72.39 187.96)) (stroke (width 0) (type default)))
+  (wire (pts (xy 67.31 204.47) (xy 72.39 204.47)) (stroke (width 0) (type default)))
+  (wire (pts (xy 67.31 204.47) (xy 85.09 204.47)) (stroke (width 0) (type default)))
+  (wire (pts (xy 72.39 187.96) (xy 72.39 191.77)) (stroke (width 0) (type default)))
+  (wire (pts (xy 72.39 191.77) (xy 76.20 191.77)) (stroke (width 0) (type default)))
+  (wire (pts (xy 74.93 72.39) (xy 74.93 77.47)) (stroke (width 0) (type default)))
+  (wire (pts (xy 74.93 246.38) (xy 74.93 251.46)) (stroke (width 0) (type default)))
+  (wire (pts (xy 74.93 259.08) (xy 74.93 264.16)) (stroke (width 0) (type default)))
+  (wire (pts (xy 82.55 67.31) (xy 82.55 69.85)) (stroke (width 0) (type default)))
+  (wire (pts (xy 82.55 67.31) (xy 86.36 67.31)) (stroke (width 0) (type default)))
+  (wire (pts (xy 82.55 128.27) (xy 82.55 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 82.55 139.70) (xy 82.55 142.24)) (stroke (width 0) (type default)))
+  (wire (pts (xy 82.55 139.70) (xy 87.63 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 85.09 204.47) (xy 85.09 210.82)) (stroke (width 0) (type default)))
+  (wire (pts (xy 85.09 218.44) (xy 85.09 223.52)) (stroke (width 0) (type default)))
+  (wire (pts (xy 93.98 67.31) (xy 105.41 67.31)) (stroke (width 0) (type default)))
+  (wire (pts (xy 93.98 67.31) (xy 116.84 67.31)) (stroke (width 0) (type default)))
+  (wire (pts (xy 102.87 167.64) (xy 102.87 172.72)) (stroke (width 0) (type default)))
+  (wire (pts (xy 102.87 187.96) (xy 102.87 193.04)) (stroke (width 0) (type default)))
+  (wire (pts (xy 105.41 67.31) (xy 105.41 76.20)) (stroke (width 0) (type default)))
+  (wire (pts (xy 105.41 83.82) (xy 105.41 88.90)) (stroke (width 0) (type default)))
+  (wire (pts (xy 111.76 97.79) (xy 116.84 97.79)) (stroke (width 0) (type default)))
+  (wire (pts (xy 111.76 227.33) (xy 111.76 240.03)) (stroke (width 0) (type default)))
+  (wire (pts (xy 111.76 227.33) (xy 119.38 227.33)) (stroke (width 0) (type default)))
+  (wire (pts (xy 114.30 209.55) (xy 119.38 209.55)) (stroke (width 0) (type default)))
+  (wire (pts (xy 114.30 212.09) (xy 119.38 212.09)) (stroke (width 0) (type default)))
+  (wire (pts (xy 114.30 214.63) (xy 119.38 214.63)) (stroke (width 0) (type default)))
+  (wire (pts (xy 114.30 219.71) (xy 119.38 219.71)) (stroke (width 0) (type default)))
+  (wire (pts (xy 115.57 67.31) (xy 115.57 76.20)) (stroke (width 0) (type default)))
+  (wire (pts (xy 115.57 67.31) (xy 116.84 67.31)) (stroke (width 0) (type default)))
+  (wire (pts (xy 115.57 83.82) (xy 115.57 88.90)) (stroke (width 0) (type default)))
+  (wire (pts (xy 115.57 171.45) (xy 115.57 176.53)) (stroke (width 0) (type default)))
+  (wire (pts (xy 115.57 184.15) (xy 115.57 189.23)) (stroke (width 0) (type default)))
+  (wire (pts (xy 116.84 62.23) (xy 116.84 67.31)) (stroke (width 0) (type default)))
+  (wire (pts (xy 116.84 67.31) (xy 120.65 67.31)) (stroke (width 0) (type default)))
+  (wire (pts (xy 116.84 102.87) (xy 132.08 102.87)) (stroke (width 0) (type default)))
+  (wire (pts (xy 116.84 137.16) (xy 121.92 137.16)) (stroke (width 0) (type default)))
+  (wire (pts (xy 119.38 240.03) (xy 124.46 240.03)) (stroke (width 0) (type default)))
+  (wire (pts (xy 120.65 44.45) (xy 120.65 67.31)) (stroke (width 0) (type default)))
+  (wire (pts (xy 120.65 52.07) (xy 120.65 67.31)) (stroke (width 0) (type default)))
+  (wire (pts (xy 121.92 106.68) (xy 121.92 111.76)) (stroke (width 0) (type default)))
+  (wire (pts (xy 121.92 127.00) (xy 121.92 132.08)) (stroke (width 0) (type default)))
+  (wire (pts (xy 121.92 142.24) (xy 148.59 142.24)) (stroke (width 0) (type default)))
+  (wire (pts (xy 128.27 44.45) (xy 132.08 44.45)) (stroke (width 0) (type default)))
+  (wire (pts (xy 128.27 52.07) (xy 133.35 52.07)) (stroke (width 0) (type default)))
+  (wire (pts (xy 129.54 199.39) (xy 129.54 204.47)) (stroke (width 0) (type default)))
+  (wire (pts (xy 129.54 236.22) (xy 129.54 241.30)) (stroke (width 0) (type default)))
+  (wire (pts (xy 129.54 237.49) (xy 129.54 242.57)) (stroke (width 0) (type default)))
+  (wire (pts (xy 129.54 248.92) (xy 129.54 254.00)) (stroke (width 0) (type default)))
+  (wire (pts (xy 132.08 44.45) (xy 132.08 64.77)) (stroke (width 0) (type default)))
+  (wire (pts (xy 132.08 48.26) (xy 132.08 64.77)) (stroke (width 0) (type default)))
+  (wire (pts (xy 132.08 48.26) (xy 137.16 48.26)) (stroke (width 0) (type default)))
+  (wire (pts (xy 132.08 64.77) (xy 137.16 64.77)) (stroke (width 0) (type default)))
+  (wire (pts (xy 132.08 100.33) (xy 132.08 102.87)) (stroke (width 0) (type default)))
+  (wire (pts (xy 134.62 110.49) (xy 134.62 115.57)) (stroke (width 0) (type default)))
+  (wire (pts (xy 134.62 123.19) (xy 134.62 128.27)) (stroke (width 0) (type default)))
+  (wire (pts (xy 137.16 48.26) (xy 137.16 52.07)) (stroke (width 0) (type default)))
+  (wire (pts (xy 137.16 52.07) (xy 140.97 52.07)) (stroke (width 0) (type default)))
+  (wire (pts (xy 137.16 139.70) (xy 140.97 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 139.70 209.55) (xy 156.21 209.55)) (stroke (width 0) (type default)))
+  (wire (pts (xy 139.70 212.09) (xy 156.21 212.09)) (stroke (width 0) (type default)))
+  (wire (pts (xy 139.70 214.63) (xy 156.21 214.63)) (stroke (width 0) (type default)))
+  (wire (pts (xy 139.70 217.17) (xy 156.21 217.17)) (stroke (width 0) (type default)))
+  (wire (pts (xy 139.70 219.71) (xy 156.21 219.71)) (stroke (width 0) (type default)))
+  (wire (pts (xy 139.70 222.25) (xy 156.21 222.25)) (stroke (width 0) (type default)))
+  (wire (pts (xy 139.70 224.79) (xy 156.21 224.79)) (stroke (width 0) (type default)))
+  (wire (pts (xy 139.70 227.33) (xy 156.21 227.33)) (stroke (width 0) (type default)))
+  (wire (pts (xy 139.70 232.41) (xy 185.42 232.41)) (stroke (width 0) (type default)))
+  (wire (pts (xy 148.59 139.70) (xy 148.59 142.24)) (stroke (width 0) (type default)))
+  (wire (pts (xy 148.59 139.70) (xy 154.94 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 148.59 139.70) (xy 165.10 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 148.59 139.70) (xy 177.80 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 154.94 139.70) (xy 154.94 151.13)) (stroke (width 0) (type default)))
+  (wire (pts (xy 154.94 158.75) (xy 154.94 163.83)) (stroke (width 0) (type default)))
+  (wire (pts (xy 156.21 64.77) (xy 161.29 64.77)) (stroke (width 0) (type default)))
+  (wire (pts (xy 156.21 190.50) (xy 156.21 209.55)) (stroke (width 0) (type default)))
+  (wire (pts (xy 156.21 195.58) (xy 156.21 212.09)) (stroke (width 0) (type default)))
+  (wire (pts (xy 156.21 199.39) (xy 156.21 214.63)) (stroke (width 0) (type default)))
+  (wire (pts (xy 156.21 204.47) (xy 156.21 217.17)) (stroke (width 0) (type default)))
+  (wire (pts (xy 156.21 209.55) (xy 156.21 219.71)) (stroke (width 0) (type default)))
+  (wire (pts (xy 156.21 209.55) (xy 156.21 229.87)) (stroke (width 0) (type default)))
+  (wire (pts (xy 156.21 209.55) (xy 205.74 209.55)) (stroke (width 0) (type default)))
+  (wire (pts (xy 156.21 212.09) (xy 156.21 234.95)) (stroke (width 0) (type default)))
+  (wire (pts (xy 156.21 212.09) (xy 205.74 212.09)) (stroke (width 0) (type default)))
+  (wire (pts (xy 156.21 214.63) (xy 156.21 222.25)) (stroke (width 0) (type default)))
+  (wire (pts (xy 156.21 219.71) (xy 156.21 224.79)) (stroke (width 0) (type default)))
+  (wire (pts (xy 156.21 224.79) (xy 156.21 227.33)) (stroke (width 0) (type default)))
+  (wire (pts (xy 163.83 190.50) (xy 168.91 190.50)) (stroke (width 0) (type default)))
+  (wire (pts (xy 163.83 195.58) (xy 168.91 195.58)) (stroke (width 0) (type default)))
+  (wire (pts (xy 163.83 199.39) (xy 168.91 199.39)) (stroke (width 0) (type default)))
+  (wire (pts (xy 163.83 204.47) (xy 168.91 204.47)) (stroke (width 0) (type default)))
+  (wire (pts (xy 163.83 209.55) (xy 168.91 209.55)) (stroke (width 0) (type default)))
+  (wire (pts (xy 163.83 214.63) (xy 168.91 214.63)) (stroke (width 0) (type default)))
+  (wire (pts (xy 163.83 219.71) (xy 168.91 219.71)) (stroke (width 0) (type default)))
+  (wire (pts (xy 163.83 224.79) (xy 168.91 224.79)) (stroke (width 0) (type default)))
+  (wire (pts (xy 163.83 229.87) (xy 168.91 229.87)) (stroke (width 0) (type default)))
+  (wire (pts (xy 163.83 234.95) (xy 168.91 234.95)) (stroke (width 0) (type default)))
+  (wire (pts (xy 165.10 139.70) (xy 165.10 151.13)) (stroke (width 0) (type default)))
+  (wire (pts (xy 165.10 158.75) (xy 165.10 163.83)) (stroke (width 0) (type default)))
+  (wire (pts (xy 168.91 64.77) (xy 176.53 64.77)) (stroke (width 0) (type default)))
+  (wire (pts (xy 176.53 52.07) (xy 176.53 64.77)) (stroke (width 0) (type default)))
+  (wire (pts (xy 176.53 227.33) (xy 176.53 240.03)) (stroke (width 0) (type default)))
+  (wire (pts (xy 176.53 227.33) (xy 185.42 227.33)) (stroke (width 0) (type default)))
+  (wire (pts (xy 177.80 137.16) (xy 177.80 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 177.80 142.24) (xy 193.04 142.24)) (stroke (width 0) (type default)))
+  (wire (pts (xy 180.34 212.09) (xy 185.42 212.09)) (stroke (width 0) (type default)))
+  (wire (pts (xy 180.34 214.63) (xy 185.42 214.63)) (stroke (width 0) (type default)))
+  (wire (pts (xy 180.34 219.71) (xy 185.42 219.71)) (stroke (width 0) (type default)))
+  (wire (pts (xy 182.88 157.48) (xy 182.88 162.56)) (stroke (width 0) (type default)))
+  (wire (pts (xy 182.88 177.80) (xy 182.88 182.88)) (stroke (width 0) (type default)))
+  (wire (pts (xy 184.15 52.07) (xy 207.01 52.07)) (stroke (width 0) (type default)))
+  (wire (pts (xy 184.15 64.77) (xy 190.50 64.77)) (stroke (width 0) (type default)))
+  (wire (pts (xy 184.15 64.77) (xy 191.77 64.77)) (stroke (width 0) (type default)))
+  (wire (pts (xy 184.15 240.03) (xy 189.23 240.03)) (stroke (width 0) (type default)))
+  (wire (pts (xy 185.42 209.55) (xy 185.42 232.41)) (stroke (width 0) (type default)))
+  (wire (pts (xy 190.50 64.77) (xy 190.50 76.20)) (stroke (width 0) (type default)))
+  (wire (pts (xy 190.50 83.82) (xy 190.50 88.90)) (stroke (width 0) (type default)))
+  (wire (pts (xy 191.77 62.23) (xy 191.77 64.77)) (stroke (width 0) (type default)))
+  (wire (pts (xy 191.77 67.31) (xy 207.01 67.31)) (stroke (width 0) (type default)))
+  (wire (pts (xy 193.04 139.70) (xy 193.04 142.24)) (stroke (width 0) (type default)))
+  (wire (pts (xy 193.04 139.70) (xy 198.12 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 195.58 161.29) (xy 195.58 166.37)) (stroke (width 0) (type default)))
+  (wire (pts (xy 195.58 173.99) (xy 195.58 179.07)) (stroke (width 0) (type default)))
+  (wire (pts (xy 195.58 199.39) (xy 195.58 204.47)) (stroke (width 0) (type default)))
+  (wire (pts (xy 195.58 236.22) (xy 195.58 241.30)) (stroke (width 0) (type default)))
+  (wire (pts (xy 195.58 237.49) (xy 195.58 242.57)) (stroke (width 0) (type default)))
+  (wire (pts (xy 195.58 248.92) (xy 195.58 254.00)) (stroke (width 0) (type default)))
+  (wire (pts (xy 200.66 139.70) (xy 205.74 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 205.74 214.63) (xy 220.98 214.63)) (stroke (width 0) (type default)))
+  (wire (pts (xy 205.74 217.17) (xy 220.98 217.17)) (stroke (width 0) (type default)))
+  (wire (pts (xy 205.74 219.71) (xy 220.98 219.71)) (stroke (width 0) (type default)))
+  (wire (pts (xy 205.74 222.25) (xy 220.98 222.25)) (stroke (width 0) (type default)))
+  (wire (pts (xy 207.01 52.07) (xy 207.01 64.77)) (stroke (width 0) (type default)))
+  (wire (pts (xy 207.01 64.77) (xy 207.01 67.31)) (stroke (width 0) (type default)))
+  (wire (pts (xy 207.01 64.77) (xy 212.09 64.77)) (stroke (width 0) (type default)))
+  (wire (pts (xy 213.36 139.70) (xy 218.44 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 213.36 139.70) (xy 220.98 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 213.36 139.70) (xy 236.22 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 213.36 139.70) (xy 240.03 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 220.98 214.63) (xy 220.98 245.11)) (stroke (width 0) (type default)))
+  (wire (pts (xy 220.98 217.17) (xy 220.98 250.19)) (stroke (width 0) (type default)))
+  (wire (pts (xy 220.98 219.71) (xy 220.98 255.27)) (stroke (width 0) (type default)))
+  (wire (pts (xy 220.98 222.25) (xy 220.98 260.35)) (stroke (width 0) (type default)))
+  (wire (pts (xy 228.60 139.70) (xy 233.68 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 228.60 245.11) (xy 233.68 245.11)) (stroke (width 0) (type default)))
+  (wire (pts (xy 228.60 250.19) (xy 233.68 250.19)) (stroke (width 0) (type default)))
+  (wire (pts (xy 228.60 255.27) (xy 233.68 255.27)) (stroke (width 0) (type default)))
+  (wire (pts (xy 228.60 260.35) (xy 233.68 260.35)) (stroke (width 0) (type default)))
+  (wire (pts (xy 236.22 134.62) (xy 236.22 139.70)) (stroke (width 0) (type default)))
+  (wire (pts (xy 240.03 139.70) (xy 240.03 146.05)) (stroke (width 0) (type default)))
+  (wire (pts (xy 240.03 153.67) (xy 240.03 158.75)) (stroke (width 0) (type default)))
+  (wire (pts (xy 243.84 134.62) (xy 248.92 134.62)) (stroke (width 0) (type default)))
+
+  (label "PREAMP_OUT" (at 137.16 64.77 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "01de5612-b7a1-4f0b-9cf7-a7b1c91e1750"))
+  (label "PREAMP_OUT" (at 156.21 64.77 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "21046d6b-ca41-42dd-b155-ad8588d8f785"))
+  (label "HPF_OUT" (at 212.09 64.77 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "42b06201-bf55-4692-81a0-005096dccf9d"))
+  (label "HPF_OUT" (at 30.48 139.70 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "80d04cfe-62e7-4e5d-9a36-5994f5d18bfe"))
+  (global_label "TAPE_FILTERED" (shape output) (at 87.63 139.70 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "401c5cf6-d333-43de-a7a5-552c1bb0d0cb"))
+  (global_label "TAPE_FILTERED" (shape input) (at 116.84 137.16 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "e6e36496-4f8b-4412-a251-5b59e4915ca6"))
+  (label "PEAK_SIGNAL" (at 198.12 139.70 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "ab5317e5-1645-40f5-b4bc-967c1075aab7"))
+  (label "PEAK_SIGNAL" (at 200.66 139.70 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "3f12ed09-2381-4de1-bbb1-d59e4204a546"))
+  (global_label "TAPE_FILTERED" (shape input) (at 30.48 199.39 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "42237091-7dbd-49bc-a482-d303f2f74127"))
+
+  (global_label "VBIAS" (shape input) (at 105.41 88.90 270) (effects (font (size 1.27 1.27)) (justify top)) (uuid "f93215ab-7250-43f8-841d-449a35a8ab64"))
+  (global_label "VBIAS" (shape input) (at 115.57 88.90 270) (effects (font (size 1.27 1.27)) (justify top)) (uuid "9a117866-d853-4c72-8c77-65d259a79a14"))
+  (global_label "VBIAS" (shape input) (at 111.76 97.79 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "5f48e76e-96da-4355-bdb6-5173d81b40fe"))
+  (global_label "VBIAS" (shape input) (at 190.50 88.90 270) (effects (font (size 1.27 1.27)) (justify top)) (uuid "4693baa4-26f1-4fdf-8095-fa89411c98f0"))
+  (global_label "VBIAS" (shape input) (at 64.77 163.83 270) (effects (font (size 1.27 1.27)) (justify top)) (uuid "8e1a4405-3727-4afa-aa02-4cf9085398ea"))
+  (global_label "VBIAS" (shape input) (at 154.94 163.83 270) (effects (font (size 1.27 1.27)) (justify top)) (uuid "ffcdece4-ad71-4604-bce3-98f4862acee5"))
+  (global_label "VBIAS" (shape input) (at 165.10 163.83 270) (effects (font (size 1.27 1.27)) (justify top)) (uuid "c49436cf-bee4-4550-af75-7492201834d2"))
+  (global_label "AZIMUTH_PEAK_ADC" (shape output) (at 218.44 139.70 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b4eb4363-c37f-4072-8300-fe8336606ea6"))
+  (global_label "VBIAS" (shape input) (at 46.99 207.01 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "6af6297a-9f2d-4865-bf73-9e678e0764c1"))
+  (global_label "TAPE_DIGITIZED" (shape output) (at 72.39 204.47 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "cbf5343d-503d-474c-870b-69032cc52b52"))
+  (global_label "VBIAS" (shape input) (at 46.99 232.41 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "a66d518a-69b3-45bb-9d78-5b483c55a533"))
+  (global_label "LEDBAR_DATA" (shape input) (at 114.30 209.55 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "37c8261b-5085-4639-8218-3e74db780f4b"))
+  (global_label "LEDBAR_CLK" (shape input) (at 114.30 212.09 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "cf3a0244-792a-48da-bfdc-52df9f6b2f1b"))
+  (global_label "LEDBAR_LE" (shape input) (at 114.30 214.63 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "7105d1d6-554e-4b29-af08-a015e0e214e8"))
+  (global_label "LEDBAR_CLK" (shape input) (at 180.34 212.09 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "a6d97bcf-c1e2-4a41-bbed-cce918e4dc41"))
+  (global_label "LEDBAR_LE" (shape input) (at 180.34 214.63 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "5760b6d2-07a5-4726-96bc-c00e59bcd834"))
+
+  (no_connect (at 67.31 234.95) (uuid "a9f4e8e5-a046-4602-a58a-df2a3c47e19b"))
+  (no_connect (at 205.74 224.79) (uuid "151e1f7a-a942-44ef-b634-7504918d361e"))
+  (no_connect (at 205.74 227.33) (uuid "05ccfbd7-4c72-40f3-acaa-7d6b050e40b0"))
+  (no_connect (at 205.74 232.41) (uuid "0bb5b039-d4d6-40e9-bc45-160d914051da"))
+  (global_label "TAPE_RAW" (shape bidirectional) (at 54.61 69.85 270) (effects (font (size 1.27 1.27)) (justify top)) (uuid "3bf100ab-203a-44c8-9270-9d5fdfeb0163"))
+  (symbol (lib_id "Tape-Master:Conn_01x06") (at 254.00 71.12 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "e8000000-0000-4000-8000-000000000008")
+    (property "Reference" "J8" (at 254.00 60.96 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "SCOPE_TEST_90DEG" (at 254.00 81.28 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Tape-Master:PinHeader_1x06_P2.54mm_Horizontal" (at 254.00 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "20239e98-ab6e-4755-aab0-a69b073b23c4"))
+    (pin "2" (uuid "f2056de8-d99a-4d83-9a8b-3269067ff632"))
+    (pin "3" (uuid "2513d707-2603-4fc3-ad92-397694767b50"))
+    (pin "4" (uuid "3cba156e-45ef-441d-9072-014b2ced3d1b"))
+    (pin "5" (uuid "d7900a72-88f5-4e83-9042-d5995f0bbde7"))
+    (pin "6" (uuid "b3d6c04b-7be6-4a7d-99bc-de39867c338d"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "J8") (unit 1))
+      )
+    )
+  )
+
+  (wire (pts (xy 248.92 66.04) (xy 243.84 66.04)) (stroke (width 0) (type default)))
+  (symbol (lib_id "Tape-Master:GND") (at 243.84 66.04 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "121dc36f-aa70-45f4-83bc-e7024c5a4336")
+    (property "Reference" "#GND" (at 243.84 66.04 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 243.84 63.50 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 243.84 66.04 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "053c0bc2-99de-473a-b7ae-ebb525645acd"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+
+  (wire (pts (xy 248.92 68.58) (xy 241.30 68.58)) (stroke (width 0) (type default)))
+  (global_label "TAPE_RAW" (shape input) (at 241.30 68.58 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "fbdba1aa-3a99-4a8b-8721-8d77f0a94744"))
+
+  (wire (pts (xy 248.92 71.12) (xy 241.30 71.12)) (stroke (width 0) (type default)))
+  (global_label "TAPE_FILTERED" (shape input) (at 241.30 71.12 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "c2ba0c13-afd8-4f6c-b612-b7557ee1f3d6"))
+
+  (wire (pts (xy 248.92 73.66) (xy 241.30 73.66)) (stroke (width 0) (type default)))
+  (global_label "TAPE_DIGITIZED" (shape input) (at 241.30 73.66 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "ad4c1b44-c1ad-451e-b52b-15aaca4fc59f"))
+
+  (wire (pts (xy 248.92 76.20) (xy 241.30 76.20)) (stroke (width 0) (type default)))
+  (global_label "AZIMUTH_PEAK_ADC" (shape input) (at 241.30 76.20 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "79efcd64-3247-4a2c-8111-224bfbb5f4db"))
+
+  (wire (pts (xy 248.92 78.74) (xy 243.84 78.74)) (stroke (width 0) (type default)))
+  (symbol (lib_id "Tape-Master:GND") (at 243.84 78.74 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "66824f02-40da-42ed-948c-3350bfeaa935")
+    (property "Reference" "#GND" (at 243.84 78.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 243.84 76.20 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 243.84 78.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "65054f60-9891-437a-9b72-f37fa1845925"))
+    (instances
+      (project "Tape-Master"
+        (path "/a1000000-0000-4000-8000-000000000000/a1000000-0000-4000-8000-000000000003" (reference "#GND") (unit 1))
+      )
+    )
+  )
+)

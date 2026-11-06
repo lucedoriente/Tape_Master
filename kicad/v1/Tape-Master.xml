@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\aless\.gemini\antigravity\scratch\Tape_Master\kicad\Tape-Master.kicad_sch</source>
+    <date>2026-11-05T00:01:40+0100</date>
+    <tool>Eeschema 9.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Tape Master Exerciser &amp; Signal Digitizer - System Architecture</title>
+        <company>Alessio Iodice</company>
+        <rev>1.0</rev>
+        <date>2026-11-04</date>
+        <source>Tape-Master.kicad_sch</source>
+        <comment number="1" value="Author / Hardware Designer: Alessio Iodice &lt;alessio67@gmail.com&gt;"/>
+        <comment number="2" value="Modular Vintage Tape Deck Exerciser, Azimuth Tuning &amp; Signal Digitizer"/>
+        <comment number="3" value="License: CC BY-NC-SA 4.0"/>
+        <comment number="4" value="Validated on KiCad 9.0 — 0 ERC / 0 DRC violations"/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/01_Power_Supply/" tstamps="/a1000000-0000-4000-8000-000000000001/">
+      <title_block>
+        <title>Power Supply &amp; Precision Bias Reference Subsystem</title>
+        <company>Alessio Iodice</company>
+        <rev>1.0</rev>
+        <date>2026-11-04</date>
+        <source>01_Power_Supply.kicad_sch</source>
+        <comment number="1" value="Author / Hardware Designer: Alessio Iodice &lt;alessio67@gmail.com&gt;"/>
+        <comment number="2" value="USB-C / C2N +5V Dual Input, 3.3V Ultra-Low-Noise LDO &amp; 2.5V Stiff Analog VBIAS"/>
+        <comment number="3" value="License: CC BY-NC-SA 4.0"/>
+        <comment number="4" value="Validated on KiCad 9.0 — 0 ERC / 0 DRC violations"/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/03_Analog_Ingest/" tstamps="/a1000000-0000-4000-8000-000000000003/">
+      <title_block>
+        <title>Analog Ingest, Active Sallen-Key Filter, Peak Detector &amp; Digitizer</title>
+        <company>Alessio Iodice</company>
+        <rev>1.0</rev>
+        <date>2026-11-04</date>
+        <source>03_Analog_Ingest.kicad_sch</source>
+        <comment number="1" value="Author / Hardware Designer: Alessio Iodice &lt;alessio67@gmail.com&gt;"/>
+        <comment number="2" value="OPA2134/NE5532 Low Noise Preamp, 300Hz-12kHz Active Bandpass, LM3914 Azimuth Bargraph &amp; LM393 Digitizer"/>
+        <comment number="3" value="License: CC BY-NC-SA 4.0"/>
+        <comment number="4" value="Validated on KiCad 9.0 — 0 ERC / 0 DRC violations"/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/02_MCU_Core/" tstamps="/a1000000-0000-4000-8000-000000000002/">
+      <title_block>
+        <title>Microcontroller Core &amp; User Interface</title>
+        <company>Alessio Iodice</company>
+        <rev>1.0</rev>
+        <date>2026-11-04</date>
+        <source>02_MCU_Core.kicad_sch</source>
+        <comment number="1" value="Author / Hardware Designer: Alessio Iodice &lt;alessio67@gmail.com&gt;"/>
+        <comment number="2" value="Raspberry Pi Pico (RP2040), MicroSD SPI, I2C OLED 128x64, Rotary Encoder &amp; Status LEDs"/>
+        <comment number="3" value="License: CC BY-NC-SA 4.0"/>
+        <comment number="4" value="Validated on KiCad 9.0 — 0 ERC / 0 DRC violations"/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/04_Tape_Interfaces/" tstamps="/a1000000-0000-4000-8000-000000000004/">
+      <title_block>
+        <title>Vintage Cassette Bus Interfaces &amp; Remote Control</title>
+        <company>Alessio Iodice</company>
+        <rev>1.0</rev>
+        <date>2026-11-04</date>
+        <source>04_Tape_Interfaces.kicad_sch</source>
+        <comment number="1" value="Author / Hardware Designer: Alessio Iodice &lt;alessio67@gmail.com&gt;"/>
+        <comment number="2" value="Commodore C2N 6-Pin Datassette Port (74LS06 Driver), Sinclair/Apple Audio PWM &amp; Opto Remote Relay"/>
+        <comment number="3" value="License: CC BY-NC-SA 4.0"/>
+        <comment number="4" value="Validated on KiCad 9.0 — 0 ERC / 0 DRC violations"/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components/>
+  <libparts/>
+  <libraries/>
+  <nets/>
+</export>

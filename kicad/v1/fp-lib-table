@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Tape-Master")(type "KiCad")(uri "${KIPRJMOD}/Tape-Master.pretty")(options "")(descr "Local project footprints"))
+)

@@ -1,0 +1,160 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('KiCad 9.0 Solid Model'), '2;1');
+FILE_NAME('EC11_Encoder.step', '2026-11-04T12:00:00', ('Alessio Iodice'), ('MuDIsTInf'), 'Open CASCADE STEP processor 7.7', 'KiCad 9.0', 'Unknown');
+FILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));
+ENDSEC;
+DATA;
+#1 = APPLICATION_PROTOCOL_DEFINITION('international standard', 'automotive_design', 2000, #2);
+#2 = APPLICATION_CONTEXT('core data for automotive mechanical design processes');
+#3 = SHAPE_DEFINITION_REPRESENTATION(#4, #10);
+#4 = PRODUCT_DEFINITION_SHAPE('', '', #5);
+#5 = PRODUCT_DEFINITION('design', '', #6, #9);
+#6 = PRODUCT_DEFINITION_FORMATION('', '', #7);
+#7 = PRODUCT('EC11_Encoder', 'EC11_Encoder', '', (#8));
+#8 = PRODUCT_CONTEXT('', #2, 'mechanical');
+#9 = PRODUCT_DEFINITION_CONTEXT('part definition', #2, 'design');
+#10 = ADVANCED_BREP_SHAPE_REPRESENTATION('', (#11, #15), #190);
+#11 = AXIS2_PLACEMENT_3D('', #12, #13, #14);
+#12 = CARTESIAN_POINT('', (0.0, 0.0, 0.0));
+#13 = DIRECTION('', (0.0, 0.0, 1.0));
+#14 = DIRECTION('', (1.0, 0.0, 0.0));
+#15 = MANIFOLD_SOLID_BREP('', #16);
+#16 = CLOSED_SHELL('', (#101, #102, #103, #104, #105, #106));
+
+#20 = CARTESIAN_POINT('', (1.0000, -8.5000, 0.0000));
+#21 = CARTESIAN_POINT('', (14.0000, -8.5000, 0.0000));
+#22 = CARTESIAN_POINT('', (14.0000, 3.5000, 0.0000));
+#23 = CARTESIAN_POINT('', (1.0000, 3.5000, 0.0000));
+#24 = CARTESIAN_POINT('', (1.0000, -8.5000, 20.0000));
+#25 = CARTESIAN_POINT('', (14.0000, -8.5000, 20.0000));
+#26 = CARTESIAN_POINT('', (14.0000, 3.5000, 20.0000));
+#27 = CARTESIAN_POINT('', (1.0000, 3.5000, 20.0000));
+
+#30 = VERTEX_POINT('', #20);
+#31 = VERTEX_POINT('', #21);
+#32 = VERTEX_POINT('', #22);
+#33 = VERTEX_POINT('', #23);
+#34 = VERTEX_POINT('', #24);
+#35 = VERTEX_POINT('', #25);
+#36 = VERTEX_POINT('', #26);
+#37 = VERTEX_POINT('', #27);
+
+#40 = DIRECTION('', (1.0, 0.0, 0.0));
+#41 = DIRECTION('', (0.0, 1.0, 0.0));
+#42 = DIRECTION('', (-1.0, 0.0, 0.0));
+#43 = DIRECTION('', (0.0, -1.0, 0.0));
+#44 = DIRECTION('', (0.0, 0.0, 1.0));
+#45 = DIRECTION('', (0.0, 0.0, -1.0));
+
+#46 = VECTOR('', #40, 1.0);
+#47 = VECTOR('', #41, 1.0);
+#48 = VECTOR('', #42, 1.0);
+#49 = VECTOR('', #43, 1.0);
+#50 = VECTOR('', #44, 1.0);
+
+#51 = LINE('', #20, #46);
+#52 = LINE('', #21, #47);
+#53 = LINE('', #22, #48);
+#54 = LINE('', #23, #49);
+#55 = LINE('', #24, #46);
+#56 = LINE('', #25, #47);
+#57 = LINE('', #26, #48);
+#58 = LINE('', #27, #49);
+#59 = LINE('', #20, #50);
+#60 = LINE('', #21, #50);
+#61 = LINE('', #22, #50);
+#62 = LINE('', #23, #50);
+
+#70 = EDGE_CURVE('', #30, #31, #51, .T.);
+#71 = EDGE_CURVE('', #31, #32, #52, .T.);
+#72 = EDGE_CURVE('', #32, #33, #53, .T.);
+#73 = EDGE_CURVE('', #33, #30, #54, .T.);
+#74 = EDGE_CURVE('', #34, #35, #55, .T.);
+#75 = EDGE_CURVE('', #35, #36, #56, .T.);
+#76 = EDGE_CURVE('', #36, #37, #57, .T.);
+#77 = EDGE_CURVE('', #37, #34, #58, .T.);
+#78 = EDGE_CURVE('', #30, #34, #59, .T.);
+#79 = EDGE_CURVE('', #31, #35, #60, .T.);
+#80 = EDGE_CURVE('', #32, #36, #61, .T.);
+#81 = EDGE_CURVE('', #33, #37, #62, .T.);
+
+#90 = AXIS2_PLACEMENT_3D('', #20, #45, #42);
+#91 = AXIS2_PLACEMENT_3D('', #24, #44, #40);
+#92 = AXIS2_PLACEMENT_3D('', #20, #43, #40);
+#93 = AXIS2_PLACEMENT_3D('', #22, #41, #42);
+#94 = AXIS2_PLACEMENT_3D('', #23, #42, #43);
+#95 = AXIS2_PLACEMENT_3D('', #21, #40, #41);
+
+#96 = PLANE('', #90);
+#97 = PLANE('', #91);
+#98 = PLANE('', #92);
+#99 = PLANE('', #93);
+#100 = PLANE('', #94);
+#107 = PLANE('', #95);
+
+#110 = ORIENTED_EDGE('', *, *, #70, .F.);
+#111 = ORIENTED_EDGE('', *, *, #73, .F.);
+#112 = ORIENTED_EDGE('', *, *, #72, .F.);
+#113 = ORIENTED_EDGE('', *, *, #71, .F.);
+#114 = EDGE_LOOP('', (#110, #111, #112, #113));
+#115 = FACE_BOUND('', #114, .T.);
+#101 = ADVANCED_FACE('', (#115), #96, .T.);
+
+#120 = ORIENTED_EDGE('', *, *, #74, .T.);
+#121 = ORIENTED_EDGE('', *, *, #75, .T.);
+#122 = ORIENTED_EDGE('', *, *, #76, .T.);
+#123 = ORIENTED_EDGE('', *, *, #77, .T.);
+#124 = EDGE_LOOP('', (#120, #121, #122, #123));
+#125 = FACE_BOUND('', #124, .T.);
+#102 = ADVANCED_FACE('', (#125), #97, .T.);
+
+#130 = ORIENTED_EDGE('', *, *, #70, .T.);
+#131 = ORIENTED_EDGE('', *, *, #79, .T.);
+#132 = ORIENTED_EDGE('', *, *, #74, .F.);
+#133 = ORIENTED_EDGE('', *, *, #78, .F.);
+#134 = EDGE_LOOP('', (#130, #131, #132, #133));
+#135 = FACE_BOUND('', #134, .T.);
+#103 = ADVANCED_FACE('', (#135), #98, .T.);
+
+#140 = ORIENTED_EDGE('', *, *, #72, .T.);
+#141 = ORIENTED_EDGE('', *, *, #81, .T.);
+#142 = ORIENTED_EDGE('', *, *, #76, .F.);
+#143 = ORIENTED_EDGE('', *, *, #80, .F.);
+#144 = EDGE_LOOP('', (#140, #141, #142, #143));
+#145 = FACE_BOUND('', #144, .T.);
+#104 = ADVANCED_FACE('', (#145), #99, .T.);
+
+#150 = ORIENTED_EDGE('', *, *, #73, .T.);
+#151 = ORIENTED_EDGE('', *, *, #78, .T.);
+#152 = ORIENTED_EDGE('', *, *, #77, .F.);
+#153 = ORIENTED_EDGE('', *, *, #81, .F.);
+#154 = EDGE_LOOP('', (#150, #151, #152, #153));
+#155 = FACE_BOUND('', #154, .T.);
+#105 = ADVANCED_FACE('', (#155), #100, .T.);
+
+#160 = ORIENTED_EDGE('', *, *, #71, .T.);
+#161 = ORIENTED_EDGE('', *, *, #80, .T.);
+#162 = ORIENTED_EDGE('', *, *, #75, .F.);
+#163 = ORIENTED_EDGE('', *, *, #79, .F.);
+#164 = EDGE_LOOP('', (#160, #161, #162, #163));
+#165 = FACE_BOUND('', #164, .T.);
+#106 = ADVANCED_FACE('', (#165), #107, .T.);
+
+#190 = ( GEOMETRIC_REPRESENTATION_CONTEXT(3) GLOBAL_UNCERTAINTY_ASSIGNED_CONTEXT((#194)) GLOBAL_UNIT_ASSIGNED_CONTEXT((#191, #192, #193)) REPRESENTATION_CONTEXT('Context #1', '3D Context with UNIT and UNCERTAINTY') );
+#191 = ( LENGTH_UNIT() NAMED_UNIT(*) SI_UNIT(.MILLI., .METRE.) );
+#192 = ( NAMED_UNIT(*) PLANE_ANGLE_UNIT() SI_UNIT($, .RADIAN.) );
+#193 = ( NAMED_UNIT(*) SI_UNIT($, .STERADIAN.) SOLID_ANGLE_UNIT() );
+#194 = UNCERTAINTY_MEASURE_WITH_UNIT(LENGTH_MEASURE(1.E-07), #191, 'distance_accuracy_value', 'confusion accuracy');
+#195 = PRODUCT_RELATED_PRODUCT_CATEGORY('part', $, (#7));
+#196 = MECHANICAL_DESIGN_GEOMETRIC_PRESENTATION_REPRESENTATION('', (#197), #190);
+#197 = STYLED_ITEM('color', (#198), #15);
+#198 = PRESENTATION_STYLE_ASSIGNMENT((#199));
+#199 = SURFACE_STYLE_USAGE(.BOTH., #200);
+#200 = SURFACE_SIDE_STYLE('', (#201));
+#201 = SURFACE_STYLE_FILL_AREA(#202);
+#202 = FILL_AREA_STYLE('', (#203));
+#203 = FILL_AREA_STYLE_COLOUR('', #204);
+#204 = COLOUR_RGB('', 0.750, 0.750, 0.780);
+ENDSEC;
+END-ISO-10303-21;

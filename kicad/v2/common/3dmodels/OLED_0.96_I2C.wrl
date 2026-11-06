@@ -1,0 +1,174 @@
+#VRML V2.0 utf8
+# 0.96 inch I2C 128x64 OLED Display Module
+# Dimensions: 27.3mm x 27.8mm, elevated on 8.5mm female header
+
+Group {
+  children [
+    # 1. OLED Carrier PCB (Dark Blue FR4, 27.3 x 27.8 x 1.6 mm)
+    # Centered at (0, 10, 8.5)
+    Transform {
+      translation 0 10 8.5
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.05 0.12 0.35
+              specularColor 0.2 0.3 0.5
+              shininess 0.4
+            }
+          }
+          geometry Box {
+            size 27.3 27.8 1.6
+          }
+        }
+      ]
+    }
+
+    # 2. OLED Glass Panel (24.7 x 15.0 x 1.4 mm)
+    # Sitting on top of the carrier PCB at (0, 8.5, 9.8)
+    Transform {
+      translation 0 8.5 9.8
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.02 0.02 0.04
+              specularColor 0.8 0.8 0.9
+              shininess 0.9
+            }
+          }
+          geometry Box {
+            size 24.7 15.0 1.2
+          }
+        }
+      ]
+    }
+
+    # 3. OLED Active Display Area (Subtle Dark Cyan/Blue Active Matrix 22.0 x 11.0 mm)
+    Transform {
+      translation 0 8.5 10.45
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.0 0.15 0.25
+              emissiveColor 0.0 0.08 0.12
+              specularColor 0.5 0.7 0.9
+              shininess 0.8
+            }
+          }
+          geometry Box {
+            size 22.0 11.0 0.05
+          }
+        }
+      ]
+    }
+
+    # 4. White Silkscreen Bezel / Frame
+    Transform {
+      translation 0 8.5 9.35
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.85 0.85 0.85
+            }
+          }
+          geometry Box {
+            size 25.5 16.0 0.05
+          }
+        }
+      ]
+    }
+
+    # 5. 4-Pin Plastic Header Base (Black Nylon 10.16 x 2.54 x 8.5 mm)
+    # At top of module, connecting module PCB to main board
+    Transform {
+      translation 0 -1.5 4.25
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.1 0.1 0.1
+              specularColor 0.2 0.2 0.2
+              shininess 0.3
+            }
+          }
+          geometry Box {
+            size 10.5 2.6 8.5
+          }
+        }
+      ]
+    }
+
+    # 6. 4 Gold Plated Connecting Pins
+    Transform {
+      translation -3.81 -1.5 1.5
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.85 0.75 0.2
+              specularColor 0.9 0.85 0.4
+              shininess 0.8
+            }
+          }
+          geometry Box {
+            size 0.64 0.64 12.0
+          }
+        }
+      ]
+    }
+    Transform {
+      translation -1.27 -1.5 1.5
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.85 0.75 0.2
+              specularColor 0.9 0.85 0.4
+              shininess 0.8
+            }
+          }
+          geometry Box {
+            size 0.64 0.64 12.0
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 1.27 -1.5 1.5
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.85 0.75 0.2
+              specularColor 0.9 0.85 0.4
+              shininess 0.8
+            }
+          }
+          geometry Box {
+            size 0.64 0.64 12.0
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 3.81 -1.5 1.5
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.85 0.75 0.2
+              specularColor 0.9 0.85 0.4
+              shininess 0.8
+            }
+          }
+          geometry Box {
+            size 0.64 0.64 12.0
+          }
+        }
+      ]
+    }
+  ]
+}

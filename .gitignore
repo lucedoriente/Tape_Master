@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# KiCad temporary and backup files
+*-backups/
+*.bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+fp-info-cache
+~*.lck
+*.lck
+
+# EDA build & routing temporary files
+*.dsn
+*.ses
+*.kicad_prl
+_norton_/

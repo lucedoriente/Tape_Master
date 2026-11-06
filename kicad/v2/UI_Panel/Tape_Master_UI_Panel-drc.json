@@ -1,0 +1,64 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-06T00:02:02+0100",
+    "kicad_version": "9.0.6",
+    "schematic_parity": [],
+    "source": "Tape_Master_UI_Panel.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; 3 spokes connected to isolated island)",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 0.5,
+                        "y": 0.5
+                    },
+                    "uuid": "d754599d-62ba-46c0-951f-51f8f8133bc6"
+                },
+                {
+                    "description": "PTH pad 12 [GND] of J1",
+                    "pos": {
+                        "x": 43.3,
+                        "y": 13.46
+                    },
+                    "uuid": "bab43942-0784-4ebb-babe-958d4c0ef6a2"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of J1 on B.Silkscreen",
+                    "pos": {
+                        "x": 27.93,
+                        "y": 10.17
+                    },
+                    "uuid": "5c84157a-ae0d-4505-b41f-f50c3c483643"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of J1 on B.Silkscreen",
+                    "pos": {
+                        "x": 61.21,
+                        "y": 10.17
+                    },
+                    "uuid": "f34434f2-f92b-4824-9a60-305e30097b73"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

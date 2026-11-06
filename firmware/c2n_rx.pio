@@ -1,0 +1,41 @@
+;
+; c2n_rx.pio - RP2040 PIO program for Commodore C2N signal capture
+; Measures the period between falling edges with 1 us resolution.
+;
+.program c2n_rx
+
+.wrap_target
+    ; Wait for READ pin to go HIGH (idle state)
+    wait 1 pin 0
+    ; Wait for falling edge (active pulse)
+    wait 0 pin 0
+
+    ; Initialize X counter with maximum value (~0xFFFFFFFF)
+    set x, 0
+    mov x, ~x
+
+count_loop:
+    jmp x-- test_pin
+    jmp finish
+
+test_pin:
+    ; Sample pin 0. If it is 0, keep waiting for pulse to end
+    jmp pin pulse_active
+    ; When pin returns to HIGH, wait for the next falling edge while counting
+pulse_high:
+    jmp pin still_high
+    ; Falling edge detected! We completed one full pulse cycle.
+    jmp finish
+
+still_high:
+    jmp x-- pulse_high
+    jmp finish
+
+pulse_active:
+    jmp x-- count_loop
+
+finish:
+    ; Push inverted count (elapsed cycles) to FIFO
+    mov isr, ~x
+    push noblock
+.wrap

@@ -1,0 +1,147 @@
+** Drc report for Tape_Master_Mainboard.kicad_pcb **
+** Created on 2026-11-06T01:59:48+0100 **
+
+** Found 4 DRC violations **
+[lib_footprint_mismatch]: Footprint 'microSD_HC_Hirose_DM3D-SF' does not match copy in library 'Connector_Card'.
+    Local override; warning
+    @(20.0000 mm, 78.0000 mm): Footprint J2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(104.0000 mm, 66.0000 mm): PCB text 'TP (PRE/FILT/DIG/AGND)' on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(62.5000 mm, 4.0000 mm): PCB text 'Tape Master v2 - Mainboard Base' on F.Silkscreen
+    @(85.0000 mm, 4.0000 mm): PCB text 'UI PANEL (IDC-20)' on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(114.2700 mm, 18.7900 mm): Segment of J5 on F.Silkscreen
+    @(110.0000 mm, 18.0000 mm): PCB text 'CARTRIDGE BUS (40-PIN)' on F.Silkscreen
+
+** Found 0 unconnected pads **
+
+** Found 41 Footprint errors **
+[footprint_symbol_mismatch]: RaspberryPi_Pico_Common_THT doesn't match footprint given by symbol (Module:RaspberryPi_Pico_Common_THT).
+    Local override; warning
+    @(48.0000 mm, 32.0000 mm): Footprint U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/CART_IRQ_N).
+    Local override; warning
+    @(48.0000 mm, 32.0000 mm): PTH pad 1 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/CART_DETECT_N).
+    Local override; warning
+    @(48.0000 mm, 34.5400 mm): PTH pad 2 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (GND).
+    Local override; warning
+    @(48.0000 mm, 37.0800 mm): PTH pad 3 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/ENC_A).
+    Local override; warning
+    @(48.0000 mm, 39.6200 mm): PTH pad 4 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/ENC_B).
+    Local override; warning
+    @(48.0000 mm, 42.1600 mm): PTH pad 5 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/I2C_SDA).
+    Local override; warning
+    @(48.0000 mm, 44.7000 mm): PTH pad 6 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/I2C_SCL).
+    Local override; warning
+    @(48.0000 mm, 47.2400 mm): PTH pad 7 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (GND).
+    Local override; warning
+    @(48.0000 mm, 49.7800 mm): PTH pad 8 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/ENC_SW).
+    Local override; warning
+    @(48.0000 mm, 52.3200 mm): PTH pad 9 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/BTN_PLAY).
+    Local override; warning
+    @(48.0000 mm, 54.8600 mm): PTH pad 10 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/BTN_REC).
+    Local override; warning
+    @(48.0000 mm, 57.4000 mm): PTH pad 11 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/BTN_PREV).
+    Local override; warning
+    @(48.0000 mm, 59.9400 mm): PTH pad 12 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (GND).
+    Local override; warning
+    @(48.0000 mm, 62.4800 mm): PTH pad 13 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/BTN_NEXT).
+    Local override; warning
+    @(48.0000 mm, 65.0200 mm): PTH pad 14 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/BTN_RESET).
+    Local override; warning
+    @(48.0000 mm, 67.5600 mm): PTH pad 15 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/MOTOR_SENSE).
+    Local override; warning
+    @(48.0000 mm, 70.1000 mm): PTH pad 16 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/MOTOR_CTRL).
+    Local override; warning
+    @(48.0000 mm, 72.6400 mm): PTH pad 17 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (GND).
+    Local override; warning
+    @(48.0000 mm, 75.1800 mm): PTH pad 18 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/TAPE_SENSE).
+    Local override; warning
+    @(48.0000 mm, 77.7200 mm): PTH pad 19 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/TAPE_DIGITIZED).
+    Local override; warning
+    @(48.0000 mm, 80.2600 mm): PTH pad 20 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/SD_MISO).
+    Local override; warning
+    @(65.7800 mm, 80.2600 mm): PTH pad 21 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/SD_CS).
+    Local override; warning
+    @(65.7800 mm, 77.7200 mm): PTH pad 22 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (GND).
+    Local override; warning
+    @(65.7800 mm, 75.1800 mm): PTH pad 23 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/SD_SCK).
+    Local override; warning
+    @(65.7800 mm, 72.6400 mm): PTH pad 24 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/SD_MOSI).
+    Local override; warning
+    @(65.7800 mm, 70.1000 mm): PTH pad 25 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/LEDBAR_LE).
+    Local override; warning
+    @(65.7800 mm, 67.5600 mm): PTH pad 26 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/TAPE_EMU_OUT).
+    Local override; warning
+    @(65.7800 mm, 65.0200 mm): PTH pad 27 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (GND).
+    Local override; warning
+    @(65.7800 mm, 62.4800 mm): PTH pad 28 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/TAPE_REC_IN).
+    Local override; warning
+    @(65.7800 mm, 59.9400 mm): PTH pad 29 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/RESET_L).
+    Local override; warning
+    @(65.7800 mm, 57.4000 mm): PTH pad 30 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/AZIMUTH_PEAK_ADC).
+    Local override; warning
+    @(65.7800 mm, 54.8600 mm): PTH pad 31 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/TAPE_RAW_ADC).
+    Local override; warning
+    @(65.7800 mm, 52.3200 mm): PTH pad 32 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/AGND).
+    Local override; warning
+    @(65.7800 mm, 49.7800 mm): PTH pad 33 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/AUX_GPIO).
+    Local override; warning
+    @(65.7800 mm, 47.2400 mm): PTH pad 34 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/+3V3A).
+    Local override; warning
+    @(65.7800 mm, 44.7000 mm): PTH pad 35 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (unconnected-(U2-3V3-Pad36)).
+    Local override; warning
+    @(65.7800 mm, 42.1600 mm): PTH pad 36 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (+5V).
+    Local override; warning
+    @(65.7800 mm, 39.6200 mm): PTH pad 37 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (GND).
+    Local override; warning
+    @(65.7800 mm, 37.0800 mm): PTH pad 38 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (+5V).
+    Local override; warning
+    @(65.7800 mm, 34.5400 mm): PTH pad 39 [+3V3] of U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (unconnected-(U2-VBUS-Pad40)).
+    Local override; warning
+    @(65.7800 mm, 32.0000 mm): PTH pad 40 [+3V3] of U2
+
+** End of Report **
