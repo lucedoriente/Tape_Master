@@ -1,0 +1,14 @@
+(footprint "Test_PinSocket"
+	(version 20241229)
+	(generator "pcbnew")
+	(layer "F.Cu")
+	(property "Reference" "REF**" (at 37.0 8.0 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+	(property "Value" "Test" (at 37.0 10.0 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))))
+	(attr through_hole)
+	(pad "1" thru_hole circle (at 12.87 5.08) (size 1.7 1.7) (drill 1.05) (layers "*.Cu" "*.Mask"))
+	(model "${KICAD9_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x20_P2.54mm_Horizontal.step"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 270))
+	)
+)

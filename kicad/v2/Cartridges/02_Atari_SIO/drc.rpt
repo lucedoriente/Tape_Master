@@ -1,0 +1,14 @@
+** Drc report for Tape_Master_Cartridge_Atari_SIO.kicad_pcb **
+** Created on 2026-11-07T01:20:18+0100 **
+
+** Found 0 DRC violations **
+
+** Found 1 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.0000 mm, 8.0000 mm): Zone [GND] on B.Cu, priority 0
+    @(0.0000 mm, 8.0000 mm): Zone [GND] on B.Cu, priority 0
+
+** Found 0 Footprint errors **
+
+** End of Report **

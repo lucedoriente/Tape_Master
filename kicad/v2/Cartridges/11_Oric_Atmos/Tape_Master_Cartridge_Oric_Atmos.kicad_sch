@@ -1,0 +1,3953 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "e53b9751-c3d1-4a89-abdb-9fb52dfcc117")
+	(paper "A3")
+	(title_block
+		(title "Tape Master v2 - Cartridge 11: Oric 1 / Oric Atmos")
+		(date "2026-11-06")
+		(rev "1.0")
+		(company "Alessio Iodice")
+		(comment 1 "Author / Hardware Designer: Alessio Iodice <alessio67@gmail.com>")
+		(comment 2 "Oric 1, Oric Atmos & Telestrat Tape Interface: DIN 7-Pin 270° & Breakout Header, Level Buffers, Motor Relay Sense/Control, EEPROM Auto-ID")
+		(comment 3 "License: CC BY-NC-SA 4.0")
+		(comment 4 "Validated on KiCad 9.0 — 0 ERC / 0 DRC violations")
+	)
+  (lib_symbols
+    (symbol "Tape-Master:+3V3"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 0 3.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "+3V3_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "+3V3_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+    (symbol "Tape-Master:+5V"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 0 3.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "+5V_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "+5V_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+    (symbol "Tape-Master:GND"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "GND_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "GND_1_1"
+			(pin power_in line
+				(at 0 0 270)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+    (symbol "Tape-Master:PWR_FLAG"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+    (symbol "Tape-Master:Conn_02x20_Odd_Even"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 1.27 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_02x20_Odd_Even"
+			(at 1.27 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_2x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_02x20_Odd_Even_1_1"
+			(rectangle
+				(start -1.27 24.13)
+				(end 3.81 -26.67)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 22.987)
+				(end 0 22.733)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 20.447)
+				(end 0 20.193)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 17.907)
+				(end 0 17.653)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 15.367)
+				(end 0 15.113)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 12.827)
+				(end 0 12.573)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 10.287)
+				(end 0 10.033)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 7.747)
+				(end 0 7.493)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 5.207)
+				(end 0 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -7.493)
+				(end 0 -7.747)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -10.033)
+				(end 0 -10.287)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -12.573)
+				(end 0 -12.827)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -15.113)
+				(end 0 -15.367)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -17.653)
+				(end 0 -17.907)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -20.193)
+				(end 0 -20.447)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -22.733)
+				(end 0 -22.987)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -25.273)
+				(end 0 -25.527)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 22.987)
+				(end 2.54 22.733)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 20.447)
+				(end 2.54 20.193)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 17.907)
+				(end 2.54 17.653)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 15.367)
+				(end 2.54 15.113)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 12.827)
+				(end 2.54 12.573)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 10.287)
+				(end 2.54 10.033)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 7.747)
+				(end 2.54 7.493)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 5.207)
+				(end 2.54 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 2.667)
+				(end 2.54 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 0.127)
+				(end 2.54 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -2.413)
+				(end 2.54 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -4.953)
+				(end 2.54 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -7.493)
+				(end 2.54 -7.747)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -10.033)
+				(end 2.54 -10.287)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -12.573)
+				(end 2.54 -12.827)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -15.113)
+				(end 2.54 -15.367)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -17.653)
+				(end 2.54 -17.907)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -20.193)
+				(end 2.54 -20.447)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -22.733)
+				(end 2.54 -22.987)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -25.273)
+				(end 2.54 -25.527)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 22.86 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 20.32 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 17.78 0)
+				(length 3.81)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 15.24 0)
+				(length 3.81)
+				(name "Pin_7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 12.7 0)
+				(length 3.81)
+				(name "Pin_9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 10.16 0)
+				(length 3.81)
+				(name "Pin_11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 7.62 0)
+				(length 3.81)
+				(name "Pin_13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 5.08 0)
+				(length 3.81)
+				(name "Pin_15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -7.62 0)
+				(length 3.81)
+				(name "Pin_25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -10.16 0)
+				(length 3.81)
+				(name "Pin_27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -12.7 0)
+				(length 3.81)
+				(name "Pin_29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -15.24 0)
+				(length 3.81)
+				(name "Pin_31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -17.78 0)
+				(length 3.81)
+				(name "Pin_33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -20.32 0)
+				(length 3.81)
+				(name "Pin_35"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "35"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -22.86 0)
+				(length 3.81)
+				(name "Pin_37"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -25.4 0)
+				(length 3.81)
+				(name "Pin_39"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "39"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 22.86 180)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 20.32 180)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 17.78 180)
+				(length 3.81)
+				(name "Pin_6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 15.24 180)
+				(length 3.81)
+				(name "Pin_8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 12.7 180)
+				(length 3.81)
+				(name "Pin_10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 10.16 180)
+				(length 3.81)
+				(name "Pin_12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 7.62 180)
+				(length 3.81)
+				(name "Pin_14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 5.08 180)
+				(length 3.81)
+				(name "Pin_16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 2.54 180)
+				(length 3.81)
+				(name "Pin_18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 0 180)
+				(length 3.81)
+				(name "Pin_20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -2.54 180)
+				(length 3.81)
+				(name "Pin_22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -5.08 180)
+				(length 3.81)
+				(name "Pin_24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -7.62 180)
+				(length 3.81)
+				(name "Pin_26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -10.16 180)
+				(length 3.81)
+				(name "Pin_28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -12.7 180)
+				(length 3.81)
+				(name "Pin_30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -15.24 180)
+				(length 3.81)
+				(name "Pin_32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -17.78 180)
+				(length 3.81)
+				(name "Pin_34"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "34"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -20.32 180)
+				(length 3.81)
+				(name "Pin_36"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "36"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -22.86 180)
+				(length 3.81)
+				(name "Pin_38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -25.4 180)
+				(length 3.81)
+				(name "Pin_40"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "40"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+				(embedded_fonts no)
+	)
+    (symbol "Tape-Master:DIN-7"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 3.175 5.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DIN-7"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "7-pin DIN connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "circular DIN connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "DIN*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "DIN-7_0_1"
+			(polyline
+				(pts
+					(xy -5.08 2.54) (xy -4.318 2.54) (xy -3.048 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 0) (xy -3.556 -0.508)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -2.54) (xy -4.318 -2.54) (xy -2.032 -2.794)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center -3.048 -0.762)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center -2.54 2.032)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center -1.524 -2.794)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.762 -4.953) (xy -0.762 -4.191) (xy 0.762 -4.191) (xy 0.762 -4.953)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 5.08 0)
+				(mid 3.8673 -3.3444)
+				(end 0.762 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 5.08) (xy 0 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 3.302)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -5.08 0)
+				(mid 0 5.0579)
+				(end 5.08 0)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -0.762 -5.08)
+				(mid -3.8597 -3.3379)
+				(end -5.08 0)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 1.524 -2.794)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.54 2.032)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 3.048 -0.762)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 2.54) (xy 4.318 2.54) (xy 3.048 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 0) (xy 3.556 -0.508)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -2.54) (xy 4.318 -2.54) (xy 2.032 -2.794)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "DIN-7_1_1"
+			(pin passive line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 2.54 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -2.54 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+    (symbol "Tape-Master:Conn_01x07"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x07"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x07_1_1"
+			(rectangle
+				(start -1.27 8.89)
+				(end 1.27 -8.89)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 7.747)
+				(end 0 7.493)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 5.207)
+				(end 0 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -7.493)
+				(end 0 -7.747)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 7.62 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 5.08 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -7.62 0)
+				(length 3.81)
+				(name "Pin_7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+    (symbol "Tape-Master:24C02"
+		(pin_names (offset 1.016))
+		(in_bom yes) (on_board yes)
+		(property "Reference" "U" (at -5.08 7.62 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "24C02" (at -5.08 5.08 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21709J.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "2Kb I2C Serial EEPROM, SOIC-8" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "24C02_0_1"
+			(rectangle (start -7.62 3.81) (end 7.62 -8.89) (stroke (width 0.254) (type solid)) (fill (type background)))
+		)
+		(symbol "24C02_1_1"
+			(pin input line (at -10.16 2.54 0) (length 2.54) (name "A0" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -10.16 0.0 0) (length 2.54) (name "A1" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -10.16 -2.54 0) (length 2.54) (name "A2" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at -10.16 -5.08 0) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at 10.16 -5.08 180) (length 2.54) (name "SDA" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin input line (at 10.16 -2.54 180) (length 2.54) (name "SCL" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+			(pin input line (at 10.16 0.0 180) (length 2.54) (name "WP" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at 10.16 2.54 180) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+		)
+	)
+    (symbol "Tape-Master:74HCT06_SOIC14"
+		(pin_names (offset 1.016))
+		(in_bom yes) (on_board yes)
+		(property "Reference" "U" (at -7.62 17.78 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "74HCT06" (at -7.62 15.24 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS06" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Hex Inverter with Open-Collector Outputs, SOIC-14" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "74HCT06_SOIC14_0_1"
+			(rectangle (start -10.16 13.97) (end 10.16 -13.97) (stroke (width 0.254) (type solid)) (fill (type background)))
+		)
+		(symbol "74HCT06_SOIC14_1_1"
+			(pin power_in line (at -12.7 12.7 0) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "14" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -12.7 8.89 0) (length 2.54) (name "1A" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin open_collector line (at 12.7 8.89 180) (length 2.54) (name "1Y" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -12.7 5.08 0) (length 2.54) (name "2A" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin open_collector line (at 12.7 5.08 180) (length 2.54) (name "2Y" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -12.7 1.27 0) (length 2.54) (name "3A" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin open_collector line (at 12.7 1.27 180) (length 2.54) (name "3Y" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at 12.7 -13.97 180) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+			(pin open_collector line (at 12.7 -2.54 180) (length 2.54) (name "4Y" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -12.7 -2.54 0) (length 2.54) (name "4A" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))
+			(pin open_collector line (at 12.7 -6.35 180) (length 2.54) (name "5Y" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -12.7 -6.35 0) (length 2.54) (name "5A" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27)))))
+			(pin open_collector line (at 12.7 -10.16 180) (length 2.54) (name "6Y" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -12.7 -10.16 0) (length 2.54) (name "6A" (effects (font (size 1.27 1.27)))) (number "13" (effects (font (size 1.27 1.27)))))
+		)
+	)
+    (symbol "Tape-Master:BAT54S"
+		(pin_names (offset 0) (hide yes))
+		(in_bom yes) (on_board yes)
+		(property "Reference" "D" (at 5.08 2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "BAT54S" (at 5.08 0 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds11005.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Dual Series Schottky Barrier Diodes, SOT-23" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "BAT54S_0_1"
+			(polyline (pts (xy -1.27 1.27) (xy -1.27 -1.27) (xy 1.27 0) (xy -1.27 1.27)) (stroke (width 0.254) (type solid)) (fill (type background)))
+			(polyline (pts (xy 1.27 -1.27) (xy 1.27 1.27)) (stroke (width 0.254) (type solid)))
+		)
+		(symbol "BAT54S_1_1"
+			(pin passive line (at -3.81 0 0) (length 2.54) (name "A1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 3.81 2.54 180) (length 2.54) (name "C2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 3.81 -2.54 180) (length 2.54) (name "C1A2" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+		)
+	)
+    (symbol "Tape-Master:USBLC6-2SC6"
+		(pin_names (offset 1.016))
+		(in_bom yes) (on_board yes)
+		(property "Reference" "D" (at -5.08 7.62 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "USBLC6-2SC6" (at -5.08 5.08 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Very Low Capacitance ESD Protection Array, SOT-23-6" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "USBLC6-2SC6_0_1"
+			(rectangle (start -6.35 3.81) (end 6.35 -6.35) (stroke (width 0.254) (type solid)) (fill (type background)))
+		)
+		(symbol "USBLC6-2SC6_1_1"
+			(pin passive line (at -8.89 2.54 0) (length 2.54) (name "I/O1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at -8.89 -2.54 0) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -8.89 -5.08 0) (length 2.54) (name "I/O2" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 8.89 -5.08 180) (length 2.54) (name "I/O2" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at 8.89 -2.54 180) (length 2.54) (name "VBUS" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 8.89 2.54 180) (length 2.54) (name "I/O1" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+		)
+	)
+    (symbol "Tape-Master:2N7002"
+		(pin_names (offset 0) (hide yes))
+		(in_bom yes) (on_board yes)
+		(property "Reference" "Q" (at 5.08 2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "2N7002" (at 5.08 0 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds11303.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "60V 115mA N-Channel MOSFET, SOT-23" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "2N7002_0_1"
+			(polyline (pts (xy 0.635 -2.54) (xy 0.635 2.54)) (stroke (width 0.254) (type solid)))
+			(polyline (pts (xy 1.27 1.905) (xy 2.54 1.905) (xy 2.54 2.54)) (stroke (width 0.254) (type solid)))
+			(polyline (pts (xy 1.27 -1.905) (xy 2.54 -1.905) (xy 2.54 -2.54)) (stroke (width 0.254) (type solid)))
+			(polyline (pts (xy 1.27 0) (xy 2.54 0) (xy 2.54 -1.905)) (stroke (width 0.254) (type solid)))
+		)
+		(symbol "2N7002_1_1"
+			(pin input line (at -2.54 0 0) (length 3.175) (name "G" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 2.54 -5.08 90) (length 2.54) (name "S" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 2.54 5.08 270) (length 2.54) (name "D" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+		)
+	)
+    (symbol "Tape-Master:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+    (symbol "Tape-Master:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+  )
+  (symbol (lib_id "Tape-Master:PWR_FLAG") (at 45.72 40.64 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "cbd0715c-827f-4e25-90f0-a6ba883c05b9")
+    (property "Reference" "#FLG_+5V_45_40" (at 45.72 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "PWR_FLAG" (at 45.72 43.18 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 45.72 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "9dd11ba4-c961-49c2-8221-9e735ea79f07"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#FLG") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 45.72 40.64) (xy 45.72 38.10)) (stroke (width 0) (type default)) (uuid "9114bcec-ccdb-480e-a32b-090973d91d61"))
+  (symbol (lib_id "Tape-Master:+5V") (at 45.72 38.10 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "135ad936-7329-4819-a27f-576fb9ae0fe5")
+    (property "Reference" "#+5V_45_38" (at 45.72 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 45.72 40.64 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 45.72 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "f66b3cfe-f33e-4c10-b673-f06aa101379a"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:PWR_FLAG") (at 60.96 40.64 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c1f596e2-6c7d-44a0-9e7d-680a43ed1b7a")
+    (property "Reference" "#FLG_+3V3_60_40" (at 60.96 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "PWR_FLAG" (at 60.96 43.18 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 60.96 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "561a40b3-4d30-4267-afe3-6efbe9ee9843"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#FLG") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 60.96 40.64) (xy 60.96 38.10)) (stroke (width 0) (type default)) (uuid "899390f4-46e4-40cf-85b7-be9a7b44b694"))
+  (symbol (lib_id "Tape-Master:+3V3") (at 60.96 38.10 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "054b05c7-ec4c-4f3d-a3eb-e5bba196dd1e")
+    (property "Reference" "#+3V3_60_38" (at 60.96 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+3V3" (at 60.96 40.64 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 60.96 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "9783ce99-be2d-45c1-a7d4-8daf94b314fb"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#+3V3") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:PWR_FLAG") (at 76.20 40.64 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "7ca10a91-04b9-4186-a341-e686affb654d")
+    (property "Reference" "#FLG_GND_76_40" (at 76.20 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "PWR_FLAG" (at 76.20 43.18 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 76.20 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "8b8a889e-5998-4661-999d-057b456f0fa4"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#FLG") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 76.20 40.64) (xy 76.20 38.10)) (stroke (width 0) (type default)) (uuid "6c0c54e8-af92-4049-ba50-8a5c8b302277"))
+  (symbol (lib_id "Tape-Master:GND") (at 76.20 38.10 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "2950cbcb-94e4-409a-af4e-721260a64a9e")
+    (property "Reference" "#GND_76_38" (at 76.20 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 76.20 40.64 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 76.20 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "b709a736-f3dc-4560-892b-bf7ea577604c"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:PWR_FLAG") (at 91.44 40.64 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "f5d3c343-7eb7-46df-938a-240601923e37")
+    (property "Reference" "#FLG_AGND_91_40" (at 91.44 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "PWR_FLAG" (at 91.44 43.18 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 91.44 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "df7621df-35eb-43ea-80d3-45f89c18d48a"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#FLG") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 91.44 40.64) (xy 91.44 38.10)) (stroke (width 0) (type default)) (uuid "dcbd50c9-c671-4027-af9e-ee28b42350ab"))
+  (label "AGND" (at 91.44 38.10 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "6139a0ac-b4b6-40a3-9bf3-d2b363ab671b"))
+  (symbol (lib_id "Tape-Master:Conn_02x20_Odd_Even") (at 101.60 114.30 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c4285c0d-6296-4831-a72f-fd8e77c56ee5")
+    (property "Reference" "J1" (at 101.60 109.22 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "Cartridge_Bus_2x20" (at 101.60 119.38 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Tape-Master:PinSocket_2x20_P2.54mm_Horizontal_Cartridge" (at 101.60 114.30 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "ce4e659d-5dee-45ae-806a-f4e258a6ddd7"))
+    (pin "3" (uuid "e76b663b-8b19-4a0f-a6ae-1927e66ffcc1"))
+    (pin "5" (uuid "394431a1-1fe2-422e-bf75-dce3fa16ab55"))
+    (pin "7" (uuid "c02e2fa2-efd8-4c48-9bf3-cd88f1708a0a"))
+    (pin "9" (uuid "218e8b4a-3ec3-4901-98a0-4c061f59c8fd"))
+    (pin "11" (uuid "887bd423-6ca3-4042-bd11-2bf0012b8d03"))
+    (pin "13" (uuid "0014f0ae-0963-42d4-bd15-578b21f6c76c"))
+    (pin "15" (uuid "164350c9-a792-4856-a29f-2bfd82cae478"))
+    (pin "17" (uuid "e7ff08d7-5e35-4156-ade8-76c5276219bd"))
+    (pin "19" (uuid "af38e19d-c776-42d4-b8b5-94056143a871"))
+    (pin "21" (uuid "07aa725e-3fe3-4f54-9d6b-fb6d259c75a0"))
+    (pin "23" (uuid "094342c6-d218-40b5-abba-46a4674550eb"))
+    (pin "25" (uuid "68c8b198-34b0-4d0d-bb0d-4b63f64a297c"))
+    (pin "27" (uuid "dd430ec7-007e-406f-81dc-638bff467418"))
+    (pin "29" (uuid "77c2ce80-59c2-421a-a3e3-5b5cf577fce0"))
+    (pin "31" (uuid "296309f3-53b1-47c3-8767-c379ca3c6fdb"))
+    (pin "33" (uuid "1ad25294-29a4-4c3e-8e0e-62093b45e1ab"))
+    (pin "35" (uuid "efce1592-a1b2-45d5-9661-ef72be3321aa"))
+    (pin "37" (uuid "44abacdd-5602-40fc-8707-cea8e2ee930f"))
+    (pin "39" (uuid "939bc92d-531a-4d22-8b03-4a61469406e7"))
+    (pin "2" (uuid "3aab16f4-1cb5-4423-8e21-bb45982a811c"))
+    (pin "4" (uuid "7d59bb7b-f4e6-4b84-be9d-7c7234daa9fc"))
+    (pin "6" (uuid "a80f6453-65b6-4d41-a3fa-de983e48e174"))
+    (pin "8" (uuid "072d3e2d-083c-4c72-b790-9f02cf3ec438"))
+    (pin "10" (uuid "7d603c08-e815-43b6-97ec-0795b12adb96"))
+    (pin "12" (uuid "6ca31f1a-e459-4da7-a327-2a1ab6444969"))
+    (pin "14" (uuid "30f320d3-c406-4049-973a-08b74ad65acd"))
+    (pin "16" (uuid "2ab464d6-c5bd-4cc6-b83d-4cea44eacbe8"))
+    (pin "18" (uuid "54bbf240-350c-44cc-bc3e-acc5ec108400"))
+    (pin "20" (uuid "03141d5d-18cc-485b-aea3-13877d600919"))
+    (pin "22" (uuid "e8e7c0e0-29a1-48b8-87c6-07867f98ab1e"))
+    (pin "24" (uuid "c5d0feb6-ee75-44ad-b6a7-6e00f7e00cf4"))
+    (pin "26" (uuid "a0c94bff-2869-4713-b750-52728cf9497b"))
+    (pin "28" (uuid "513cd9dc-8e67-4e8f-9ac1-caea5887880e"))
+    (pin "30" (uuid "415d3a52-62ba-4e90-95e3-8f2c9bf3ae57"))
+    (pin "32" (uuid "602820fc-f1ed-454d-8892-9fb380568ff8"))
+    (pin "34" (uuid "87fd58e3-5bc8-40f4-92e5-afad3c41b16d"))
+    (pin "36" (uuid "b971d8cc-6608-4edc-8aab-dbfb820daa1e"))
+    (pin "38" (uuid "64e29c37-a239-444a-88c2-fbac236e7314"))
+    (pin "40" (uuid "b60e0617-6b0d-4621-9af4-5a82890756cd"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "J1") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 96.52 91.44) (xy 88.90 91.44)) (stroke (width 0) (type default)) (uuid "b66fb9c0-9b70-496f-850f-03f350ab292b"))
+  (label "+5V" (at 88.90 91.44 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "4ff3ad23-7494-489a-828e-fac06fe75b61"))
+  (wire (pts (xy 109.22 91.44) (xy 116.84 91.44)) (stroke (width 0) (type default)) (uuid "e56e39ac-a7c4-4e51-9bb9-d4929ecad95c"))
+  (label "+5V" (at 116.84 91.44 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "477303dc-ac18-4fd8-9340-e7e150b3250f"))
+  (wire (pts (xy 96.52 93.98) (xy 88.90 93.98)) (stroke (width 0) (type default)) (uuid "dc3f8b9d-8afb-4ed7-bd9e-597eb3d38223"))
+  (label "+3V3" (at 88.90 93.98 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "d0d2625f-600d-4cf5-8681-efae16063fac"))
+  (wire (pts (xy 109.22 93.98) (xy 116.84 93.98)) (stroke (width 0) (type default)) (uuid "7ddde668-0374-4b55-b0d9-3c6e02280abd"))
+  (label "+3V3" (at 116.84 93.98 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "c35f1ffc-81d6-4374-b3ef-44789343b8fc"))
+  (no_connect (at 96.52 96.52) (uuid "c6b69472-0236-43d5-8aed-89b5af3e1978"))
+  (wire (pts (xy 109.22 96.52) (xy 116.84 96.52)) (stroke (width 0) (type default)) (uuid "adc19fd3-e9f6-41c5-8c0f-e6b446ea7ab8"))
+  (label "GND" (at 116.84 96.52 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "d111c1b8-63e4-46a2-bfd6-e7bf5e20b7d2"))
+  (wire (pts (xy 96.52 99.06) (xy 88.90 99.06)) (stroke (width 0) (type default)) (uuid "c6fdda25-f844-4696-8456-1e606c0209df"))
+  (label "AGND" (at 88.90 99.06 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "9c35893d-75b8-4282-aa2f-b32b583ba02e"))
+  (wire (pts (xy 109.22 99.06) (xy 116.84 99.06)) (stroke (width 0) (type default)) (uuid "32580018-529a-4176-bb21-f2cbd76d889d"))
+  (label "AUDIO_RAW_L" (at 116.84 99.06 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "34594c6b-3212-4a3b-8e2c-7460eaccb9ef"))
+  (wire (pts (xy 96.52 101.60) (xy 88.90 101.60)) (stroke (width 0) (type default)) (uuid "3ada8e6c-c025-4afd-95ff-2f5e94975d24"))
+  (label "AGND" (at 88.90 101.60 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "f69a4b0c-06c3-41e8-9d05-38c7f62b5681"))
+  (no_connect (at 109.22 101.60) (uuid "3ee89285-8c5b-482a-88b6-1f889a40fa50"))
+  (wire (pts (xy 96.52 104.14) (xy 88.90 104.14)) (stroke (width 0) (type default)) (uuid "6e119a39-e7ba-4bed-8c69-b3956bc3b08d"))
+  (label "AGND" (at 88.90 104.14 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "1bebbb43-82a9-4638-8964-d318ae5b3879"))
+  (wire (pts (xy 109.22 104.14) (xy 116.84 104.14)) (stroke (width 0) (type default)) (uuid "cfb2f719-8786-4124-881b-a9fe9b7e9e4c"))
+  (label "AUDIO_DAC_L" (at 116.84 104.14 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "1d644bcc-f62d-4b80-bfa0-f35c327dcb85"))
+  (wire (pts (xy 96.52 106.68) (xy 88.90 106.68)) (stroke (width 0) (type default)) (uuid "92e37797-096c-4471-8bed-eee4839e8b34"))
+  (label "AGND" (at 88.90 106.68 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "23d0dfe7-6f4a-4748-a984-f7789c1d40b2"))
+  (no_connect (at 109.22 106.68) (uuid "84b475c1-916d-4bee-8fa3-2a8df304ba8b"))
+  (wire (pts (xy 96.52 109.22) (xy 88.90 109.22)) (stroke (width 0) (type default)) (uuid "254dbfdc-4e90-4c68-9d8d-ddbcbfab0af0"))
+  (label "GND" (at 88.90 109.22 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "8b7baf84-ea7e-4679-9661-959c1610e4af"))
+  (wire (pts (xy 109.22 109.22) (xy 116.84 109.22)) (stroke (width 0) (type default)) (uuid "5bdc1fb4-e2bc-4599-9ff7-4cad647859ad"))
+  (label "TAPE_EMU_OUT" (at 116.84 109.22 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b838890d-87dd-434c-8149-29e57932ba30"))
+  (wire (pts (xy 96.52 111.76) (xy 88.90 111.76)) (stroke (width 0) (type default)) (uuid "22cb0b87-e44e-444f-8817-b3032c4c35a5"))
+  (label "TAPE_REC_IN" (at 88.90 111.76 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "a3771d19-b827-4037-bcea-fb92df285fbb"))
+  (wire (pts (xy 109.22 111.76) (xy 116.84 111.76)) (stroke (width 0) (type default)) (uuid "5534df2d-d7b0-455f-91e7-2d74ca1f78cc"))
+  (label "MOTOR_SENSE" (at 116.84 111.76 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "89130dbe-a165-4946-b4ce-b02d9a1e833a"))
+  (wire (pts (xy 96.52 114.30) (xy 88.90 114.30)) (stroke (width 0) (type default)) (uuid "983202e1-2f1d-4a29-a15f-848c86201d0d"))
+  (label "MOTOR_CTRL" (at 88.90 114.30 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "29a546e9-75b0-4e50-a4db-f334850de460"))
+  (no_connect (at 109.22 114.30) (uuid "b15b5d19-2a58-4de3-aa45-ab2b81ad81a9"))
+  (no_connect (at 96.52 116.84) (uuid "069a06ab-b952-4d73-80bb-3ad509db8302"))
+  (no_connect (at 109.22 116.84) (uuid "436cda26-cedd-4ce4-855b-bfd90986d934"))
+  (wire (pts (xy 96.52 119.38) (xy 88.90 119.38)) (stroke (width 0) (type default)) (uuid "34cd8255-d6bd-44b0-b79b-82606b316a98"))
+  (label "GND" (at 88.90 119.38 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "17a6846f-5c06-4182-90d1-37be88cc9123"))
+  (wire (pts (xy 109.22 119.38) (xy 116.84 119.38)) (stroke (width 0) (type default)) (uuid "e4251617-df48-48f0-99b9-469d75a84292"))
+  (label "I2C_SCL" (at 116.84 119.38 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "d5f6423c-3b4f-4568-8d9d-3b0187f611c6"))
+  (wire (pts (xy 96.52 121.92) (xy 88.90 121.92)) (stroke (width 0) (type default)) (uuid "233952a1-52ed-4528-8360-f82957761a50"))
+  (label "I2C_SDA" (at 88.90 121.92 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "1dd56525-92cf-4cab-b78c-869c5991de21"))
+  (wire (pts (xy 109.22 121.92) (xy 116.84 121.92)) (stroke (width 0) (type default)) (uuid "bb34aafb-6646-477e-913c-93811dbe3bb9"))
+  (label "GND" (at 116.84 121.92 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "12a1836a-ffa1-44af-aac0-4a506e526854"))
+  (no_connect (at 96.52 124.46) (uuid "ffc8b32c-6ea1-4dad-ad09-54ce5ef5a716"))
+  (no_connect (at 109.22 124.46) (uuid "7fdd2212-1d73-40e8-b8c1-3dd33867f061"))
+  (no_connect (at 96.52 127.00) (uuid "5e1fbe6b-595b-42f2-a751-573ee331290d"))
+  (no_connect (at 109.22 127.00) (uuid "986320e9-0444-4f0a-a6bd-5085e960147f"))
+  (no_connect (at 96.52 129.54) (uuid "f7e6166f-05d0-4763-9a9d-87b4b20cc042"))
+  (no_connect (at 109.22 129.54) (uuid "41ca26a0-be3c-441f-a11e-8057c3edb930"))
+  (no_connect (at 96.52 132.08) (uuid "6ebbb403-fb5b-488d-b641-55287ab49913"))
+  (no_connect (at 109.22 132.08) (uuid "abdd2e99-ddd2-4097-8a17-4480fee22ad9"))
+  (no_connect (at 96.52 134.62) (uuid "7075b98e-a659-4435-93ad-3cc722271356"))
+  (no_connect (at 109.22 134.62) (uuid "2de6ae7e-b29c-4ef3-9dfa-0a5e836f05cc"))
+  (no_connect (at 96.52 137.16) (uuid "6df948c0-52a8-45ce-80b7-1db6c877fb41"))
+  (no_connect (at 109.22 137.16) (uuid "0a9485f2-4d2d-46d9-84db-2329f08b748d"))
+  (no_connect (at 96.52 139.70) (uuid "8e81b944-d1bc-45fe-b833-4182098eb019"))
+  (wire (pts (xy 109.22 139.70) (xy 116.84 139.70)) (stroke (width 0) (type default)) (uuid "5201dd6f-e67d-4c30-815e-c801364713a3"))
+  (label "GND" (at 116.84 139.70 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "3b16503f-0640-48ed-a375-45ad7bc1e0a2"))
+  (symbol (lib_id "Tape-Master:DIN-7") (at 101.60 190.50 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "9731bf86-5519-42a9-bc5f-bae916b91a03")
+    (property "Reference" "J2" (at 101.60 185.42 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "Oric_Atmos_DIN7" (at 101.60 195.58 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Tape-Master:DIN-7_270_Horizontal_CUI_SDS-70J" (at 101.60 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "4" (uuid "ed93c655-8857-4cda-88a9-467a84e1149f"))
+    (pin "1" (uuid "256cb56e-ace3-4100-acd9-ee857f38c662"))
+    (pin "6" (uuid "4aac00bb-9c1c-49c5-9222-4d2461f8007e"))
+    (pin "2" (uuid "3725486b-a96e-4de9-a94a-c60dce806deb"))
+    (pin "5" (uuid "63f47341-3a05-41f6-aaab-107d1fc929ac"))
+    (pin "3" (uuid "2397d85e-2699-4cb9-9cde-cb2d891be58f"))
+    (pin "7" (uuid "7cc38399-8c80-4536-9fe8-120a48b3bc91"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "J2") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 93.98 190.50) (xy 86.36 190.50)) (stroke (width 0) (type default)) (uuid "8dfede1f-b8d4-42e3-a8a0-49b0566237bc"))
+  (label "ORIC_REM_B" (at 86.36 190.50 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "53ff1601-f5aa-43f8-aecd-07028ad0bc4d"))
+  (wire (pts (xy 101.60 182.88) (xy 93.98 182.88)) (stroke (width 0) (type default)) (uuid "1c5dd9ae-dadc-43b1-8ebf-f7996299fb05"))
+  (label "GND" (at 93.98 182.88 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "60ef4355-6582-42e5-85e4-4dd2657ee93d"))
+  (wire (pts (xy 109.22 190.50) (xy 116.84 190.50)) (stroke (width 0) (type default)) (uuid "875c4187-7e38-46fa-af17-1e6f5f352d52"))
+  (label "ORIC_READ" (at 116.84 190.50 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "03f836e9-122d-4260-aeb7-3f24fd8c16ac"))
+  (wire (pts (xy 93.98 187.96) (xy 86.36 187.96)) (stroke (width 0) (type default)) (uuid "9520bf8a-5e00-49dd-8855-114052f79f9d"))
+  (label "ORIC_WRITE" (at 86.36 187.96 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "999b12af-4cba-45cf-a0ce-b00afe78052c"))
+  (wire (pts (xy 109.22 187.96) (xy 116.84 187.96)) (stroke (width 0) (type default)) (uuid "47c512bc-8588-4f75-8f7f-04f6e8c1e42c"))
+  (label "ORIC_WRITE" (at 116.84 187.96 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "55aaa93a-b6ca-4725-a042-7538d7a6b4e3"))
+  (no_connect (at 93.98 193.04) (uuid "c83df839-2878-469e-9c20-437a801b64f0"))
+  (no_connect (at 109.22 193.04) (uuid "812a3dd8-f501-4b80-9128-a5c58645b64d"))
+  (symbol (lib_id "Tape-Master:Conn_01x07") (at 45.72 114.30 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "485bb463-690f-4c5f-aa10-05a8183ab973")
+    (property "Reference" "J3" (at 45.72 109.22 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "Breakout_Oric" (at 45.72 119.38 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" (at 45.72 114.30 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "0528d23c-1a44-4e1d-9bd3-066f887408b0"))
+    (pin "2" (uuid "c51a93f4-d958-432d-b709-83ed1580a568"))
+    (pin "3" (uuid "91ad156d-8d09-4226-9afc-2103c991ad3a"))
+    (pin "4" (uuid "72008c5b-7e07-453d-99d9-606ce1451b8b"))
+    (pin "5" (uuid "0f231e36-b0cf-4593-ba8e-309190153d67"))
+    (pin "6" (uuid "30c93c40-7af9-4cdb-9943-f9b06515079f"))
+    (pin "7" (uuid "a19d14b7-731a-4f56-9540-22177776223f"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "J3") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 40.64 106.68) (xy 33.02 106.68)) (stroke (width 0) (type default)) (uuid "f0cfc2b1-ff22-46a0-81ee-39ea15b0dbbf"))
+  (label "ORIC_REM_B" (at 33.02 106.68 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "0b3e2f39-21f4-4916-ad32-8c32e39e1767"))
+  (wire (pts (xy 40.64 109.22) (xy 33.02 109.22)) (stroke (width 0) (type default)) (uuid "1541e987-75cc-4317-9d5d-bdd99316dc08"))
+  (label "GND" (at 33.02 109.22 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "84ec49c3-1205-4170-94a8-fe902b78e828"))
+  (wire (pts (xy 40.64 111.76) (xy 33.02 111.76)) (stroke (width 0) (type default)) (uuid "fbb667c5-c27f-4d97-a0e2-2f2dcbfc67da"))
+  (label "ORIC_READ" (at 33.02 111.76 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "44c09ec1-3bbe-407d-aa33-6df3586544bc"))
+  (wire (pts (xy 40.64 114.30) (xy 33.02 114.30)) (stroke (width 0) (type default)) (uuid "92256cc8-4483-4e4f-ba96-62a8bf789e77"))
+  (label "ORIC_WRITE" (at 33.02 114.30 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "7bd90e20-34e2-4bf0-ac32-093fe0a4f1e0"))
+  (wire (pts (xy 40.64 116.84) (xy 33.02 116.84)) (stroke (width 0) (type default)) (uuid "ef5505df-bec5-41df-94d1-160fd2464644"))
+  (label "ORIC_WRITE" (at 33.02 116.84 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "16f4a67c-b5ca-4687-bc10-1427cfdf44d9"))
+  (wire (pts (xy 40.64 119.38) (xy 33.02 119.38)) (stroke (width 0) (type default)) (uuid "d0b7372e-a2a3-4b00-8754-c849769a1123"))
+  (label "+5V" (at 33.02 119.38 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "b4a7fcab-bece-420f-bc72-c19c9d2eac2c"))
+  (wire (pts (xy 40.64 121.92) (xy 33.02 121.92)) (stroke (width 0) (type default)) (uuid "51864304-4b39-4edd-9662-b3eb7cd97376"))
+  (label "GND" (at 33.02 121.92 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "ddc28929-88ad-48b6-8a87-aa14460f4510"))
+  (symbol (lib_id "Tape-Master:24C02") (at 160.02 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "5a35827c-4bd7-4fce-bb6c-12ca12d43978")
+    (property "Reference" "U1" (at 160.02 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "24C02" (at 160.02 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 160.02 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "59d0d1ae-212a-4815-9b4c-e4add3d266e4"))
+    (pin "2" (uuid "418865cb-e72a-4a95-a8b3-5a2d3093f214"))
+    (pin "3" (uuid "e7bc0813-0145-4330-af44-2ed67c3a01db"))
+    (pin "4" (uuid "7de65f40-1a4d-4055-9d9c-bfc7fe993599"))
+    (pin "5" (uuid "13ff78f7-2178-4fb6-b47b-fb3f17fdafa5"))
+    (pin "6" (uuid "590cb28b-d215-4a5f-b177-3d31bb9b3613"))
+    (pin "7" (uuid "4ed38561-6666-42f4-9160-daa313d7fe5e"))
+    (pin "8" (uuid "5d81cf3f-f133-4004-a215-5923476e4245"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "U1") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 149.86 99.06) (xy 144.78 99.06)) (stroke (width 0) (type default)) (uuid "b21b5742-37e7-4d62-a958-453ee53a70cb"))
+  (symbol (lib_id "Tape-Master:GND") (at 144.78 99.06 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "d19451f3-5b85-4c7c-8747-1d6b285f9bd3")
+    (property "Reference" "#GND_144_99" (at 144.78 99.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 144.78 101.60 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 144.78 99.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "e9dbb938-eb3f-44a6-ac36-1c0cd550f5b2"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 149.86 101.60) (xy 144.78 101.60)) (stroke (width 0) (type default)) (uuid "327eea78-de66-408c-9ad4-1c8b8753d6f2"))
+  (symbol (lib_id "Tape-Master:GND") (at 144.78 101.60 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "776fe307-1836-4c03-adbd-ec1c62455955")
+    (property "Reference" "#GND_144_101" (at 144.78 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 144.78 104.14 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 144.78 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "7eb814a3-2fd2-4933-8e80-8b4d46bef866"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 149.86 104.14) (xy 144.78 104.14)) (stroke (width 0) (type default)) (uuid "920ab7a8-8a6f-41b8-a40b-2635994ae02d"))
+  (symbol (lib_id "Tape-Master:GND") (at 144.78 104.14 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "80865fef-d403-4924-849e-85b7e675dfa7")
+    (property "Reference" "#GND_144_104" (at 144.78 104.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 144.78 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 144.78 104.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "a1bbd924-931e-48cf-9113-8b393c07518b"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 149.86 106.68) (xy 144.78 106.68)) (stroke (width 0) (type default)) (uuid "eb31d748-ab3e-46fa-94bf-3230b7e7f7f9"))
+  (symbol (lib_id "Tape-Master:GND") (at 144.78 106.68 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "f1484901-5b1d-45a9-8e28-52227bdb22a1")
+    (property "Reference" "#GND_144_106" (at 144.78 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 144.78 109.22 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 144.78 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "01478ce2-d2ef-4d59-ac4f-7f795cae5964"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 170.18 106.68) (xy 175.26 106.68)) (stroke (width 0) (type default)) (uuid "786176c5-dc18-4189-ae4d-4c61735ebb55"))
+  (label "I2C_SDA" (at 175.26 106.68 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "ebc41871-f604-4248-b10a-bee853d612b0"))
+  (wire (pts (xy 170.18 104.14) (xy 175.26 104.14)) (stroke (width 0) (type default)) (uuid "19cc20f6-3a8c-4c7e-8be5-c6430a9c782d"))
+  (label "I2C_SCL" (at 175.26 104.14 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "4d98531a-ae92-4d68-a0cd-2ae4d9679c98"))
+  (wire (pts (xy 170.18 101.60) (xy 175.26 101.60)) (stroke (width 0) (type default)) (uuid "2a9e81d3-552b-4081-a7ec-8fbf15a9ee12"))
+  (symbol (lib_id "Tape-Master:GND") (at 175.26 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "02c8c062-db3f-4e86-a74f-f611a2c669d2")
+    (property "Reference" "#GND_175_101" (at 175.26 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 175.26 104.14 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 175.26 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "d9c8f1bf-fb69-4273-9e87-acdb0ea81445"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 170.18 99.06) (xy 175.26 99.06)) (stroke (width 0) (type default)) (uuid "19835ee9-a37d-49ae-9676-8decf83ffe00"))
+  (symbol (lib_id "Tape-Master:+3V3") (at 175.26 99.06 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "e43cde4b-3c47-44b7-bf92-af9a6c962d7e")
+    (property "Reference" "#+3V3_175_99" (at 175.26 99.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+3V3" (at 175.26 101.60 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 175.26 99.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "46e80471-994d-4ad2-bdab-48ad5a942550"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#+3V3") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 147.32 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b2cd2c0b-33a4-4016-9877-a37e03923f3f")
+    (property "Reference" "C1" (at 147.32 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "0.1uF" (at 147.32 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 147.32 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "d98566e8-4df9-4633-ac4c-f6734d1f20f2"))
+    (pin "2" (uuid "7bc785a3-6c06-4c2d-9f0b-a9c7529f4b58"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "C1") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 147.32 97.79) (xy 147.32 92.71)) (stroke (width 0) (type default)) (uuid "703106fc-8153-40ba-9475-fc3cb7c83527"))
+  (symbol (lib_id "Tape-Master:+3V3") (at 147.32 92.71 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "d92b7164-6e72-4487-9517-4d5933c48907")
+    (property "Reference" "#+3V3_147_92" (at 147.32 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+3V3" (at 147.32 95.25 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 147.32 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "8a662af4-44ce-4554-bade-4d0e731b4d2d"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#+3V3") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 147.32 105.41) (xy 147.32 110.49)) (stroke (width 0) (type default)) (uuid "13956af7-378b-4021-b0ea-d91ef135c6b8"))
+  (symbol (lib_id "Tape-Master:GND") (at 147.32 110.49 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "d04b61ef-bc3b-4bd5-8170-670284deca2e")
+    (property "Reference" "#GND_147_110" (at 147.32 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 147.32 113.03 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 147.32 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "32b40444-ad3d-4be0-afc2-83f8f52da541"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:74HCT06_SOIC14") (at 177.80 114.30 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "a6edf78a-be1e-403e-b588-139c8ccada75")
+    (property "Reference" "U2" (at 177.80 109.22 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "74HCT06" (at 177.80 119.38 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" (at 177.80 114.30 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "14" (uuid "92fdea9f-6555-4011-9723-5ff1df6f83a4"))
+    (pin "1" (uuid "e8e19fe3-a298-4552-b92a-a2c17b7a25aa"))
+    (pin "2" (uuid "a51528aa-0527-43a2-ba4a-6917103e7ac4"))
+    (pin "3" (uuid "f0b9637e-c2ff-4c4a-a001-c11bdc614041"))
+    (pin "4" (uuid "a5c81d0e-2ec0-4967-9bdb-50a725187381"))
+    (pin "5" (uuid "623ac3bf-ec94-42b0-bf5b-91e35db0e0c9"))
+    (pin "6" (uuid "b6ec49f0-0a66-45f7-bc0e-ea6123297e5e"))
+    (pin "7" (uuid "0855d24e-b53d-4a11-9ba4-0ccc7f469992"))
+    (pin "8" (uuid "caa0c24b-964d-4dc7-b0c7-958099be7a24"))
+    (pin "9" (uuid "9639928c-ceaf-4f72-a8d8-dc4bc8239b41"))
+    (pin "10" (uuid "ad846d1f-84c0-41b4-b627-016ae9dbaff5"))
+    (pin "11" (uuid "43c305d0-829a-48df-b626-f54145f2d591"))
+    (pin "12" (uuid "6b3e454a-0e50-4094-8af1-f2a3cbd4bf72"))
+    (pin "13" (uuid "75dbc9bf-2e99-4147-a63d-18518a376d74"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "U2") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 165.10 101.60) (xy 160.02 101.60)) (stroke (width 0) (type default)) (uuid "3201b2a2-d9b0-4d0c-80fb-1b5e162cd1c7"))
+  (symbol (lib_id "Tape-Master:+5V") (at 160.02 101.60 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "988614e7-4467-4f12-9a57-f8b4659bb736")
+    (property "Reference" "#+5V_160_101" (at 160.02 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 160.02 104.14 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 160.02 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "145ab463-eba8-4df9-a106-852caab8dc8e"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 190.50 128.27) (xy 195.58 128.27)) (stroke (width 0) (type default)) (uuid "7f3e6212-7b62-4cd2-b86e-71bc13909d9a"))
+  (symbol (lib_id "Tape-Master:GND") (at 195.58 128.27 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b7736543-6a47-4557-81a0-936808a45104")
+    (property "Reference" "#GND_195_128" (at 195.58 128.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 195.58 130.81 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 195.58 128.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "49fe5873-d513-475b-bd2c-847e4cab307a"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 152.40 88.90 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "0993c219-bd30-485c-9c2e-88ad222ff643")
+    (property "Reference" "C2" (at 152.40 83.82 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "0.1uF" (at 152.40 93.98 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 152.40 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "0fa2df12-0cf1-4560-bf2a-5a89217b33f9"))
+    (pin "2" (uuid "c2b12617-d37a-4bdf-87e2-be0c90ff5f82"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "C2") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 152.40 85.09) (xy 152.40 80.01)) (stroke (width 0) (type default)) (uuid "ee194b9b-c3da-4ad9-8187-8b4cab3c368e"))
+  (symbol (lib_id "Tape-Master:+5V") (at 152.40 80.01 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "98f40a1d-4ffd-4879-bdbb-cfc81e8f6119")
+    (property "Reference" "#+5V_152_80" (at 152.40 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 152.40 82.55 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 152.40 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "7f796c37-ff4a-4123-ba8e-edb93a544734"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 152.40 92.71) (xy 152.40 97.79)) (stroke (width 0) (type default)) (uuid "7642a0e4-e13f-442b-b4cb-25364586fe6a"))
+  (symbol (lib_id "Tape-Master:GND") (at 152.40 97.79 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "9f7ccd57-e7ff-45b6-8151-4cda52e312ec")
+    (property "Reference" "#GND_152_97" (at 152.40 97.79 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 152.40 100.33 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 152.40 97.79 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "7a6faaaa-8851-40c6-8e2f-2feaa97db55a"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 165.10 105.41) (xy 157.48 105.41)) (stroke (width 0) (type default)) (uuid "a137f1af-93bb-47fa-9797-52db77269454"))
+  (label "TAPE_EMU_OUT" (at 157.48 105.41 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "d6be36de-a18f-45f9-b759-2294fe0f0671"))
+  (wire (pts (xy 190.50 105.41) (xy 195.58 105.41)) (stroke (width 0) (type default)) (uuid "43540292-b97d-4c78-9107-471a3783f246"))
+  (label "U2_1Y" (at 195.58 105.41 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "e82ef58e-6641-41c6-94c8-c38bdf5dac49"))
+  (wire (pts (xy 165.10 109.22) (xy 157.48 109.22)) (stroke (width 0) (type default)) (uuid "2e5e11be-17b8-495f-83c7-2c87d644ee82"))
+  (label "U2_1Y" (at 157.48 109.22 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "e0d852c5-07dd-4f0c-8f7e-8f001234685e"))
+  (wire (pts (xy 190.50 109.22) (xy 195.58 109.22)) (stroke (width 0) (type default)) (uuid "79cefb4a-1dd0-4e0e-b227-5c4e27813ce0"))
+  (label "READ_BUF_OUT" (at 195.58 109.22 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "684f1c19-af8f-4c31-95f9-4b1d357e5956"))
+  (symbol (lib_id "Tape-Master:R") (at 210.82 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "11f065f6-f4b8-4578-b36a-69223a05ef36")
+    (property "Reference" "R7" (at 210.82 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "4.7k" (at 210.82 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 210.82 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "09c9866e-6fdb-4195-8236-555d1f3983ad"))
+    (pin "2" (uuid "613cf71b-d898-43fc-be87-ce993f2bc000"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "R7") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 210.82 97.79) (xy 210.82 92.71)) (stroke (width 0) (type default)) (uuid "4a168baf-14c1-4de8-8b69-07d7f743cc12"))
+  (symbol (lib_id "Tape-Master:+5V") (at 210.82 92.71 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b2474e50-9398-40b0-83eb-08727549259b")
+    (property "Reference" "#+5V_210_92" (at 210.82 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 210.82 95.25 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 210.82 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "fbe72d01-c116-4434-a1ec-7577446f709a"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 210.82 105.41) (xy 210.82 110.49)) (stroke (width 0) (type default)) (uuid "230d9d3f-5dbf-4fc8-a81b-d3f67fb571de"))
+  (label "U2_1Y" (at 210.82 110.49 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "f9de6024-ce22-42b5-be45-5f46d97519d9"))
+  (symbol (lib_id "Tape-Master:R") (at 223.52 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "bbd86dc2-093d-4ab6-a81f-69703a2bc356")
+    (property "Reference" "R8" (at 223.52 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "4.7k" (at 223.52 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 223.52 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "8b63cd7a-73b3-4649-a14b-91b57e1e9da7"))
+    (pin "2" (uuid "6eec1a0a-375c-4028-a297-92186c0ecce5"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "R8") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 223.52 97.79) (xy 223.52 92.71)) (stroke (width 0) (type default)) (uuid "39bf3f57-5986-4351-847f-02709dd40e30"))
+  (symbol (lib_id "Tape-Master:+5V") (at 223.52 92.71 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "d48a32e8-e69b-40dc-82d0-027f58ae0242")
+    (property "Reference" "#+5V_223_92" (at 223.52 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 223.52 95.25 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 223.52 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "8d58ffad-5218-432b-8317-cf879f6fc09c"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 223.52 105.41) (xy 223.52 110.49)) (stroke (width 0) (type default)) (uuid "44565866-20a6-4af3-beab-6e3c0eef80c6"))
+  (label "READ_BUF_OUT" (at 223.52 110.49 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "afc7a0ab-72c5-43d7-b3b5-4e787b5fcf25"))
+  (wire (pts (xy 165.10 113.03) (xy 160.02 113.03)) (stroke (width 0) (type default)) (uuid "68ec396d-bd69-445d-bf11-3c8347e8e94f"))
+  (symbol (lib_id "Tape-Master:GND") (at 160.02 113.03 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "dc3f270e-b58b-4407-806f-cc183868d968")
+    (property "Reference" "#GND_160_113" (at 160.02 113.03 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 160.02 115.57 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 160.02 113.03 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "587c584e-1ee3-4fb1-a832-1125e4631b3c"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 165.10 116.84) (xy 160.02 116.84)) (stroke (width 0) (type default)) (uuid "c27492c3-ca6c-4368-ac1c-7fba5c99439e"))
+  (symbol (lib_id "Tape-Master:GND") (at 160.02 116.84 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "590cdac7-d1ea-4a61-84eb-6256af4701c7")
+    (property "Reference" "#GND_160_116" (at 160.02 116.84 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 160.02 119.38 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 160.02 116.84 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "cc17c2fa-8250-4e86-a6df-4d25b6e46efe"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 165.10 120.65) (xy 160.02 120.65)) (stroke (width 0) (type default)) (uuid "1a64b28c-e326-4034-aab0-7ec652941c10"))
+  (symbol (lib_id "Tape-Master:GND") (at 160.02 120.65 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "7eec4850-2083-47ae-9e9d-ce8d012ea2d5")
+    (property "Reference" "#GND_160_120" (at 160.02 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 160.02 123.19 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 160.02 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "5281389a-e27b-405b-8a81-5c0c39428e4a"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 165.10 124.46) (xy 160.02 124.46)) (stroke (width 0) (type default)) (uuid "6d4a65dd-cd60-45ce-a467-f5852c781213"))
+  (symbol (lib_id "Tape-Master:GND") (at 160.02 124.46 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "1034abfa-a1aa-4172-afef-cd22ab261642")
+    (property "Reference" "#GND_160_124" (at 160.02 124.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 160.02 127.00 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 160.02 124.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "607b0fac-fc45-4541-81c3-9f7161cefdea"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (no_connect (at 190.50 113.03) (uuid "ad13680b-df32-4851-8962-cd485a2b0be1"))
+  (no_connect (at 190.50 116.84) (uuid "fc7c5b7c-6c9d-4a3f-97ac-962cbc839afd"))
+  (no_connect (at 190.50 120.65) (uuid "8b35dd2d-eb7e-45d9-81f1-f9cee61c1d20"))
+  (no_connect (at 190.50 124.46) (uuid "16bf4fba-fd6f-42b1-bccf-9bca3352d6ee"))
+  (symbol (lib_id "Tape-Master:R") (at 241.30 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "74930ca1-1c5d-4613-b189-13b298cd0189")
+    (property "Reference" "R9" (at 241.30 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1k" (at 241.30 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 241.30 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "e2f60c70-7bec-455b-bf4f-3071e594d26f"))
+    (pin "2" (uuid "b27721e6-48aa-4b50-aa59-c2d4f3d165fb"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "R9") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 241.30 97.79) (xy 241.30 92.71)) (stroke (width 0) (type default)) (uuid "2bd21c81-5dbc-4dd3-a380-143ffc46b13e"))
+  (label "READ_BUF_OUT" (at 241.30 92.71 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "effb22d2-b8e7-48e6-9810-fd533514b6ef"))
+  (wire (pts (xy 241.30 105.41) (xy 241.30 110.49)) (stroke (width 0) (type default)) (uuid "86e26c78-70bb-49c3-b8d5-342bbbcffb96"))
+  (label "READ_MID" (at 241.30 110.49 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "8631d20e-1541-4829-bacc-07e0ac30f83c"))
+  (symbol (lib_id "Tape-Master:C") (at 254.00 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "caa18694-0588-4ef0-8837-8a728699401f")
+    (property "Reference" "C3" (at 254.00 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "4.7uF" (at 254.00 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 254.00 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "f89a9f6e-3b32-42b7-a7ef-c7d0022597d5"))
+    (pin "2" (uuid "c72f7140-f6a2-4c1f-a10c-78e23f427914"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "C3") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 254.00 97.79) (xy 254.00 92.71)) (stroke (width 0) (type default)) (uuid "be47e537-572d-420e-b5c0-5af266296bda"))
+  (label "READ_MID" (at 254.00 92.71 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "56e241d8-0c07-4695-b892-de3193fa9ecc"))
+  (wire (pts (xy 254.00 105.41) (xy 254.00 110.49)) (stroke (width 0) (type default)) (uuid "e5784281-dc57-4d18-b4e9-78babc840653"))
+  (label "ORIC_READ" (at 254.00 110.49 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "22fa85f4-5b0e-40fe-9664-9749f4ed7678"))
+  (symbol (lib_id "Tape-Master:R") (at 266.70 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "6882cfd9-bcf2-40db-859a-45ea1997744a")
+    (property "Reference" "R10" (at 266.70 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10k" (at 266.70 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 266.70 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "d2fd65bd-4bfe-429e-9493-3d1949445207"))
+    (pin "2" (uuid "dde59109-c717-453e-84dc-8f29cce011e7"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "R10") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 266.70 97.79) (xy 266.70 92.71)) (stroke (width 0) (type default)) (uuid "387c437f-0f5c-43b3-93d0-e4f9e2d651f3"))
+  (label "ORIC_READ" (at 266.70 92.71 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "a0967e57-537b-4423-8f34-9ef210602077"))
+  (wire (pts (xy 266.70 105.41) (xy 266.70 110.49)) (stroke (width 0) (type default)) (uuid "98e8f106-a859-4128-8900-71a7ad0ff802"))
+  (symbol (lib_id "Tape-Master:GND") (at 266.70 110.49 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "f6927b79-0f0f-4c1c-9406-98a4293c9b34")
+    (property "Reference" "#GND_266_110" (at 266.70 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 266.70 113.03 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 266.70 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "042c858a-d81f-4952-bd8b-104ae5a3d245"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 279.40 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "24eba36d-2940-4cae-a066-56946d7a4d52")
+    (property "Reference" "C6" (at 279.40 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "4.7uF" (at 279.40 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 279.40 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "a497e0ea-43bd-4e42-9037-05f91ffd8456"))
+    (pin "2" (uuid "d508d5e6-fe3d-4ca0-927f-c7dd32c6e7fe"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "C6") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 279.40 97.79) (xy 279.40 92.71)) (stroke (width 0) (type default)) (uuid "cd4142fe-45cf-441d-92ab-52288e413e2e"))
+  (label "AUDIO_DAC_L" (at 279.40 92.71 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "00749e21-d8e7-470a-8eca-371636e75327"))
+  (wire (pts (xy 279.40 105.41) (xy 279.40 110.49)) (stroke (width 0) (type default)) (uuid "d5d49cd8-e0aa-4cc8-8c43-88317a6a6961"))
+  (label "DAC_MID" (at 279.40 110.49 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "4b404c00-2e80-4046-a00f-d671466e9188"))
+  (symbol (lib_id "Tape-Master:R") (at 292.10 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "f1d5fa97-689c-4867-a0cb-301eafb09f5d")
+    (property "Reference" "R6" (at 292.10 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "2.2k" (at 292.10 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 292.10 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "bc0e4d43-9197-4346-9927-ededc1093cad"))
+    (pin "2" (uuid "4cc44d3a-c482-458c-9dcf-dbc4c127f6ce"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "R6") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 292.10 97.79) (xy 292.10 92.71)) (stroke (width 0) (type default)) (uuid "6d68f624-6761-49c6-b187-d40f234ca96d"))
+  (label "DAC_MID" (at 292.10 92.71 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "86994a4e-5222-47ae-b5f9-76777e1b6e2d"))
+  (wire (pts (xy 292.10 105.41) (xy 292.10 110.49)) (stroke (width 0) (type default)) (uuid "424ef883-36e9-4cfd-9d15-ddbd9931d9e5"))
+  (label "ORIC_READ" (at 292.10 110.49 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "2aad9037-d2eb-47e4-8492-a94ec042b02b"))
+  (symbol (lib_id "Tape-Master:R") (at 152.40 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c8b16c8d-888d-4c39-95d2-62f533629a86")
+    (property "Reference" "R1" (at 152.40 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "2.2k" (at 152.40 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 152.40 160.02 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "af4fa24a-1c04-4fe7-a5f6-5f4c5c48f2c8"))
+    (pin "2" (uuid "b8d10859-305e-4525-ae00-24cd1dd1cb1f"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "R1") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 152.40 156.21) (xy 152.40 151.13)) (stroke (width 0) (type default)) (uuid "2766c79c-7cb9-488f-b62e-901f8a4fa94c"))
+  (label "ORIC_WRITE" (at 152.40 151.13 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "c441108a-dc63-4369-8334-d7532a1da2b8"))
+  (wire (pts (xy 152.40 163.83) (xy 152.40 168.91)) (stroke (width 0) (type default)) (uuid "ff18cec4-dd87-4ede-9af6-e3d5c4e8f2b6"))
+  (label "TAPE_REC_IN" (at 152.40 168.91 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "92386c3e-984b-489c-a9be-68cf1049f1ae"))
+  (symbol (lib_id "Tape-Master:R") (at 165.10 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "9d1e7d40-0902-408f-aba3-9323b79e96f0")
+    (property "Reference" "R2" (at 165.10 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "3.3k" (at 165.10 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 165.10 160.02 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "25cd8520-f241-476b-a50c-5ba7e7254711"))
+    (pin "2" (uuid "04685817-fa70-4b23-900c-e4ebdf896ceb"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "R2") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 165.10 156.21) (xy 165.10 151.13)) (stroke (width 0) (type default)) (uuid "40d84f0e-4898-4002-b128-5f0888ac22af"))
+  (label "TAPE_REC_IN" (at 165.10 151.13 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "23737c58-e79e-4ea1-b16a-1b4cc5627193"))
+  (wire (pts (xy 165.10 163.83) (xy 165.10 168.91)) (stroke (width 0) (type default)) (uuid "f01e2fc5-f5fb-4978-bc3f-2cc5bbad60f2"))
+  (symbol (lib_id "Tape-Master:GND") (at 165.10 168.91 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "00737775-eb69-4e99-8684-4b5fc9be6cf9")
+    (property "Reference" "#GND_165_168" (at 165.10 168.91 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 165.10 171.45 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 165.10 168.91 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "d524d09d-7fef-43e7-b318-0c0b0fbc0691"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:BAT54S") (at 180.34 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "729221c6-293c-45dc-bbc4-90f4521e46c8")
+    (property "Reference" "D1" (at 180.34 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "BAT54S" (at 180.34 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 180.34 160.02 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "cf5a5a19-4ba5-4e2a-aba6-221711acb2f7"))
+    (pin "2" (uuid "3d0aa731-9725-40cd-a0b1-d92a9eddefa2"))
+    (pin "3" (uuid "058c851f-197a-4235-bfca-d3ee53b3f43a"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "D1") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 176.53 160.02) (xy 176.53 165.10)) (stroke (width 0) (type default)) (uuid "cafa0eca-cab1-459e-838c-dee84f4e8d30"))
+  (symbol (lib_id "Tape-Master:GND") (at 176.53 165.10 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "926672d8-f10a-4dba-9b11-44e155c5d9be")
+    (property "Reference" "#GND_176_165" (at 176.53 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 176.53 167.64 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 176.53 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "b89014ee-a9b8-476a-b37f-aa7fe6ccb589"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 184.15 157.48) (xy 184.15 152.40)) (stroke (width 0) (type default)) (uuid "70557bc0-d2ca-45d0-aa21-ee39750d4f14"))
+  (symbol (lib_id "Tape-Master:+3V3") (at 184.15 152.40 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "8082cde7-2752-4362-b41f-d964ddf0ffc5")
+    (property "Reference" "#+3V3_184_152" (at 184.15 152.40 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+3V3" (at 184.15 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 184.15 152.40 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "15e0d627-78d9-4e35-a2b5-42fe6158b116"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#+3V3") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 184.15 162.56) (xy 189.23 162.56)) (stroke (width 0) (type default)) (uuid "25498b81-5a3e-4870-8c32-525550064eb2"))
+  (label "TAPE_REC_IN" (at 189.23 162.56 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "d14b3819-1f84-4441-9135-2d081fa5411f"))
+  (symbol (lib_id "Tape-Master:C") (at 152.40 182.88 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "3cee3fc8-efd0-4259-b3fc-d0b9e62041d9")
+    (property "Reference" "C4" (at 152.40 177.80 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "4.7uF" (at 152.40 187.96 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 152.40 182.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "9b79bfa1-9aab-4fdc-acc4-2ddda2c26c89"))
+    (pin "2" (uuid "15078508-f314-4f06-ba78-6bb92d3c3f6f"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "C4") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 152.40 179.07) (xy 152.40 173.99)) (stroke (width 0) (type default)) (uuid "ba22228d-dda4-4063-a4fc-724cab804e14"))
+  (label "ORIC_WRITE" (at 152.40 173.99 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "4f050690-3c3e-4710-8c02-dd931210ff43"))
+  (wire (pts (xy 152.40 186.69) (xy 152.40 191.77)) (stroke (width 0) (type default)) (uuid "a07d3545-37df-44aa-a943-85f773090daf"))
+  (label "AUD_MID" (at 152.40 191.77 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "b159ba4b-4410-4009-87ba-7f1ad171e827"))
+  (symbol (lib_id "Tape-Master:R") (at 165.10 182.88 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "5ac8d02c-9ff2-44bf-adfa-6b9a215b50c5")
+    (property "Reference" "R11" (at 165.10 177.80 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1k" (at 165.10 187.96 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 165.10 182.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "41d2ca5a-17a6-4dee-a9c7-38f59194e0b8"))
+    (pin "2" (uuid "849f2b6b-8b16-4549-b614-33261fd8f832"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "R11") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 165.10 179.07) (xy 165.10 173.99)) (stroke (width 0) (type default)) (uuid "67bb0bdd-2edd-4e33-b84b-2be2e1a08968"))
+  (label "AUD_MID" (at 165.10 173.99 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b604df53-b23c-4f92-acfd-aa1c6f5aad02"))
+  (wire (pts (xy 165.10 186.69) (xy 165.10 191.77)) (stroke (width 0) (type default)) (uuid "3b1995a4-5831-4535-8399-011d1b558620"))
+  (label "AUDIO_RAW_L" (at 165.10 191.77 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "3b7fe8b4-488f-45cc-a99a-d831aae3baf2"))
+  (symbol (lib_id "Tape-Master:C") (at 177.80 182.88 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "e94aa376-0852-4a4a-916d-5f1b1081eac4")
+    (property "Reference" "C5" (at 177.80 177.80 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10nF" (at 177.80 187.96 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 177.80 182.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "31d2bf8b-4d38-428c-abdf-d72e074d5fae"))
+    (pin "2" (uuid "8721800c-653e-4dc8-9026-64cc4e44ce19"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "C5") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 177.80 179.07) (xy 177.80 173.99)) (stroke (width 0) (type default)) (uuid "4458f26e-e8d2-404f-bc17-dcd61c354664"))
+  (label "AUDIO_RAW_L" (at 177.80 173.99 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "34c75b8d-aaa2-46d1-9319-ec84edea8958"))
+  (wire (pts (xy 177.80 186.69) (xy 177.80 191.77)) (stroke (width 0) (type default)) (uuid "50afd41e-7db2-4a97-af5f-087fff909050"))
+  (label "AGND" (at 177.80 191.77 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "d41f09cb-4aa4-4ce8-b5c3-30039f9b0847"))
+  (symbol (lib_id "Tape-Master:R") (at 190.50 182.88 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "0b9bf8cc-e8a8-48c1-a9fe-a9c85493d66c")
+    (property "Reference" "R12" (at 190.50 177.80 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10k" (at 190.50 187.96 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 190.50 182.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "387970f3-0730-4331-8885-ae75adb1e81c"))
+    (pin "2" (uuid "01374331-d547-4785-8361-df714c45f6cc"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "R12") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 190.50 179.07) (xy 190.50 173.99)) (stroke (width 0) (type default)) (uuid "669f7da9-4bcc-4c8e-b8c6-f151d5e60bf1"))
+  (label "AUDIO_RAW_L" (at 190.50 173.99 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "2195df1f-e33c-4537-99b2-66eac22cbc22"))
+  (wire (pts (xy 190.50 186.69) (xy 190.50 191.77)) (stroke (width 0) (type default)) (uuid "fcc7c316-e4b7-4043-ba47-42200a1808b7"))
+  (label "AGND" (at 190.50 191.77 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "286ae64e-e740-409b-abb8-90d1c9056da4"))
+  (symbol (lib_id "Tape-Master:R") (at 215.90 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "5e9a8305-1002-4f5c-9347-be1750d981e0")
+    (property "Reference" "R3" (at 215.90 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10k" (at 215.90 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 215.90 160.02 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "f6032606-84a1-4dc8-b52f-849ba0a9fa44"))
+    (pin "2" (uuid "78c3e6de-be07-49f9-84ad-46ea00f9ac68"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "R3") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 215.90 156.21) (xy 215.90 151.13)) (stroke (width 0) (type default)) (uuid "b3491b63-820f-4380-ac05-33dcd2246dac"))
+  (symbol (lib_id "Tape-Master:+5V") (at 215.90 151.13 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "dc2c452e-cb0a-449a-814d-48665df56cb3")
+    (property "Reference" "#+5V_215_151" (at 215.90 151.13 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 215.90 153.67 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 215.90 151.13 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "ce3e7d14-6de5-4870-bc0e-5553e075ba86"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 215.90 163.83) (xy 215.90 168.91)) (stroke (width 0) (type default)) (uuid "d6d282b6-e57c-4163-a16e-2f456b3fcc9e"))
+  (label "ORIC_REM_B" (at 215.90 168.91 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "b3c96563-818f-475c-a06e-b6e316b60624"))
+  (symbol (lib_id "Tape-Master:R") (at 228.60 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "3864952d-e86c-4686-9187-18147e2e65e3")
+    (property "Reference" "R4" (at 228.60 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "2.2k" (at 228.60 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 228.60 160.02 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "8dfba0df-21c2-4816-aedb-db4889992142"))
+    (pin "2" (uuid "9cca7a40-d898-4e72-b444-8f9f96c832dc"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "R4") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 228.60 156.21) (xy 228.60 151.13)) (stroke (width 0) (type default)) (uuid "48b1a0e1-6433-4359-8667-e6392368987a"))
+  (label "ORIC_REM_B" (at 228.60 151.13 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "a488866d-9dff-463b-bbd9-248189b53956"))
+  (wire (pts (xy 228.60 163.83) (xy 228.60 168.91)) (stroke (width 0) (type default)) (uuid "89dce484-979b-4df0-b5e0-b7ca529146ee"))
+  (label "MOTOR_SENSE" (at 228.60 168.91 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "a24d0cb2-f873-4500-8bda-05286eecae71"))
+  (symbol (lib_id "Tape-Master:R") (at 241.30 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "3e51c465-78b2-44cb-81f9-e1004b2e1167")
+    (property "Reference" "R5" (at 241.30 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "3.3k" (at 241.30 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 241.30 160.02 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "b76d2d00-045c-477e-9de4-4d7471a4c5ec"))
+    (pin "2" (uuid "37e8f86d-de4e-45ca-8ee9-b19b07476116"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "R5") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 241.30 156.21) (xy 241.30 151.13)) (stroke (width 0) (type default)) (uuid "55e9fb95-1d49-499b-a061-cfd096d1b7eb"))
+  (label "MOTOR_SENSE" (at 241.30 151.13 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "004e176f-e417-4776-bea9-b80e1c0be34d"))
+  (wire (pts (xy 241.30 163.83) (xy 241.30 168.91)) (stroke (width 0) (type default)) (uuid "71065ecf-47bb-45b7-be5f-f86041cf0548"))
+  (symbol (lib_id "Tape-Master:GND") (at 241.30 168.91 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "125621ed-dfa8-4c24-bd02-1a5ce331f2b2")
+    (property "Reference" "#GND_241_168" (at 241.30 168.91 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 241.30 171.45 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 241.30 168.91 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "5ae240d8-735d-4451-a046-8e3324e6837a"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:BAT54S") (at 256.54 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "97099a52-ca77-4da6-932c-36a56ea2ce2f")
+    (property "Reference" "D2" (at 256.54 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "BAT54S" (at 256.54 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 256.54 160.02 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "3eec0f64-a74f-422f-b8a3-9eb1432076f8"))
+    (pin "2" (uuid "711b673c-dd28-4044-ad89-e3e6d33fa4c1"))
+    (pin "3" (uuid "f0608fb3-41da-4810-b3c9-54290fe68250"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "D2") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 252.73 160.02) (xy 252.73 165.10)) (stroke (width 0) (type default)) (uuid "2bf3d4e2-62a4-4106-a1e4-f2e8ac338568"))
+  (symbol (lib_id "Tape-Master:GND") (at 252.73 165.10 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "e3a6defa-2b85-448a-9b9b-793b9222e532")
+    (property "Reference" "#GND_252_165" (at 252.73 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 252.73 167.64 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 252.73 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "5927510a-5730-4a30-a4cf-27539dd81862"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 260.35 157.48) (xy 260.35 152.40)) (stroke (width 0) (type default)) (uuid "3f670835-6947-4317-b57f-6f7023de8caf"))
+  (symbol (lib_id "Tape-Master:+3V3") (at 260.35 152.40 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "f28eb3a0-100f-4fed-87c1-b866c90ec041")
+    (property "Reference" "#+3V3_260_152" (at 260.35 152.40 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+3V3" (at 260.35 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 260.35 152.40 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "f1e745bf-4dd8-4d60-8e14-4498dd87be19"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#+3V3") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 260.35 162.56) (xy 265.43 162.56)) (stroke (width 0) (type default)) (uuid "421f14d3-576c-4e75-b4ad-3f96087c9010"))
+  (label "MOTOR_SENSE" (at 265.43 162.56 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "0f3f40f5-9a3d-4d8f-b9ca-1badccae7c20"))
+  (symbol (lib_id "Tape-Master:2N7002") (at 236.22 187.96 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "1f8f0e3f-f0a6-4b04-b7c7-ff30e74bee52")
+    (property "Reference" "Q1" (at 236.22 182.88 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "2N7002" (at 236.22 193.04 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 236.22 187.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "5ec716ed-87b3-4ec3-ae7a-8d7bcdf8d88a"))
+    (pin "2" (uuid "56362daf-498c-45a8-9cd7-c8ac3ab70ab0"))
+    (pin "3" (uuid "c2e62938-6f35-4ec5-81c4-012f92f85824"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "Q1") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 238.76 182.88) (xy 238.76 177.80)) (stroke (width 0) (type default)) (uuid "504adbf8-fc82-4789-a11a-1bf3dac97bd5"))
+  (label "ORIC_REM_B" (at 238.76 177.80 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "08544310-24ac-4c42-b55e-ab0924c956f7"))
+  (wire (pts (xy 238.76 193.04) (xy 238.76 198.12)) (stroke (width 0) (type default)) (uuid "d9eeaee4-16a7-4e13-977e-7ffa97022bf6"))
+  (symbol (lib_id "Tape-Master:GND") (at 238.76 198.12 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "687c5db5-3d76-44da-9ec9-bee40b8cb63e")
+    (property "Reference" "#GND_238_198" (at 238.76 198.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 238.76 200.66 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 238.76 198.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "3d1df116-07de-4895-b01a-a531604a3c2c"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 233.68 187.96) (xy 228.60 187.96)) (stroke (width 0) (type default)) (uuid "c32ff625-3fdc-4d8c-801c-eb0b6c262cdc"))
+  (label "Q1_GATE" (at 228.60 187.96 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "61071e27-55a0-41c7-9b3b-e94903cf8752"))
+  (symbol (lib_id "Tape-Master:R") (at 215.90 187.96 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "3621b6d9-1a47-4888-ac3b-9428f82ff998")
+    (property "Reference" "R13" (at 215.90 182.88 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100" (at 215.90 193.04 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 215.90 187.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "b452cc78-361c-4ef9-8ff2-6640b2f853f2"))
+    (pin "2" (uuid "614fc01c-16fe-4057-9ddb-b97d2ad0768b"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "R13") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 215.90 184.15) (xy 215.90 179.07)) (stroke (width 0) (type default)) (uuid "55a1ffdc-030c-4467-9215-b0fc1e452854"))
+  (label "MOTOR_CTRL" (at 215.90 179.07 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b898023f-71ad-4059-ab58-e3b7b4fe4f51"))
+  (wire (pts (xy 215.90 191.77) (xy 215.90 196.85)) (stroke (width 0) (type default)) (uuid "eefe8a54-9b26-4fd2-a7c2-203d63b73bdb"))
+  (label "Q1_GATE" (at 215.90 196.85 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "80e64cb5-ca78-4c0b-910a-952333cac04d"))
+  (symbol (lib_id "Tape-Master:R") (at 228.60 187.96 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "5536cccf-ea3f-4aa4-88e7-936eca105626")
+    (property "Reference" "R14" (at 228.60 182.88 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100k" (at 228.60 193.04 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 228.60 187.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "3009bfa9-c8ad-4c9e-9989-0f769e52466e"))
+    (pin "2" (uuid "376d64dd-318b-4080-9be2-429fd8acbb70"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "R14") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 228.60 184.15) (xy 228.60 179.07)) (stroke (width 0) (type default)) (uuid "b5071f7a-4541-491d-b426-194daf6a4b8c"))
+  (label "Q1_GATE" (at 228.60 179.07 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "7319c3c9-16e4-4560-a823-c5590eeac207"))
+  (wire (pts (xy 228.60 191.77) (xy 228.60 196.85)) (stroke (width 0) (type default)) (uuid "6ba031bb-b62a-4bda-bfe7-09e6020e2bad"))
+  (symbol (lib_id "Tape-Master:GND") (at 228.60 196.85 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "44d73761-1bde-4c2c-84d8-96821aec6ff9")
+    (property "Reference" "#GND_228_196" (at 228.60 196.85 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 228.60 199.39 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 228.60 196.85 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "863a1dc5-6557-457e-96db-f54a32257059"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:USBLC6-2SC6") (at 101.60 228.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c63a2e87-7114-4b7a-96da-e12034ecfec4")
+    (property "Reference" "D3" (at 101.60 223.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "USBLC6-2SC6" (at 101.60 233.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 101.60 228.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "12d22b7e-c5f3-4e1b-9b24-98cefae87df1"))
+    (pin "2" (uuid "8be8f454-32f8-48f9-8a78-3a37c50c11ca"))
+    (pin "3" (uuid "108055af-887f-42f4-b39a-0748b8fff11a"))
+    (pin "4" (uuid "e462a9ae-17be-4328-a722-2a37325870e8"))
+    (pin "5" (uuid "69094ad4-c1a7-422a-948d-53a76b9bc4b0"))
+    (pin "6" (uuid "9605f527-acaa-43eb-8727-2431b1d87e34"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "D3") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 92.71 226.06) (xy 87.63 226.06)) (stroke (width 0) (type default)) (uuid "2fd37374-c8af-4d2d-a686-a8046e11f73a"))
+  (label "ORIC_READ" (at 87.63 226.06 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "de0589ac-b397-4b8e-8c16-5980cdc0db98"))
+  (wire (pts (xy 92.71 231.14) (xy 87.63 231.14)) (stroke (width 0) (type default)) (uuid "1070c28c-ccfd-4b12-ab22-96f14b0da050"))
+  (symbol (lib_id "Tape-Master:GND") (at 87.63 231.14 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "fa97af63-f40a-45b7-b73b-13bd3d521dbe")
+    (property "Reference" "#GND_87_231" (at 87.63 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 87.63 233.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 87.63 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "c87d2906-414b-4dca-a5d1-0eb57b13a248"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 92.71 233.68) (xy 87.63 233.68)) (stroke (width 0) (type default)) (uuid "16d8be3a-211c-4a84-a703-1cc0bbc034bc"))
+  (label "ORIC_WRITE" (at 87.63 233.68 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "0310f168-8926-4854-b74a-cabe829c4869"))
+  (wire (pts (xy 110.49 233.68) (xy 115.57 233.68)) (stroke (width 0) (type default)) (uuid "11a8ba03-79f8-46d0-8eef-f0b1d6341ee9"))
+  (label "ORIC_REM_B" (at 115.57 233.68 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "32c72130-9684-48c4-aceb-188f59404697"))
+  (wire (pts (xy 110.49 231.14) (xy 115.57 231.14)) (stroke (width 0) (type default)) (uuid "57a15c8f-1e7c-427f-9b43-62fefa228490"))
+  (symbol (lib_id "Tape-Master:+5V") (at 115.57 231.14 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "7e3c987e-cff1-4f5b-9260-a0f6c59f7cd1")
+    (property "Reference" "#+5V_115_231" (at 115.57 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 115.57 233.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 115.57 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "3653b914-99f2-477f-ab30-96b3e419dcca"))
+    (instances
+      (project "Tape_Master_Cartridge_Oric_Atmos"
+        (path "/e53b9751-c3d1-4a89-abdb-9fb52dfcc117" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (no_connect (at 110.49 226.06) (uuid "210b4bfb-2930-45f8-a62f-7f6fc0616f17"))
+)

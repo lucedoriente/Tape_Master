@@ -1,0 +1,3763 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "ac8521f3-8ead-4a64-9b8b-f1f1be2a0015")
+	(paper "A3")
+	(title_block
+		(title "Tape Master v2 - Cartridge 08: Tandy CoCo & Dragon 32/64")
+		(date "2026-11-06")
+		(rev "1.0")
+		(company "Alessio Iodice")
+		(comment 1 "Author / Hardware Designer: Alessio Iodice <alessio67@gmail.com>")
+		(comment 2 "Tandy CoCo (1/2/3), Dragon 32/64 & TRS-80 Tape Interface: DIN 5-Pin 180° & Breakout Header, Level Buffers, Motor Relay Sense/Control, EEPROM Auto-ID")
+		(comment 3 "License: CC BY-NC-SA 4.0")
+		(comment 4 "Validated on KiCad 9.0 — 0 ERC / 0 DRC violations")
+	)
+  (lib_symbols
+    (symbol "Tape-Master:+3V3"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 0 3.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "+3V3_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "+3V3_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+    (symbol "Tape-Master:+5V"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 0 3.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "+5V_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "+5V_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+    (symbol "Tape-Master:GND"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "GND_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "GND_1_1"
+			(pin power_in line
+				(at 0 0 270)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+    (symbol "Tape-Master:PWR_FLAG"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+    (symbol "Tape-Master:Conn_02x20_Odd_Even"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 1.27 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_02x20_Odd_Even"
+			(at 1.27 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_2x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_02x20_Odd_Even_1_1"
+			(rectangle
+				(start -1.27 24.13)
+				(end 3.81 -26.67)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 22.987)
+				(end 0 22.733)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 20.447)
+				(end 0 20.193)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 17.907)
+				(end 0 17.653)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 15.367)
+				(end 0 15.113)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 12.827)
+				(end 0 12.573)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 10.287)
+				(end 0 10.033)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 7.747)
+				(end 0 7.493)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 5.207)
+				(end 0 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -7.493)
+				(end 0 -7.747)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -10.033)
+				(end 0 -10.287)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -12.573)
+				(end 0 -12.827)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -15.113)
+				(end 0 -15.367)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -17.653)
+				(end 0 -17.907)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -20.193)
+				(end 0 -20.447)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -22.733)
+				(end 0 -22.987)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -25.273)
+				(end 0 -25.527)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 22.987)
+				(end 2.54 22.733)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 20.447)
+				(end 2.54 20.193)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 17.907)
+				(end 2.54 17.653)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 15.367)
+				(end 2.54 15.113)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 12.827)
+				(end 2.54 12.573)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 10.287)
+				(end 2.54 10.033)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 7.747)
+				(end 2.54 7.493)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 5.207)
+				(end 2.54 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 2.667)
+				(end 2.54 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 0.127)
+				(end 2.54 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -2.413)
+				(end 2.54 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -4.953)
+				(end 2.54 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -7.493)
+				(end 2.54 -7.747)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -10.033)
+				(end 2.54 -10.287)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -12.573)
+				(end 2.54 -12.827)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -15.113)
+				(end 2.54 -15.367)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -17.653)
+				(end 2.54 -17.907)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -20.193)
+				(end 2.54 -20.447)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -22.733)
+				(end 2.54 -22.987)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -25.273)
+				(end 2.54 -25.527)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 22.86 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 20.32 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 17.78 0)
+				(length 3.81)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 15.24 0)
+				(length 3.81)
+				(name "Pin_7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 12.7 0)
+				(length 3.81)
+				(name "Pin_9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 10.16 0)
+				(length 3.81)
+				(name "Pin_11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 7.62 0)
+				(length 3.81)
+				(name "Pin_13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 5.08 0)
+				(length 3.81)
+				(name "Pin_15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -7.62 0)
+				(length 3.81)
+				(name "Pin_25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -10.16 0)
+				(length 3.81)
+				(name "Pin_27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -12.7 0)
+				(length 3.81)
+				(name "Pin_29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -15.24 0)
+				(length 3.81)
+				(name "Pin_31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -17.78 0)
+				(length 3.81)
+				(name "Pin_33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -20.32 0)
+				(length 3.81)
+				(name "Pin_35"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "35"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -22.86 0)
+				(length 3.81)
+				(name "Pin_37"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -25.4 0)
+				(length 3.81)
+				(name "Pin_39"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "39"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 22.86 180)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 20.32 180)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 17.78 180)
+				(length 3.81)
+				(name "Pin_6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 15.24 180)
+				(length 3.81)
+				(name "Pin_8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 12.7 180)
+				(length 3.81)
+				(name "Pin_10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 10.16 180)
+				(length 3.81)
+				(name "Pin_12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 7.62 180)
+				(length 3.81)
+				(name "Pin_14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 5.08 180)
+				(length 3.81)
+				(name "Pin_16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 2.54 180)
+				(length 3.81)
+				(name "Pin_18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 0 180)
+				(length 3.81)
+				(name "Pin_20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -2.54 180)
+				(length 3.81)
+				(name "Pin_22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -5.08 180)
+				(length 3.81)
+				(name "Pin_24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -7.62 180)
+				(length 3.81)
+				(name "Pin_26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -10.16 180)
+				(length 3.81)
+				(name "Pin_28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -12.7 180)
+				(length 3.81)
+				(name "Pin_30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -15.24 180)
+				(length 3.81)
+				(name "Pin_32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -17.78 180)
+				(length 3.81)
+				(name "Pin_34"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "34"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -20.32 180)
+				(length 3.81)
+				(name "Pin_36"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "36"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -22.86 180)
+				(length 3.81)
+				(name "Pin_38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -25.4 180)
+				(length 3.81)
+				(name "Pin_40"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "40"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+				(embedded_fonts no)
+	)
+    (symbol "Tape-Master:DIN-5_180degree"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 3.175 5.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DIN-5_180degree"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Tape-Master:DIN-5_180_Horizontal_CUI_SDS-50J"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "5-pin DIN connector (5-pin DIN-5 stereo)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "circular DIN connector stereo audio"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "DIN*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "DIN-5_180degree_0_1"
+			(polyline
+				(pts
+					(xy -5.08 2.54) (xy -4.318 2.54) (xy -2.794 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 0) (xy -3.556 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center -3.048 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center -2.286 2.286)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.762 -4.953) (xy -0.762 -4.191) (xy 0.762 -4.191) (xy 0.762 -4.953)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 5.08 0)
+				(mid 3.8673 -3.3444)
+				(end 0.762 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 5.08) (xy 0 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 3.302)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -5.08 0)
+				(mid 0 5.0579)
+				(end 5.08 0)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -0.762 -5.08)
+				(mid -3.8597 -3.3379)
+				(end -5.08 0)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.286 2.286)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 3.048 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 2.54) (xy 4.318 2.54) (xy 2.794 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 0) (xy 3.556 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "DIN-5_180degree_1_1"
+			(pin passive line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 2.54 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+    (symbol "Tape-Master:Conn_01x06"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x06"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x06_1_1"
+			(rectangle
+				(start -1.27 6.35)
+				(end 1.27 -8.89)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 5.207)
+				(end 0 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -7.493)
+				(end 0 -7.747)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 5.08 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -7.62 0)
+				(length 3.81)
+				(name "Pin_6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+    (symbol "Tape-Master:24C02"
+		(pin_names (offset 1.016))
+		(in_bom yes) (on_board yes)
+		(property "Reference" "U" (at -5.08 7.62 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "24C02" (at -5.08 5.08 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21709J.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "2Kb I2C Serial EEPROM, SOIC-8" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "24C02_0_1"
+			(rectangle (start -7.62 3.81) (end 7.62 -8.89) (stroke (width 0.254) (type solid)) (fill (type background)))
+		)
+		(symbol "24C02_1_1"
+			(pin input line (at -10.16 2.54 0) (length 2.54) (name "A0" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -10.16 0.0 0) (length 2.54) (name "A1" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -10.16 -2.54 0) (length 2.54) (name "A2" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at -10.16 -5.08 0) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at 10.16 -5.08 180) (length 2.54) (name "SDA" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin input line (at 10.16 -2.54 180) (length 2.54) (name "SCL" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+			(pin input line (at 10.16 0.0 180) (length 2.54) (name "WP" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at 10.16 2.54 180) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+		)
+	)
+    (symbol "Tape-Master:74HCT06_SOIC14"
+		(pin_names (offset 1.016))
+		(in_bom yes) (on_board yes)
+		(property "Reference" "U" (at -7.62 17.78 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "74HCT06" (at -7.62 15.24 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS06" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Hex Inverter with Open-Collector Outputs, SOIC-14" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "74HCT06_SOIC14_0_1"
+			(rectangle (start -10.16 13.97) (end 10.16 -13.97) (stroke (width 0.254) (type solid)) (fill (type background)))
+		)
+		(symbol "74HCT06_SOIC14_1_1"
+			(pin power_in line (at -12.7 12.7 0) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "14" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -12.7 8.89 0) (length 2.54) (name "1A" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin open_collector line (at 12.7 8.89 180) (length 2.54) (name "1Y" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -12.7 5.08 0) (length 2.54) (name "2A" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin open_collector line (at 12.7 5.08 180) (length 2.54) (name "2Y" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -12.7 1.27 0) (length 2.54) (name "3A" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin open_collector line (at 12.7 1.27 180) (length 2.54) (name "3Y" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at 12.7 -13.97 180) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+			(pin open_collector line (at 12.7 -2.54 180) (length 2.54) (name "4Y" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -12.7 -2.54 0) (length 2.54) (name "4A" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))
+			(pin open_collector line (at 12.7 -6.35 180) (length 2.54) (name "5Y" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -12.7 -6.35 0) (length 2.54) (name "5A" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27)))))
+			(pin open_collector line (at 12.7 -10.16 180) (length 2.54) (name "6Y" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -12.7 -10.16 0) (length 2.54) (name "6A" (effects (font (size 1.27 1.27)))) (number "13" (effects (font (size 1.27 1.27)))))
+		)
+	)
+    (symbol "Tape-Master:BAT54S"
+		(pin_names (offset 0) (hide yes))
+		(in_bom yes) (on_board yes)
+		(property "Reference" "D" (at 5.08 2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "BAT54S" (at 5.08 0 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds11005.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Dual Series Schottky Barrier Diodes, SOT-23" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "BAT54S_0_1"
+			(polyline (pts (xy -1.27 1.27) (xy -1.27 -1.27) (xy 1.27 0) (xy -1.27 1.27)) (stroke (width 0.254) (type solid)) (fill (type background)))
+			(polyline (pts (xy 1.27 -1.27) (xy 1.27 1.27)) (stroke (width 0.254) (type solid)))
+		)
+		(symbol "BAT54S_1_1"
+			(pin passive line (at -3.81 0 0) (length 2.54) (name "A1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 3.81 2.54 180) (length 2.54) (name "C2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 3.81 -2.54 180) (length 2.54) (name "C1A2" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+		)
+	)
+    (symbol "Tape-Master:USBLC6-2SC6"
+		(pin_names (offset 1.016))
+		(in_bom yes) (on_board yes)
+		(property "Reference" "D" (at -5.08 7.62 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "USBLC6-2SC6" (at -5.08 5.08 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Very Low Capacitance ESD Protection Array, SOT-23-6" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "USBLC6-2SC6_0_1"
+			(rectangle (start -6.35 3.81) (end 6.35 -6.35) (stroke (width 0.254) (type solid)) (fill (type background)))
+		)
+		(symbol "USBLC6-2SC6_1_1"
+			(pin passive line (at -8.89 2.54 0) (length 2.54) (name "I/O1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at -8.89 -2.54 0) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -8.89 -5.08 0) (length 2.54) (name "I/O2" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 8.89 -5.08 180) (length 2.54) (name "I/O2" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at 8.89 -2.54 180) (length 2.54) (name "VBUS" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 8.89 2.54 180) (length 2.54) (name "I/O1" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+		)
+	)
+    (symbol "Tape-Master:2N7002"
+		(pin_names (offset 0) (hide yes))
+		(in_bom yes) (on_board yes)
+		(property "Reference" "Q" (at 5.08 2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "2N7002" (at 5.08 0 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds11303.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "60V 115mA N-Channel MOSFET, SOT-23" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "2N7002_0_1"
+			(polyline (pts (xy 0.635 -2.54) (xy 0.635 2.54)) (stroke (width 0.254) (type solid)))
+			(polyline (pts (xy 1.27 1.905) (xy 2.54 1.905) (xy 2.54 2.54)) (stroke (width 0.254) (type solid)))
+			(polyline (pts (xy 1.27 -1.905) (xy 2.54 -1.905) (xy 2.54 -2.54)) (stroke (width 0.254) (type solid)))
+			(polyline (pts (xy 1.27 0) (xy 2.54 0) (xy 2.54 -1.905)) (stroke (width 0.254) (type solid)))
+		)
+		(symbol "2N7002_1_1"
+			(pin input line (at -2.54 0 0) (length 3.175) (name "G" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 2.54 -5.08 90) (length 2.54) (name "S" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 2.54 5.08 270) (length 2.54) (name "D" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+		)
+	)
+    (symbol "Tape-Master:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+    (symbol "Tape-Master:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+  )
+  (symbol (lib_id "Tape-Master:PWR_FLAG") (at 45.72 40.64 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "61c0e3ee-a007-46cd-b194-2ea2f70738fa")
+    (property "Reference" "#FLG_+5V_45_40" (at 45.72 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "PWR_FLAG" (at 45.72 43.18 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 45.72 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "6a52be32-89fc-438d-a400-2d66c320df98"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#FLG") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 45.72 40.64) (xy 45.72 38.10)) (stroke (width 0) (type default)) (uuid "aefbf43b-ce16-45d1-b632-385f561b62ff"))
+  (symbol (lib_id "Tape-Master:+5V") (at 45.72 38.10 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "61d1a414-3c40-406f-9019-eaab19432523")
+    (property "Reference" "#+5V_45_38" (at 45.72 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 45.72 40.64 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 45.72 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "4ee4ed53-9b1b-49e6-8dda-f729d8299926"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:PWR_FLAG") (at 60.96 40.64 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "2a9b7acd-c109-4e5f-b16a-dbf82522375f")
+    (property "Reference" "#FLG_+3V3_60_40" (at 60.96 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "PWR_FLAG" (at 60.96 43.18 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 60.96 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "02a40d23-ec8a-434c-ac28-d6da2426887b"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#FLG") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 60.96 40.64) (xy 60.96 38.10)) (stroke (width 0) (type default)) (uuid "b609bdf1-b338-496c-b41f-97ca815e1840"))
+  (symbol (lib_id "Tape-Master:+3V3") (at 60.96 38.10 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "71b2ecfa-302f-4b97-8f41-6539f54ff5e9")
+    (property "Reference" "#+3V3_60_38" (at 60.96 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+3V3" (at 60.96 40.64 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 60.96 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "ed0abafc-fed7-4a2a-ac12-7a02311a16aa"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#+3V3") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:PWR_FLAG") (at 76.20 40.64 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "7d068994-cea1-49f1-acd3-70280ef86e82")
+    (property "Reference" "#FLG_GND_76_40" (at 76.20 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "PWR_FLAG" (at 76.20 43.18 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 76.20 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "2d35728f-e3b6-419e-9258-c5c1eef0b3d1"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#FLG") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 76.20 40.64) (xy 76.20 38.10)) (stroke (width 0) (type default)) (uuid "61440e8c-06ff-4e9a-96b6-8273b82bfcd7"))
+  (symbol (lib_id "Tape-Master:GND") (at 76.20 38.10 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "d105ea68-3670-4dbf-a71c-b7355320acf1")
+    (property "Reference" "#GND_76_38" (at 76.20 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 76.20 40.64 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 76.20 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "9e8d7be2-d8c8-46da-a3f7-a0bb6705e3b3"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:PWR_FLAG") (at 91.44 40.64 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "16436518-8db5-4f20-a060-f1aae2c5d2f9")
+    (property "Reference" "#FLG_AGND_91_40" (at 91.44 38.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "PWR_FLAG" (at 91.44 43.18 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 91.44 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "7aac6bd4-fc76-49b1-ab36-579892e46119"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#FLG") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 91.44 40.64) (xy 91.44 38.10)) (stroke (width 0) (type default)) (uuid "31b9104e-ba3c-4bba-b61d-aba47d7a5e07"))
+  (label "AGND" (at 91.44 38.10 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "0b0aa26f-2524-47a6-9a94-8683d3990934"))
+  (symbol (lib_id "Tape-Master:Conn_02x20_Odd_Even") (at 101.60 114.30 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "11106188-9e0d-4b1b-9833-c870ecbe1cc4")
+    (property "Reference" "J1" (at 101.60 109.22 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "Cartridge_Bus_2x20" (at 101.60 119.38 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Tape-Master:PinSocket_2x20_P2.54mm_Horizontal_Cartridge" (at 101.60 114.30 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "253d05e9-a0ad-4f40-92de-f118ed0f7bd2"))
+    (pin "3" (uuid "7393425f-d609-4bc4-bf38-d4a83d95ee65"))
+    (pin "5" (uuid "63579d2e-c816-4cbc-be94-92818c33c125"))
+    (pin "7" (uuid "664acda1-30e8-41d7-89d5-2c6df7dc9748"))
+    (pin "9" (uuid "ff627a9b-06c3-4780-a915-eaeff6add787"))
+    (pin "11" (uuid "c6fa0a93-c6f2-48c4-96fc-ef853f4c8082"))
+    (pin "13" (uuid "65c5a15c-e06e-48d5-9f83-eec9a7e09cdd"))
+    (pin "15" (uuid "c9a0fe0b-ff80-4d01-9847-979cb3ef9af9"))
+    (pin "17" (uuid "4682bf0b-1ff4-4c22-b525-2ff8a7d862b3"))
+    (pin "19" (uuid "4d6f25bb-6296-489b-ad95-a39158cd961e"))
+    (pin "21" (uuid "3f49c21a-d14b-41d0-bf66-bc79b1fc176c"))
+    (pin "23" (uuid "320fd4cd-f11f-424f-996e-98b4cf19ab75"))
+    (pin "25" (uuid "d7e640a7-36b7-4a99-8b79-e72978c974a6"))
+    (pin "27" (uuid "e6cbcf82-6c13-46ea-af3c-20ee650591e3"))
+    (pin "29" (uuid "1153a903-98d8-4aed-b895-f1c8b1a3273f"))
+    (pin "31" (uuid "51517b45-c7f6-488f-832b-4f99fecc5769"))
+    (pin "33" (uuid "3d66c46b-463d-4ce9-aca6-77ba9cbc4764"))
+    (pin "35" (uuid "1cc0ac50-f6f2-49a1-a3a2-d69cb8c41964"))
+    (pin "37" (uuid "e7e69989-e4f9-44f9-b10e-47ac1537f3d2"))
+    (pin "39" (uuid "ad2926f0-bd8f-44f9-9391-6e16d78d3b4f"))
+    (pin "2" (uuid "79909337-3a1a-47c4-be40-5d3a72ec8ca4"))
+    (pin "4" (uuid "a10e19ba-81bc-4fb4-93ce-4972b0979b81"))
+    (pin "6" (uuid "d9415f2e-da15-4124-addc-ab494f19d4cc"))
+    (pin "8" (uuid "049cb600-1865-4833-a7af-b14a5ad040bf"))
+    (pin "10" (uuid "4f4d96b7-4469-46be-8637-93974223f75c"))
+    (pin "12" (uuid "a3a0891f-a6d2-4c05-8b66-431ee0ccce6f"))
+    (pin "14" (uuid "4e444085-525c-436f-995b-fa33146637bf"))
+    (pin "16" (uuid "e728d195-b8e2-4e9a-9603-f78e13afdf1a"))
+    (pin "18" (uuid "b144bd8d-ac6f-4b9a-b7ff-b740aacb62cf"))
+    (pin "20" (uuid "1337c331-6cde-4dfb-bd78-cc110c9d418d"))
+    (pin "22" (uuid "0261262c-eba6-4bd1-8c63-5c008af002a1"))
+    (pin "24" (uuid "12abc2b0-337b-4b42-852e-9dafe1f834de"))
+    (pin "26" (uuid "5791348c-a9b5-4500-a0e0-463f8f292dab"))
+    (pin "28" (uuid "68642d75-1204-4378-9b7c-55fcdcfd31ec"))
+    (pin "30" (uuid "d92029bb-7976-436e-8a8c-ccc90d71331c"))
+    (pin "32" (uuid "d9323ed4-c379-4f4a-8a00-22778400699a"))
+    (pin "34" (uuid "ed17c229-ff7e-4775-be92-2e278d7d42df"))
+    (pin "36" (uuid "81dd7d8c-f556-45c9-a1dc-359d8fb77e6e"))
+    (pin "38" (uuid "84157486-cde8-4353-9aeb-15502bc24970"))
+    (pin "40" (uuid "5d653902-2a80-43c8-9c69-ac82c6ee7e47"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "J1") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 96.52 91.44) (xy 88.90 91.44)) (stroke (width 0) (type default)) (uuid "a257de75-3c55-49e3-bbef-16f0a285a2d9"))
+  (label "+5V" (at 88.90 91.44 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "fd327b3c-d791-4634-ba07-d4a694381c83"))
+  (wire (pts (xy 109.22 91.44) (xy 116.84 91.44)) (stroke (width 0) (type default)) (uuid "453cbcb8-aef9-42ec-a211-6ffe9274badb"))
+  (label "+5V" (at 116.84 91.44 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "64598261-2298-4206-8c03-8ac4b0e62996"))
+  (wire (pts (xy 96.52 93.98) (xy 88.90 93.98)) (stroke (width 0) (type default)) (uuid "9f49832c-81e5-46d7-84b4-2cb41b22bbf2"))
+  (label "+3V3" (at 88.90 93.98 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "61adae17-26f5-4eb6-87c4-b2ff162a526e"))
+  (wire (pts (xy 109.22 93.98) (xy 116.84 93.98)) (stroke (width 0) (type default)) (uuid "871d83fc-9975-4c38-9506-7a0077eacdce"))
+  (label "+3V3" (at 116.84 93.98 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "20693287-a5a1-44df-a105-1687da43c630"))
+  (no_connect (at 96.52 96.52) (uuid "4b306850-73f8-494b-a9ef-496a4479142a"))
+  (wire (pts (xy 109.22 96.52) (xy 116.84 96.52)) (stroke (width 0) (type default)) (uuid "52b840dd-02ba-437a-ad58-d1d6a16e2d94"))
+  (label "GND" (at 116.84 96.52 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "a2c22297-aadf-4ae1-a64a-ca8f9b8fc45d"))
+  (wire (pts (xy 96.52 99.06) (xy 88.90 99.06)) (stroke (width 0) (type default)) (uuid "e4524ee6-843b-436a-89d2-4c56d838227b"))
+  (label "AGND" (at 88.90 99.06 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "8fbb196b-bec4-4922-856d-8a3a7d98f1f6"))
+  (wire (pts (xy 109.22 99.06) (xy 116.84 99.06)) (stroke (width 0) (type default)) (uuid "6b1b5017-a64a-4182-9296-47002c3e4717"))
+  (label "AUDIO_RAW_L" (at 116.84 99.06 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "daf3e767-35ca-49b3-b59c-40718377a340"))
+  (wire (pts (xy 96.52 101.60) (xy 88.90 101.60)) (stroke (width 0) (type default)) (uuid "aed51118-7d3f-4774-990c-f8001e0c856f"))
+  (label "AGND" (at 88.90 101.60 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "901f43df-95ab-4dde-b774-f5d3fd2890cd"))
+  (no_connect (at 109.22 101.60) (uuid "8ab5f53e-ec11-4c43-b64a-081065b8a02d"))
+  (wire (pts (xy 96.52 104.14) (xy 88.90 104.14)) (stroke (width 0) (type default)) (uuid "f15d4f42-0037-4aa4-b21f-8d1d808e194d"))
+  (label "AGND" (at 88.90 104.14 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "fe12810b-120e-4635-8679-71c4b0280304"))
+  (wire (pts (xy 109.22 104.14) (xy 116.84 104.14)) (stroke (width 0) (type default)) (uuid "455967a5-a60c-4fa8-8121-5dd0b7a42fdd"))
+  (label "AUDIO_DAC_L" (at 116.84 104.14 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "5153bc6e-9f5b-47ba-84eb-9dceb5058458"))
+  (wire (pts (xy 96.52 106.68) (xy 88.90 106.68)) (stroke (width 0) (type default)) (uuid "4bc766da-bd7e-4977-8201-d66ef945801b"))
+  (label "AGND" (at 88.90 106.68 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "12115910-cc4c-46f3-85e5-6b4d7ea2337d"))
+  (no_connect (at 109.22 106.68) (uuid "2d42f98c-293d-4237-ab76-017956e6c9ad"))
+  (wire (pts (xy 96.52 109.22) (xy 88.90 109.22)) (stroke (width 0) (type default)) (uuid "5d21a44a-3a38-48af-9e50-865797c03587"))
+  (label "GND" (at 88.90 109.22 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "f914ac1a-dd14-4caf-a718-e29d669c8e62"))
+  (wire (pts (xy 109.22 109.22) (xy 116.84 109.22)) (stroke (width 0) (type default)) (uuid "842cf8fe-9ee0-431b-b254-a9f14138387a"))
+  (label "TAPE_EMU_OUT" (at 116.84 109.22 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "3fbdca43-f162-4923-beed-c77d493be415"))
+  (wire (pts (xy 96.52 111.76) (xy 88.90 111.76)) (stroke (width 0) (type default)) (uuid "d54fc235-8b85-436d-a7ce-4b1a61f98931"))
+  (label "TAPE_REC_IN" (at 88.90 111.76 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "4160f276-21bb-4f0d-bd35-6f2ea80d066f"))
+  (wire (pts (xy 109.22 111.76) (xy 116.84 111.76)) (stroke (width 0) (type default)) (uuid "3e0aa39d-a93b-46bb-9288-0f3fda0efc88"))
+  (label "MOTOR_SENSE" (at 116.84 111.76 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "5da92948-3c1b-413f-8af4-93cc483f3d1b"))
+  (wire (pts (xy 96.52 114.30) (xy 88.90 114.30)) (stroke (width 0) (type default)) (uuid "1510d7dd-e497-4ad2-b268-7155d6623fc4"))
+  (label "MOTOR_CTRL" (at 88.90 114.30 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "4de6f3fb-554e-4e18-a10a-7b36f4a6ac8e"))
+  (no_connect (at 109.22 114.30) (uuid "9dc87415-d910-4bd8-a73f-5b4530d5fc86"))
+  (no_connect (at 96.52 116.84) (uuid "5348cbc8-47cf-4dc1-860b-ef014e746af6"))
+  (no_connect (at 109.22 116.84) (uuid "4367ab96-e928-4862-92d0-5b23314c8544"))
+  (wire (pts (xy 96.52 119.38) (xy 88.90 119.38)) (stroke (width 0) (type default)) (uuid "cceb58c2-ddbc-442c-a78f-5713db1bc6da"))
+  (label "GND" (at 88.90 119.38 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "43023f7b-676c-4517-b96a-03d71b1285bd"))
+  (wire (pts (xy 109.22 119.38) (xy 116.84 119.38)) (stroke (width 0) (type default)) (uuid "f8333f45-8b63-4f1d-b117-c12c7db2c6d4"))
+  (label "I2C_SCL" (at 116.84 119.38 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "7bd80672-d99f-4ebf-bbf9-bc485db74afb"))
+  (wire (pts (xy 96.52 121.92) (xy 88.90 121.92)) (stroke (width 0) (type default)) (uuid "01e69864-251c-4742-9881-d155308609c2"))
+  (label "I2C_SDA" (at 88.90 121.92 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "dd3ba30e-0488-460d-a9cf-1b1be779708f"))
+  (wire (pts (xy 109.22 121.92) (xy 116.84 121.92)) (stroke (width 0) (type default)) (uuid "b9f5f910-5dd9-43b3-8d65-0957ef95a870"))
+  (label "GND" (at 116.84 121.92 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "96906f31-22dc-43b9-8117-268f6a26ce26"))
+  (no_connect (at 96.52 124.46) (uuid "4f7e1978-3ea6-455c-a91a-a252df4ef732"))
+  (no_connect (at 109.22 124.46) (uuid "c4ed9f42-4b55-421a-aec4-2800de7c9420"))
+  (no_connect (at 96.52 127.00) (uuid "51e97e9a-dfa7-4e8b-a426-a86eec223a20"))
+  (no_connect (at 109.22 127.00) (uuid "fb2da013-b380-4e67-a8e8-e74ed6b97fc5"))
+  (no_connect (at 96.52 129.54) (uuid "b822b31b-ab4c-4d84-a694-3d7dcdb29427"))
+  (no_connect (at 109.22 129.54) (uuid "0a8df67e-40df-4821-bd73-6cd74d6996a1"))
+  (no_connect (at 96.52 132.08) (uuid "c06628e6-e75f-4d04-abbe-16e6d784300e"))
+  (no_connect (at 109.22 132.08) (uuid "167b3754-e34c-4e68-9a68-a4810a764c53"))
+  (no_connect (at 96.52 134.62) (uuid "2dcc106e-c1ca-421f-b9c7-9a0e20179bdb"))
+  (no_connect (at 109.22 134.62) (uuid "b2e9eb02-02b6-45a8-bae6-ae0526fbceb0"))
+  (no_connect (at 96.52 137.16) (uuid "7f03dbf7-b730-477d-8322-8f4fe359ff79"))
+  (no_connect (at 109.22 137.16) (uuid "474e0dd2-cff1-4676-869a-5f25ccc2f42b"))
+  (no_connect (at 96.52 139.70) (uuid "0005beb3-f03c-430f-bc96-1022a16f373d"))
+  (wire (pts (xy 109.22 139.70) (xy 116.84 139.70)) (stroke (width 0) (type default)) (uuid "d2630cfb-352d-4872-a4a2-988e4fc4b1ef"))
+  (label "GND" (at 116.84 139.70 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "19930dce-96f5-47b2-9328-5c0c37801d13"))
+  (symbol (lib_id "Tape-Master:DIN-5_180degree") (at 101.60 190.50 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "8ffa2663-f68f-4203-a6a8-5ea822cf5fe0")
+    (property "Reference" "J2" (at 101.60 185.42 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "CoCo_Dragon_DIN5" (at 101.60 195.58 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Tape-Master:DIN-5_180_Horizontal_CUI_SDS-50J" (at 101.60 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "4" (uuid "009e967d-950f-427d-b3c3-09310c4f0905"))
+    (pin "1" (uuid "75802143-29e5-475d-8ee9-638f81fa2ff9"))
+    (pin "2" (uuid "d201fb68-047f-4bd7-b9aa-97811430c963"))
+    (pin "5" (uuid "6bd2ef85-d462-42ac-84b5-4aa68073e120"))
+    (pin "3" (uuid "9a183a81-fbb2-41ca-be1a-5006a6dfe4c7"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "J2") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 93.98 190.50) (xy 86.36 190.50)) (stroke (width 0) (type default)) (uuid "55773949-e6e8-4bc8-9baa-05b5f48bb53a"))
+  (label "GND" (at 86.36 190.50 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "db474178-be67-45e1-bbd2-bbc9f4c71835"))
+  (wire (pts (xy 101.60 182.88) (xy 93.98 182.88)) (stroke (width 0) (type default)) (uuid "c40b4308-e66a-40cd-b39e-d9ffb48f0fdb"))
+  (label "GND" (at 93.98 182.88 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "9e83b4a7-df0b-460e-a6bf-0645e442d62c"))
+  (wire (pts (xy 109.22 190.50) (xy 101.60 190.50)) (stroke (width 0) (type default)) (uuid "86a81b04-2506-435d-9781-8604ee4a2acc"))
+  (label "COCO_REM_B" (at 101.60 190.50 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "8ee10158-ab8a-4e1a-889f-b64390d4316c"))
+  (wire (pts (xy 93.98 187.96) (xy 101.60 187.96)) (stroke (width 0) (type default)) (uuid "3209e9ce-bdd2-43c4-82e4-993ab73e7582"))
+  (label "COCO_READ" (at 101.60 187.96 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "1bb86d3b-da17-42f2-8f69-67e4f26883a4"))
+  (wire (pts (xy 109.22 187.96) (xy 116.84 187.96)) (stroke (width 0) (type default)) (uuid "5a856551-adef-418b-83d4-ef3f851203e4"))
+  (label "COCO_WRITE" (at 116.84 187.96 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "ed733408-1b63-411d-8ea2-b0ffdfbc2572"))
+  (symbol (lib_id "Tape-Master:Conn_01x06") (at 45.72 114.30 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "892d4480-09bd-4bc0-9dec-ef2f06b5a027")
+    (property "Reference" "J3" (at 45.72 109.22 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "Breakout_CoCo" (at 45.72 119.38 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" (at 45.72 114.30 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "53bdfc2c-479e-4f35-8328-a319d127798a"))
+    (pin "2" (uuid "f67bedc8-581b-4c41-b220-2e6d9e5ed181"))
+    (pin "3" (uuid "0bf3b703-fc00-469b-8274-80b6cf919ddd"))
+    (pin "4" (uuid "6de4b82d-550d-472f-a2ad-47f7ede08ce7"))
+    (pin "5" (uuid "54a4fa50-ee07-4055-a58f-d611352e3ae2"))
+    (pin "6" (uuid "0efd7bef-1686-4279-aa4f-00f738d88578"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "J3") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 40.64 109.22) (xy 33.02 109.22)) (stroke (width 0) (type default)) (uuid "cb286a40-bb44-47ba-b0e2-e2e711bced4d"))
+  (label "GND" (at 33.02 109.22 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "bf60df5c-fdcd-4ba8-bf98-54b50ffaa37e"))
+  (wire (pts (xy 40.64 111.76) (xy 33.02 111.76)) (stroke (width 0) (type default)) (uuid "1efe45b0-9018-4047-8ee4-69d94a7e862a"))
+  (label "+5V" (at 33.02 111.76 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "26a02a99-369b-4605-9f0e-20e81588573d"))
+  (wire (pts (xy 40.64 114.30) (xy 33.02 114.30)) (stroke (width 0) (type default)) (uuid "41802f75-123e-46ef-97f5-55b6a4c77110"))
+  (label "GND" (at 33.02 114.30 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "57ca91b6-c5ce-41b7-a024-b19c87d6e8a6"))
+  (wire (pts (xy 40.64 116.84) (xy 33.02 116.84)) (stroke (width 0) (type default)) (uuid "0f65c244-fb94-4aa6-88a9-f9622dd9fd6b"))
+  (label "COCO_REM_B" (at 33.02 116.84 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "79ec1317-296c-495b-b4d7-b878ba717f7e"))
+  (wire (pts (xy 40.64 119.38) (xy 33.02 119.38)) (stroke (width 0) (type default)) (uuid "b9ba18c5-1f8a-4f5a-a423-b26f378ee7aa"))
+  (label "COCO_READ" (at 33.02 119.38 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "6075a439-08dd-4881-82ba-efda8529b794"))
+  (wire (pts (xy 40.64 121.92) (xy 33.02 121.92)) (stroke (width 0) (type default)) (uuid "1cd663aa-7e52-4882-8519-8b2ed37795e0"))
+  (label "COCO_WRITE" (at 33.02 121.92 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "a2ff3427-65ed-4470-b498-20a1db5e7d0d"))
+  (symbol (lib_id "Tape-Master:24C02") (at 180.34 63.50 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "6fd2990d-2fef-42f6-a92a-efbd0a556253")
+    (property "Reference" "U1" (at 180.34 58.42 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "24C02" (at 180.34 68.58 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 180.34 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "b11d7edc-80dd-446a-a4cb-12756bd1b233"))
+    (pin "2" (uuid "3c17c1e3-ff66-46f0-be24-0cf0bf225fb1"))
+    (pin "3" (uuid "c84c4589-3fbc-4165-99cf-ae6b8ab6a784"))
+    (pin "4" (uuid "4b07cfe0-f52b-48c9-b674-deddc382aba8"))
+    (pin "5" (uuid "b646502e-eba5-4d66-bc93-d0f65ad53911"))
+    (pin "6" (uuid "420b2574-da3c-4255-a379-75e9a8e7a674"))
+    (pin "7" (uuid "688100d7-1987-4a5e-81b3-79865a2a6e44"))
+    (pin "8" (uuid "26079c88-19a4-459b-a41a-c0be8cff0f32"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "U1") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 170.18 60.96) (xy 162.56 60.96)) (stroke (width 0) (type default)) (uuid "634e36a3-8bae-4b4a-92da-c7692904cf3c"))
+  (label "GND" (at 162.56 60.96 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "32eb94c2-f036-4d5c-90ad-1de8f134c0f9"))
+  (wire (pts (xy 170.18 63.50) (xy 162.56 63.50)) (stroke (width 0) (type default)) (uuid "4e6f6a49-7bac-441f-a385-f4175ab1de5f"))
+  (label "GND" (at 162.56 63.50 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "aac71cc7-8c69-41a0-8782-579e6a383370"))
+  (wire (pts (xy 170.18 66.04) (xy 162.56 66.04)) (stroke (width 0) (type default)) (uuid "24ba8811-725c-4b34-b798-274208bdfe59"))
+  (label "GND" (at 162.56 66.04 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "c2908323-bd96-4862-bce8-02a63794dbeb"))
+  (wire (pts (xy 170.18 68.58) (xy 162.56 68.58)) (stroke (width 0) (type default)) (uuid "cafb1d82-db0d-4c04-b733-b69c9771ed24"))
+  (label "GND" (at 162.56 68.58 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "ea42302a-f369-4a77-8f1a-8f0c0c54fa3c"))
+  (wire (pts (xy 190.50 68.58) (xy 198.12 68.58)) (stroke (width 0) (type default)) (uuid "0d5f1297-2a22-406e-8d5f-fe06e71c5ade"))
+  (label "I2C_SDA" (at 198.12 68.58 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "81782d8b-80b7-4b1d-9837-bf4ee8ab3cdf"))
+  (wire (pts (xy 190.50 66.04) (xy 198.12 66.04)) (stroke (width 0) (type default)) (uuid "32221662-33c5-428a-8bab-cb595484f49a"))
+  (label "I2C_SCL" (at 198.12 66.04 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "9a855edb-cbfa-47e5-84e3-80ae7645a3dd"))
+  (wire (pts (xy 190.50 63.50) (xy 198.12 63.50)) (stroke (width 0) (type default)) (uuid "04619cc5-1bb2-4e28-9ad9-2a5aeb4d60dc"))
+  (label "GND" (at 198.12 63.50 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "3ef81087-94e8-46ae-bd1a-0692b4a68687"))
+  (wire (pts (xy 190.50 60.96) (xy 198.12 60.96)) (stroke (width 0) (type default)) (uuid "a4b69f61-464e-4d72-9b60-c137d36a2ca3"))
+  (label "+3V3" (at 198.12 60.96 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "377f966b-ccb0-4720-b413-a3d81e57d99b"))
+  (symbol (lib_id "Tape-Master:C") (at 205.74 63.50 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "1919ad41-c7a7-4e53-a285-5fbd82b0e5a2")
+    (property "Reference" "C1" (at 205.74 58.42 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100nF" (at 205.74 68.58 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 205.74 63.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "ae35e6e6-e9b4-4e8b-8049-742f654feed3"))
+    (pin "2" (uuid "f59d54e4-9379-4a3a-8cc3-a7f48c3810d5"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "C1") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 205.74 59.69) (xy 205.74 54.61)) (stroke (width 0) (type default)) (uuid "1963a7ba-ca3c-4a1a-b8a8-f80ca50225e6"))
+  (symbol (lib_id "Tape-Master:+3V3") (at 205.74 54.61 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "056ea9e1-f6c0-48c5-8399-a796918467a3")
+    (property "Reference" "#+3V3_205_54" (at 205.74 54.61 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+3V3" (at 205.74 57.15 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 205.74 54.61 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "4395be8d-530a-4459-95ab-2de285491c31"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#+3V3") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 205.74 67.31) (xy 205.74 72.39)) (stroke (width 0) (type default)) (uuid "a5a62f2e-fc23-4b91-8051-be8350849cdd"))
+  (symbol (lib_id "Tape-Master:GND") (at 205.74 72.39 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "4041003a-f245-4189-9ff4-fa683a0b68ca")
+    (property "Reference" "#GND_205_72" (at 205.74 72.39 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 205.74 74.93 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 205.74 72.39 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "6f44505b-aff1-4bf7-aecc-3ffd6e09d99c"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:74HCT06_SOIC14") (at 177.80 114.30 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b2b13a78-ecd6-4a1b-a055-d281094e7520")
+    (property "Reference" "U2" (at 177.80 109.22 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "74HCT06" (at 177.80 119.38 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" (at 177.80 114.30 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "14" (uuid "93b8afa9-ba70-4157-bc31-931a3583fe01"))
+    (pin "1" (uuid "693ce7e0-fb3b-41fe-aab7-250ccc2f279b"))
+    (pin "2" (uuid "77d0e49f-d4a6-4fdf-a9bd-63dbc9b00772"))
+    (pin "3" (uuid "215bf709-4e5a-48ed-8687-4764546fcd17"))
+    (pin "4" (uuid "d6c7b208-4618-4345-86e4-aaf09f2b3710"))
+    (pin "5" (uuid "d0f6b4c4-a0f2-4140-b675-43653f99980f"))
+    (pin "6" (uuid "9511aee2-1585-4ade-86c4-60da28be7935"))
+    (pin "7" (uuid "aa89076a-cacc-4f6e-8f40-b7595298bc9f"))
+    (pin "8" (uuid "fad72114-2855-4aa9-8a1b-e525cf367667"))
+    (pin "9" (uuid "5c559eb6-938e-401e-aec3-899ea0163aa7"))
+    (pin "10" (uuid "0904d18d-cc50-4daa-a782-8c494b67a23d"))
+    (pin "11" (uuid "05e04f9f-cda8-4bdd-a6e9-6c1450247c16"))
+    (pin "12" (uuid "af4d21e1-c15e-4298-86e7-5c5ae8f92a20"))
+    (pin "13" (uuid "4c81b10d-9ac8-4397-b27d-11bfb6b08409"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "U2") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 165.10 101.60) (xy 160.02 101.60)) (stroke (width 0) (type default)) (uuid "88e914c2-2316-4e6e-b39f-d27b44f6d9c8"))
+  (symbol (lib_id "Tape-Master:+5V") (at 160.02 101.60 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "6c44711d-f20b-4e28-8497-dd67c35141b9")
+    (property "Reference" "#+5V_160_101" (at 160.02 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 160.02 104.14 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 160.02 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "425fd4be-0420-4441-9793-ecb97a446fc9"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 190.50 128.27) (xy 195.58 128.27)) (stroke (width 0) (type default)) (uuid "4d292afc-8e5b-4eba-b2f8-146a5c06dfd9"))
+  (symbol (lib_id "Tape-Master:GND") (at 195.58 128.27 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b2c25e44-d3f9-47d2-b2c8-7006514867fd")
+    (property "Reference" "#GND_195_128" (at 195.58 128.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 195.58 130.81 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 195.58 128.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "5e82b713-6be2-4687-bf7b-0e3b202bf3ce"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 152.40 88.90 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "ff5de94c-4015-47b6-9fb7-75604d48ff6f")
+    (property "Reference" "C2" (at 152.40 83.82 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100nF" (at 152.40 93.98 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 152.40 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "30a251ac-b3db-4627-8120-68d83549e4a4"))
+    (pin "2" (uuid "45a52fc7-09df-4e90-8de4-64f6d24e7a4a"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "C2") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 152.40 85.09) (xy 152.40 80.01)) (stroke (width 0) (type default)) (uuid "4358bb75-91db-436c-bd11-8f835a1efa16"))
+  (symbol (lib_id "Tape-Master:+5V") (at 152.40 80.01 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "e1c8c991-4d0e-45f5-8caf-59491f8537a5")
+    (property "Reference" "#+5V_152_80" (at 152.40 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 152.40 82.55 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 152.40 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "2bfea865-494a-4fa6-83fc-920413b93ca2"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 152.40 92.71) (xy 152.40 97.79)) (stroke (width 0) (type default)) (uuid "6bf18ec1-2762-4470-91a3-61880941614b"))
+  (symbol (lib_id "Tape-Master:GND") (at 152.40 97.79 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "da31a356-b074-4283-a115-71e569450ab9")
+    (property "Reference" "#GND_152_97" (at 152.40 97.79 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 152.40 100.33 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 152.40 97.79 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "3bdff888-51fe-4ae1-b222-80921050685e"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 165.10 105.41) (xy 157.48 105.41)) (stroke (width 0) (type default)) (uuid "a851f4cb-7138-4f9a-ab98-5f53b6d62595"))
+  (label "TAPE_EMU_OUT" (at 157.48 105.41 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "3470df95-59c3-4e43-b0e9-a7b719039253"))
+  (wire (pts (xy 190.50 105.41) (xy 195.58 105.41)) (stroke (width 0) (type default)) (uuid "a364b408-eda2-4ddc-a2de-162da388858c"))
+  (label "U2_1Y" (at 195.58 105.41 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "c711a1e3-f0ef-4c76-84bc-fbb871a3cbbc"))
+  (wire (pts (xy 165.10 109.22) (xy 157.48 109.22)) (stroke (width 0) (type default)) (uuid "a538e74d-6374-454f-989d-c8000d754d30"))
+  (label "U2_1Y" (at 157.48 109.22 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "31442112-ba95-4c33-b0a2-6ed1fa996696"))
+  (wire (pts (xy 190.50 109.22) (xy 195.58 109.22)) (stroke (width 0) (type default)) (uuid "bc6a4962-d5a8-4cf0-97df-a528c222cc00"))
+  (label "READ_BUF_OUT" (at 195.58 109.22 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "335d136a-e1f3-4577-88c3-40463a4345e0"))
+  (symbol (lib_id "Tape-Master:R") (at 210.82 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b0a04b81-970f-4ec8-8394-95dc38ab042f")
+    (property "Reference" "R7" (at 210.82 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "4.7k" (at 210.82 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 210.82 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "1922b946-a536-4396-bad6-5023e12de45d"))
+    (pin "2" (uuid "1c636ee2-0ec9-49ab-9fa7-2663412dd5dd"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "R7") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 210.82 97.79) (xy 210.82 92.71)) (stroke (width 0) (type default)) (uuid "76310176-af33-40fb-834c-04a490a9c05f"))
+  (symbol (lib_id "Tape-Master:+5V") (at 210.82 92.71 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "df93b213-764b-4480-b0f8-8dec81e6e003")
+    (property "Reference" "#+5V_210_92" (at 210.82 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 210.82 95.25 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 210.82 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "aa050dec-ec3a-42e9-a390-c9f458f82aa4"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 210.82 105.41) (xy 210.82 110.49)) (stroke (width 0) (type default)) (uuid "bbdd4383-0e9f-4171-994c-7c00a290e7a0"))
+  (label "U2_1Y" (at 210.82 110.49 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "00e08c00-804b-40af-a17d-da19d333c273"))
+  (symbol (lib_id "Tape-Master:R") (at 223.52 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "54cc9478-50c4-4709-950d-1b4ddb1dd8cd")
+    (property "Reference" "R8" (at 223.52 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "4.7k" (at 223.52 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 223.52 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "075201d5-8b1a-4501-b1b8-0243ed4628c2"))
+    (pin "2" (uuid "cab67789-8534-45f0-91a8-b268bde485e2"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "R8") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 223.52 97.79) (xy 223.52 92.71)) (stroke (width 0) (type default)) (uuid "5e45d7cc-b3d4-4c4a-9637-da03a8857bff"))
+  (symbol (lib_id "Tape-Master:+5V") (at 223.52 92.71 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "21e9699c-e5b4-4a2d-9bda-4d6118168667")
+    (property "Reference" "#+5V_223_92" (at 223.52 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 223.52 95.25 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 223.52 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "7372d0f3-8fa7-4a05-bc86-13d5f2a8b5ba"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 223.52 105.41) (xy 223.52 110.49)) (stroke (width 0) (type default)) (uuid "571b2d98-68f4-4e06-8dc9-af88eae4d78a"))
+  (label "READ_BUF_OUT" (at 223.52 110.49 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "3b2a8783-6499-4206-afa7-00fd3a107f8c"))
+  (wire (pts (xy 165.10 113.03) (xy 160.02 113.03)) (stroke (width 0) (type default)) (uuid "0ed7f2fe-dd5a-4e34-a1ab-7b1130af4070"))
+  (symbol (lib_id "Tape-Master:GND") (at 160.02 113.03 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "946a3d9a-5b50-44ed-a6fb-c2b5f2b9b74c")
+    (property "Reference" "#GND_160_113" (at 160.02 113.03 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 160.02 115.57 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 160.02 113.03 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "ee6d9c2c-f2d9-4e30-ac0c-8738c673b4aa"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 165.10 116.84) (xy 160.02 116.84)) (stroke (width 0) (type default)) (uuid "5099c8f2-783b-40e4-89a5-b6bdf54ceb90"))
+  (symbol (lib_id "Tape-Master:GND") (at 160.02 116.84 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c3ad2599-74c5-410b-a294-e022f884149a")
+    (property "Reference" "#GND_160_116" (at 160.02 116.84 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 160.02 119.38 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 160.02 116.84 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "c2dc5c5b-7a55-428d-8ca1-b9a09ca9d959"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 165.10 120.65) (xy 160.02 120.65)) (stroke (width 0) (type default)) (uuid "c73cf90c-fc8b-4a12-9924-b29122e0a7ef"))
+  (symbol (lib_id "Tape-Master:GND") (at 160.02 120.65 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "86a966e1-c429-4b98-9ee9-9444d7578705")
+    (property "Reference" "#GND_160_120" (at 160.02 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 160.02 123.19 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 160.02 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "13df1758-32c4-482a-a748-327006048233"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 165.10 124.46) (xy 160.02 124.46)) (stroke (width 0) (type default)) (uuid "9879e23b-5d01-438f-82fa-4d128e4ee56a"))
+  (symbol (lib_id "Tape-Master:GND") (at 160.02 124.46 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "de11d229-b430-49f7-9de9-9b678e2743b6")
+    (property "Reference" "#GND_160_124" (at 160.02 124.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 160.02 127.00 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 160.02 124.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "608ef032-7d8b-4269-8c18-ce2805861846"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (no_connect (at 190.50 113.03) (uuid "16fae18c-a2b2-4867-a66f-0c4833008ef3"))
+  (no_connect (at 190.50 116.84) (uuid "2c7f9957-d9b7-4573-9d5b-03debcffb196"))
+  (no_connect (at 190.50 120.65) (uuid "ab7623fa-647d-48ca-a5f8-a7498c58ad1c"))
+  (no_connect (at 190.50 124.46) (uuid "af859104-5bfe-4d21-b863-533d4075a9ff"))
+  (symbol (lib_id "Tape-Master:R") (at 241.30 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "41e33ee3-610a-4462-8598-8d72743caba4")
+    (property "Reference" "R9" (at 241.30 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1k" (at 241.30 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 241.30 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "22a80a54-4335-49a5-8d8e-489d344c8ecf"))
+    (pin "2" (uuid "c5e77fce-681b-4a34-b4af-15f0d5cfe561"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "R9") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 241.30 97.79) (xy 241.30 92.71)) (stroke (width 0) (type default)) (uuid "41986f64-3b9e-4748-8118-cb13a114dd08"))
+  (label "READ_BUF_OUT" (at 241.30 92.71 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "0e3ed033-433d-45d3-bbcf-951bdae4d7b8"))
+  (wire (pts (xy 241.30 105.41) (xy 241.30 110.49)) (stroke (width 0) (type default)) (uuid "6b1f9612-a7db-49fe-a061-34469505b798"))
+  (label "READ_MID" (at 241.30 110.49 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "3ab50cec-fdc2-40b2-8b3d-b204ed2b8be6"))
+  (symbol (lib_id "Tape-Master:C") (at 254.00 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "7f4052c9-2ce7-4e7d-b162-2e55e63dbf30")
+    (property "Reference" "C3" (at 254.00 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "4.7uF" (at 254.00 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 254.00 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "59573dfd-095e-4472-a5dc-57293c4924df"))
+    (pin "2" (uuid "bf698d1b-f913-4562-b18d-63b9c4681b21"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "C3") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 254.00 97.79) (xy 254.00 92.71)) (stroke (width 0) (type default)) (uuid "31c634ee-3425-41af-b2f2-44ed4e330fd1"))
+  (label "READ_MID" (at 254.00 92.71 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "6722d1fe-0ffb-4628-ab07-be751526ecbf"))
+  (wire (pts (xy 254.00 105.41) (xy 254.00 110.49)) (stroke (width 0) (type default)) (uuid "140953c1-ed12-403b-948c-971f7b19728a"))
+  (label "COCO_READ" (at 254.00 110.49 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "9daad20f-3802-4a36-a973-a97c2e49d140"))
+  (symbol (lib_id "Tape-Master:R") (at 266.70 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "1065d0ea-a66f-4d98-ba08-cd1963438a27")
+    (property "Reference" "R10" (at 266.70 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10k" (at 266.70 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 266.70 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "500b5524-7cfe-4396-b2de-f4cd15440d48"))
+    (pin "2" (uuid "0622d2b5-f3d6-4e45-8b75-47d464c12902"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "R10") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 266.70 97.79) (xy 266.70 92.71)) (stroke (width 0) (type default)) (uuid "1fcb58e2-f2ea-4936-90b6-b0e3efec1320"))
+  (label "COCO_READ" (at 266.70 92.71 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "d9450aaf-0124-499a-ac9a-e2ec41ca0f20"))
+  (wire (pts (xy 266.70 105.41) (xy 266.70 110.49)) (stroke (width 0) (type default)) (uuid "50e06c9a-3edb-4c14-a3f8-fb1f4f7563ed"))
+  (symbol (lib_id "Tape-Master:GND") (at 266.70 110.49 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "7a477e8b-f63d-46ae-90d7-3e7a9373c5b8")
+    (property "Reference" "#GND_266_110" (at 266.70 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 266.70 113.03 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 266.70 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "b6771591-c777-48c6-8caa-1323e12bb8c3"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:C") (at 279.40 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "95293133-209f-4a7a-8530-8a60bb4ad254")
+    (property "Reference" "C6" (at 279.40 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "4.7uF" (at 279.40 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 279.40 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "35617359-c5ae-4216-a3d5-a922a2244c6c"))
+    (pin "2" (uuid "6ea310ce-0e86-41f8-95e3-5ee4ad78620c"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "C6") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 279.40 97.79) (xy 279.40 92.71)) (stroke (width 0) (type default)) (uuid "597a1289-7c29-49f8-9eb1-6f2679e0f7a8"))
+  (label "AUDIO_DAC_L" (at 279.40 92.71 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b30fa261-8697-4398-8dae-e5f817c79580"))
+  (wire (pts (xy 279.40 105.41) (xy 279.40 110.49)) (stroke (width 0) (type default)) (uuid "9fe7fcc7-3bd8-490e-81cc-4177b525731f"))
+  (label "DAC_MID" (at 279.40 110.49 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "68db17f3-c38b-4186-86ed-be6ff352c147"))
+  (symbol (lib_id "Tape-Master:R") (at 292.10 101.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "9a3c3c5a-fa50-49b0-a41c-3c5c814175e1")
+    (property "Reference" "R6" (at 292.10 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "2.2k" (at 292.10 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 292.10 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "7668b44e-6f18-4c40-8607-9759b564119b"))
+    (pin "2" (uuid "fb0e740d-2e71-4b75-8639-cfed57a74cd1"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "R6") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 292.10 97.79) (xy 292.10 92.71)) (stroke (width 0) (type default)) (uuid "ed64b18d-fc52-4282-ac8b-d9c95cf81fec"))
+  (label "DAC_MID" (at 292.10 92.71 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "7f21619e-3b07-4bd7-a53b-3de99fa37b0f"))
+  (wire (pts (xy 292.10 105.41) (xy 292.10 110.49)) (stroke (width 0) (type default)) (uuid "2684848f-2be2-4bf2-bbef-300e475e72da"))
+  (label "COCO_READ" (at 292.10 110.49 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "43a25cb3-5250-4579-8780-1c72c4dcf351"))
+  (symbol (lib_id "Tape-Master:R") (at 152.40 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b42aa094-6a94-462f-810c-b7357df4c2b5")
+    (property "Reference" "R1" (at 152.40 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "2.2k" (at 152.40 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 152.40 160.02 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "338be27d-9c4c-4110-9ed5-cfbf1cac2911"))
+    (pin "2" (uuid "b59671cf-f36c-4acd-bea7-4c874af79771"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "R1") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 152.40 156.21) (xy 152.40 151.13)) (stroke (width 0) (type default)) (uuid "34b41dff-7cd3-45ba-847b-79f21a5549e8"))
+  (label "COCO_WRITE" (at 152.40 151.13 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "96100c89-1de4-40e0-bc79-901bac14bcef"))
+  (wire (pts (xy 152.40 163.83) (xy 152.40 168.91)) (stroke (width 0) (type default)) (uuid "72aeef7a-1ef6-42e5-b900-aaa8c8f83b9f"))
+  (label "TAPE_REC_IN" (at 152.40 168.91 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "c81ab1b7-7487-47fd-894e-b545cb1641f1"))
+  (symbol (lib_id "Tape-Master:R") (at 165.10 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "a590bb67-e93e-4ca7-a0de-f86a724222b7")
+    (property "Reference" "R2" (at 165.10 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "3.3k" (at 165.10 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 165.10 160.02 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "f1514a85-bd62-446b-bd67-5d515dfbba0f"))
+    (pin "2" (uuid "a021172e-05f8-4b27-830f-4e0a76ff0172"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "R2") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 165.10 156.21) (xy 165.10 151.13)) (stroke (width 0) (type default)) (uuid "bccd4508-aba3-481b-9c79-d2ecdb5b7d49"))
+  (label "TAPE_REC_IN" (at 165.10 151.13 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "3f98a1d0-39e6-4a23-be7f-93026467b665"))
+  (wire (pts (xy 165.10 163.83) (xy 165.10 168.91)) (stroke (width 0) (type default)) (uuid "a7ed0df8-92a0-4b66-8287-c27c55c25219"))
+  (symbol (lib_id "Tape-Master:GND") (at 165.10 168.91 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "7048e478-10da-45d4-a201-7cbc2df3ab1e")
+    (property "Reference" "#GND_165_168" (at 165.10 168.91 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 165.10 171.45 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 165.10 168.91 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "cfe3c854-c11f-4c9b-b149-2d54886a2767"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:BAT54S") (at 180.34 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "1e06f41e-501e-4286-9b77-106a92d453ae")
+    (property "Reference" "D1" (at 180.34 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "BAT54S" (at 180.34 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 180.34 160.02 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "079e90bb-c840-45da-8bb6-02925ce90742"))
+    (pin "2" (uuid "9bd46eea-f172-43fd-a9e0-1fab48c5e813"))
+    (pin "3" (uuid "3daafb57-d604-4662-91b9-e38e57b7d03a"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "D1") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 176.53 160.02) (xy 176.53 165.10)) (stroke (width 0) (type default)) (uuid "7357e3c5-2556-4454-b2cb-6d5c39c07024"))
+  (symbol (lib_id "Tape-Master:GND") (at 176.53 165.10 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "22a7463d-40c3-452c-9cad-f1293dd6e496")
+    (property "Reference" "#GND_176_165" (at 176.53 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 176.53 167.64 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 176.53 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "1882f55a-ab8f-4502-832b-4297c01681da"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 184.15 157.48) (xy 184.15 152.40)) (stroke (width 0) (type default)) (uuid "97ef5e8f-006f-44a4-a213-85db230b2c3e"))
+  (symbol (lib_id "Tape-Master:+3V3") (at 184.15 152.40 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "a8aa7ab9-daf0-419d-af9f-ac73db3f7acb")
+    (property "Reference" "#+3V3_184_152" (at 184.15 152.40 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+3V3" (at 184.15 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 184.15 152.40 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "464bfdf0-2762-4f0a-8c13-f84b5d9483b8"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#+3V3") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 184.15 162.56) (xy 189.23 162.56)) (stroke (width 0) (type default)) (uuid "54c9b184-edfc-4248-aa96-88eb7e2d1f04"))
+  (label "TAPE_REC_IN" (at 189.23 162.56 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "3065f75d-abb4-4ac6-832e-0b0fabb0ba34"))
+  (symbol (lib_id "Tape-Master:C") (at 152.40 182.88 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "438ca1c4-a0da-40b5-8129-76f1ba3bc422")
+    (property "Reference" "C4" (at 152.40 177.80 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "4.7uF" (at 152.40 187.96 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 152.40 182.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "a63581d8-fd4b-49b7-80df-2491855a4e0b"))
+    (pin "2" (uuid "26fc499c-5737-4d03-b339-093d7da003f6"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "C4") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 152.40 179.07) (xy 152.40 173.99)) (stroke (width 0) (type default)) (uuid "ba3e27e3-9b64-439f-a41f-e27a1ecf9f56"))
+  (label "COCO_WRITE" (at 152.40 173.99 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "d9bb4fe6-6101-4f32-91b7-f8cd590a74a1"))
+  (wire (pts (xy 152.40 186.69) (xy 152.40 191.77)) (stroke (width 0) (type default)) (uuid "030f74fe-7a89-4de4-8cd4-0ec544ff2e20"))
+  (label "AUD_MID" (at 152.40 191.77 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "69c3e446-633e-40e2-9f8a-e9bd75c81a42"))
+  (symbol (lib_id "Tape-Master:R") (at 165.10 182.88 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "d45e2d81-c481-4c4d-83a2-33bb1e77d60b")
+    (property "Reference" "R11" (at 165.10 177.80 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1k" (at 165.10 187.96 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 165.10 182.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "1ed68c92-29c5-484e-b96d-99e545604998"))
+    (pin "2" (uuid "ae98d526-68f9-41a2-8ead-0c1efb335de7"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "R11") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 165.10 179.07) (xy 165.10 173.99)) (stroke (width 0) (type default)) (uuid "0920a360-6d29-4121-9585-57ae1884052a"))
+  (label "AUD_MID" (at 165.10 173.99 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "ce69e522-26ea-486e-8934-1575addd2479"))
+  (wire (pts (xy 165.10 186.69) (xy 165.10 191.77)) (stroke (width 0) (type default)) (uuid "c8952b27-0363-4503-8c88-eb27d4326eea"))
+  (label "AUDIO_RAW_L" (at 165.10 191.77 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "89cfabea-474d-498e-9ad4-c1b512093780"))
+  (symbol (lib_id "Tape-Master:C") (at 177.80 182.88 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "fddea5b3-db49-4338-b3a7-00a85b36127a")
+    (property "Reference" "C5" (at 177.80 177.80 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10nF" (at 177.80 187.96 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 177.80 182.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "d0f61920-b72a-49e2-945f-4bdc149c8625"))
+    (pin "2" (uuid "d2243ba5-44a4-41d2-8248-f33e9e0e765b"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "C5") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 177.80 179.07) (xy 177.80 173.99)) (stroke (width 0) (type default)) (uuid "156128e3-1119-4586-a347-9d74c9e66ada"))
+  (label "AUDIO_RAW_L" (at 177.80 173.99 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "17bf97e9-a29c-4bb4-8ef7-b9214197c724"))
+  (wire (pts (xy 177.80 186.69) (xy 177.80 191.77)) (stroke (width 0) (type default)) (uuid "7640ac32-a1d1-41e7-a02c-900cf8b66f46"))
+  (label "AGND" (at 177.80 191.77 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "4b8617bc-cdb8-4bba-a5fa-913f2bdf6d0c"))
+  (symbol (lib_id "Tape-Master:R") (at 190.50 182.88 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "fce83803-169e-4a73-b86f-28be796e20cb")
+    (property "Reference" "R12" (at 190.50 177.80 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10k" (at 190.50 187.96 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 190.50 182.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "5aee8071-2ede-43fe-be81-2e9dced8bec4"))
+    (pin "2" (uuid "d3510489-74ba-411c-ad9f-a216ddf51903"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "R12") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 190.50 179.07) (xy 190.50 173.99)) (stroke (width 0) (type default)) (uuid "a9faec1e-5d67-41a4-9ce1-a930d02b8acf"))
+  (label "AUDIO_RAW_L" (at 190.50 173.99 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "2c0a1aa1-92fc-4fa6-a9bb-856b55bcc86d"))
+  (wire (pts (xy 190.50 186.69) (xy 190.50 191.77)) (stroke (width 0) (type default)) (uuid "bfe6a9e5-165c-46eb-b5ff-d38dc6847363"))
+  (label "AGND" (at 190.50 191.77 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "6177263a-48bd-4772-a1db-3e734f11342e"))
+  (symbol (lib_id "Tape-Master:R") (at 215.90 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "867f757c-5773-4c53-9d7b-fd2293e6c6fb")
+    (property "Reference" "R3" (at 215.90 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10k" (at 215.90 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 215.90 160.02 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "234b0cd0-3203-4f45-a0bc-e6bacf080fd4"))
+    (pin "2" (uuid "8013dd85-30b7-4997-a3e5-886213642e6a"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "R3") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 215.90 156.21) (xy 215.90 151.13)) (stroke (width 0) (type default)) (uuid "1c0c72e1-5f7d-4d5d-8ff0-4184271c691b"))
+  (symbol (lib_id "Tape-Master:+5V") (at 215.90 151.13 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b5c5a71a-7b0d-46aa-9610-4745699f7a23")
+    (property "Reference" "#+5V_215_151" (at 215.90 151.13 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 215.90 153.67 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 215.90 151.13 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "35048f81-bd56-450a-b625-8fe5047930a8"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 215.90 163.83) (xy 215.90 168.91)) (stroke (width 0) (type default)) (uuid "606426f5-4d04-44e8-b810-b870025bd9ec"))
+  (label "COCO_REM_B" (at 215.90 168.91 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "924f74ca-900f-4b4a-bf20-dd67bcbdc5f5"))
+  (symbol (lib_id "Tape-Master:R") (at 228.60 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "9cd8ce4a-110e-48a8-8d58-624f7d6803de")
+    (property "Reference" "R4" (at 228.60 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "2.2k" (at 228.60 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 228.60 160.02 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "b04a3e1e-57ae-4e71-bbce-6b034105300e"))
+    (pin "2" (uuid "a8018244-14fc-4f5c-b662-04f7fcde71d8"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "R4") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 228.60 156.21) (xy 228.60 151.13)) (stroke (width 0) (type default)) (uuid "61204a49-d4b2-42b8-8e59-ddafb1a83a8c"))
+  (label "COCO_REM_B" (at 228.60 151.13 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "9a59ff4a-0cd3-4d47-ab93-a36c4e15e4b0"))
+  (wire (pts (xy 228.60 163.83) (xy 228.60 168.91)) (stroke (width 0) (type default)) (uuid "4123496e-43c1-4a99-8f53-b08d11516745"))
+  (label "MOTOR_SENSE" (at 228.60 168.91 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "0f1ef0f6-80a1-4237-9bc7-7953d6506cfd"))
+  (symbol (lib_id "Tape-Master:R") (at 241.30 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "f10d78ec-f7d6-411b-814f-c33919f0a347")
+    (property "Reference" "R5" (at 241.30 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "3.3k" (at 241.30 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 241.30 160.02 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "5359ac94-f002-4339-aa42-5d4e964de05d"))
+    (pin "2" (uuid "84218718-1577-4930-bb08-639d06fb14dd"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "R5") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 241.30 156.21) (xy 241.30 151.13)) (stroke (width 0) (type default)) (uuid "5245e298-ecba-481a-82cf-71d9c38b6d36"))
+  (label "MOTOR_SENSE" (at 241.30 151.13 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "900558e5-37e2-4cd0-9521-a8338d7c68d5"))
+  (wire (pts (xy 241.30 163.83) (xy 241.30 168.91)) (stroke (width 0) (type default)) (uuid "37c6d7ad-6dd8-456f-ba2b-c57c667a6205"))
+  (symbol (lib_id "Tape-Master:GND") (at 241.30 168.91 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "3859c98c-0dd4-4d03-a0f1-c17353ab2755")
+    (property "Reference" "#GND_241_168" (at 241.30 168.91 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 241.30 171.45 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 241.30 168.91 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "1a4c35a2-90bf-43ee-a429-6ce84c4d4e14"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:BAT54S") (at 256.54 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "197e5608-129c-4bc6-8389-2db1b5a48f6a")
+    (property "Reference" "D2" (at 256.54 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "BAT54S" (at 256.54 165.10 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 256.54 160.02 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "fa566db9-f6e4-4423-aaa8-42d626699a65"))
+    (pin "2" (uuid "e8a5b7aa-80a7-40ac-bf35-db6bedfa0522"))
+    (pin "3" (uuid "281bcf62-0c39-4aae-8188-de13412d384a"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "D2") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 252.73 160.02) (xy 252.73 165.10)) (stroke (width 0) (type default)) (uuid "838d66de-eb5f-47a7-8555-6f1741d1f0f6"))
+  (symbol (lib_id "Tape-Master:GND") (at 252.73 165.10 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "20f611ac-bc35-45c6-a53e-fc2c78de7745")
+    (property "Reference" "#GND_252_165" (at 252.73 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 252.73 167.64 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 252.73 165.10 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "d976cba3-3ce6-4eb6-9f8e-1c4119d4443c"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 260.35 157.48) (xy 260.35 152.40)) (stroke (width 0) (type default)) (uuid "609b19f4-ad18-4f2f-aa98-450c6850bfdf"))
+  (symbol (lib_id "Tape-Master:+3V3") (at 260.35 152.40 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "7baea5e4-0f6e-4c74-999c-bfd4e032d85e")
+    (property "Reference" "#+3V3_260_152" (at 260.35 152.40 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+3V3" (at 260.35 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 260.35 152.40 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "fe68cc7b-9df7-4193-a0ec-2f518c6509ec"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#+3V3") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 260.35 162.56) (xy 265.43 162.56)) (stroke (width 0) (type default)) (uuid "39e79a67-2a00-4814-923d-125696a5879e"))
+  (label "MOTOR_SENSE" (at 265.43 162.56 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "4f75ad56-f721-499e-9558-fd18c1cdc157"))
+  (symbol (lib_id "Tape-Master:2N7002") (at 236.22 187.96 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "7573f6bf-56eb-4621-aa6d-0562a27c309e")
+    (property "Reference" "Q1" (at 236.22 182.88 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "2N7002" (at 236.22 193.04 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 236.22 187.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "68b54ce6-ca87-447b-a7e0-c767a21546b4"))
+    (pin "2" (uuid "7b798c1e-74ea-4d33-8d45-432a775e7ae2"))
+    (pin "3" (uuid "deaf981c-0a6e-4f21-88d3-68ebdc312ff2"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "Q1") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 238.76 182.88) (xy 238.76 177.80)) (stroke (width 0) (type default)) (uuid "bdaea49a-e65e-45a9-b014-79b238d59e9d"))
+  (label "COCO_REM_B" (at 238.76 177.80 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "80d5b2b7-fe99-4c05-b805-8626721abe77"))
+  (wire (pts (xy 238.76 193.04) (xy 238.76 198.12)) (stroke (width 0) (type default)) (uuid "531ebf7b-46aa-4c8a-8867-f689071ce12f"))
+  (symbol (lib_id "Tape-Master:GND") (at 238.76 198.12 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "3239d032-1422-4f67-8edb-cb040cde3b64")
+    (property "Reference" "#GND_238_198" (at 238.76 198.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 238.76 200.66 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 238.76 198.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "cb0021c1-ef79-4e44-b50d-76e2f488d41e"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 233.68 187.96) (xy 228.60 187.96)) (stroke (width 0) (type default)) (uuid "c0f9608e-f465-4c45-adc4-dbe58c8ceef4"))
+  (label "Q1_GATE" (at 228.60 187.96 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "888c2c29-6a84-4589-9f7e-df72c2e0feae"))
+  (symbol (lib_id "Tape-Master:R") (at 215.90 187.96 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "797f95bc-2502-4621-bc34-12a471d49c1e")
+    (property "Reference" "R13" (at 215.90 182.88 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100" (at 215.90 193.04 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 215.90 187.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "7d209cac-0596-42e0-8230-5a40934441d7"))
+    (pin "2" (uuid "0ae4fbef-7448-43ea-8918-ce0e305c1e52"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "R13") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 215.90 184.15) (xy 215.90 179.07)) (stroke (width 0) (type default)) (uuid "32934e98-6c03-4ed9-ad11-9d381a8a2d71"))
+  (label "MOTOR_CTRL" (at 215.90 179.07 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "973a597d-21fb-41ad-8fd7-257abb9db620"))
+  (wire (pts (xy 215.90 191.77) (xy 215.90 196.85)) (stroke (width 0) (type default)) (uuid "ce22d5ce-7f56-41d5-932b-cd4e85479c8a"))
+  (label "Q1_GATE" (at 215.90 196.85 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "8c174e3d-6620-475a-9d69-86da6ef7acf1"))
+  (symbol (lib_id "Tape-Master:R") (at 228.60 187.96 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "6e581393-6869-4837-b963-bbe73cac1c30")
+    (property "Reference" "R14" (at 228.60 182.88 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100k" (at 228.60 193.04 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 228.60 187.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "1dbe399d-ea20-4ed7-a344-1fe854e8678d"))
+    (pin "2" (uuid "52a6acfe-9571-460f-939a-7e2d168cb28c"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "R14") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 228.60 184.15) (xy 228.60 179.07)) (stroke (width 0) (type default)) (uuid "8699a1b3-785d-4569-8571-24cca4187e1f"))
+  (label "Q1_GATE" (at 228.60 179.07 90) (effects (font (size 1.27 1.27)) (justify left)) (uuid "4c859e1c-a6a2-40d7-8a22-40e96679ae5b"))
+  (wire (pts (xy 228.60 191.77) (xy 228.60 196.85)) (stroke (width 0) (type default)) (uuid "0a87dbd9-9b44-4255-8bc9-930047039c10"))
+  (symbol (lib_id "Tape-Master:GND") (at 228.60 196.85 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "2cf95db1-2ac2-403f-b2eb-9536a7c7cf0c")
+    (property "Reference" "#GND_228_196" (at 228.60 196.85 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 228.60 199.39 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 228.60 196.85 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "d827be4a-1ab3-4e93-a9fe-1e77b4d356d1"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (symbol (lib_id "Tape-Master:USBLC6-2SC6") (at 101.60 228.60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "bcd5b4e2-49a7-4e6f-a3e8-189d7defd103")
+    (property "Reference" "D3" (at 101.60 223.52 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "USBLC6-2SC6" (at 101.60 233.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 101.60 228.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "50513e45-7660-493f-9730-935d07713e1a"))
+    (pin "2" (uuid "d4947e4f-64e6-44a7-a085-90ccd9f5da55"))
+    (pin "3" (uuid "6c31a751-1a13-400c-bcd4-79077cbcfea6"))
+    (pin "4" (uuid "b294fd5d-846c-4c82-b4b9-83114699d660"))
+    (pin "5" (uuid "755ade75-bb42-4f0f-b369-b0ac54a16f7e"))
+    (pin "6" (uuid "b1d6ac9f-3e86-4d20-bf85-66014f2a65d4"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "D3") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 92.71 226.06) (xy 87.63 226.06)) (stroke (width 0) (type default)) (uuid "e115fbd0-c613-4855-be48-f2eb12e0070c"))
+  (label "COCO_READ" (at 87.63 226.06 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "19f9ac71-69f2-4d34-80f9-6259f9751fed"))
+  (wire (pts (xy 92.71 231.14) (xy 87.63 231.14)) (stroke (width 0) (type default)) (uuid "aae1ab6c-6c4c-404c-b834-ae4700b47832"))
+  (symbol (lib_id "Tape-Master:GND") (at 87.63 231.14 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "0ba8a48f-4a2c-4f11-aec3-1f15dd2d3bc3")
+    (property "Reference" "#GND_87_231" (at 87.63 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "GND" (at 87.63 233.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 87.63 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "62eceab7-2d2b-41ed-8b32-4cf4aae44c1f"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#GND") (unit 1))
+      )
+    )
+  )
+  (wire (pts (xy 92.71 233.68) (xy 87.63 233.68)) (stroke (width 0) (type default)) (uuid "b84ae4d2-a61d-4c8d-84fb-973824726f12"))
+  (label "COCO_WRITE" (at 87.63 233.68 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "f408f61c-0c51-4c73-b2be-60bee6e69a27"))
+  (wire (pts (xy 110.49 233.68) (xy 115.57 233.68)) (stroke (width 0) (type default)) (uuid "07e786c6-cf28-44e0-ac86-e3e330e7fa6a"))
+  (label "COCO_REM_B" (at 115.57 233.68 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "f7b9c72d-82bf-40ae-8d5c-07b8fa2a1afb"))
+  (wire (pts (xy 110.49 231.14) (xy 115.57 231.14)) (stroke (width 0) (type default)) (uuid "70e8c822-9e1b-4d32-b027-1b4376cb58d7"))
+  (symbol (lib_id "Tape-Master:+5V") (at 115.57 231.14 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "f1a31519-4fc1-4d3c-9c5d-24d371ecbabe")
+    (property "Reference" "#+5V_115_231" (at 115.57 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "+5V" (at 115.57 233.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 115.57 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (pin "1" (uuid "23366eee-af0b-4ebf-8f51-505efa2a6fcc"))
+    (instances
+      (project "Tape_Master_Cartridge_CoCo_Dragon"
+        (path "/ac8521f3-8ead-4a64-9b8b-f1f1be2a0015" (reference "#+5V") (unit 1))
+      )
+    )
+  )
+  (no_connect (at 110.49 226.06) (uuid "a632a3d8-2fc5-43bf-a3a3-9db8c59d87df"))
+)

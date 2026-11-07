@@ -1,0 +1,35 @@
+;
+; Tape Master v2 - High-Precision Pulse Interval Generator (TX)
+;
+; Generates precision active-low pulses for Commodore C2N, Sharp MZ, and digital tape decks.
+; Pulls 32-bit total cycle interval from TX FIFO.
+; Drives pin LOW for calibrated pulse width (e.g. 20 us), then holds HIGH for remainder.
+;
+.program pulse_gen_tx
+
+.wrap_target
+    ; 1. Pull total interval duration in microseconds from FIFO
+    pull block
+    mov x, osr
+
+    ; 2. Assert output pin LOW (pulse start)
+    set pins, 0
+
+    ; 3. Hold LOW for 20 us (20 loop iterations at 1 MHz clock)
+    set y, 19
+pulse_low_loop:
+    jmp y-- pulse_low_loop
+
+    ; 4. De-assert output pin HIGH (idle state)
+    set pins, 1
+
+    ; 5. Decrement X counter for remainder of interval
+remainder_loop:
+    jmp x-- check_counter
+    jmp cycle_done
+
+check_counter:
+    jmp remainder_loop
+
+cycle_done:
+.wrap

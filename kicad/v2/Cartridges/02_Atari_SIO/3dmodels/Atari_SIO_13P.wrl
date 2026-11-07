@@ -1,0 +1,152 @@
+#VRML V2.0 utf8
+# Atari 8-bit SIO 13-Pin Receptacle 3D Model
+# Author: Alessio Iodice for MuDIsTInf / Tape Master Exerciser
+# Scale 0.39370079 (1mm = 0.39370079 units)
+
+Transform {
+  scale 0.39370079 0.39370079 0.39370079
+  children [
+
+    # --- Main Connector Outer Body (Black ABS/Polycarbonate) ---
+    Transform {
+      translation 0.0 0.0 5.0
+      children [
+        Shape {
+          appearance Appearance {
+            material DEF SIO_BODY Material {
+              diffuseColor 0.15 0.15 0.15
+              specularColor 0.25 0.25 0.25
+              shininess 0.4
+            }
+          }
+          geometry Box {
+            size 28.0 13.0 10.0
+          }
+        }
+      ]
+    }
+
+    # --- D-Shaped Mating Shell Cavity/Collar (Dark Metallic Grey) ---
+    Transform {
+      translation 0.0 0.0 8.0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.25 0.27 0.30
+              specularColor 0.6 0.6 0.6
+              shininess 0.6
+            }
+          }
+          geometry Box {
+            size 18.0 9.0 4.0
+          }
+        }
+      ]
+    }
+
+    # --- Side Mounting Brackets / Tabs ---
+    Transform {
+      translation -11.0 0.0 2.0
+      children [
+        Shape {
+          appearance Appearance {
+            material DEF METAL_TABS Material {
+              diffuseColor 0.7 0.72 0.75
+              specularColor 0.8 0.8 0.8
+              shininess 0.8
+            }
+          }
+          geometry Cylinder {
+            radius 2.0
+            height 4.0
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 11.0 0.0 2.0
+      children [
+        Shape {
+          appearance USE METAL_TABS
+          geometry Cylinder {
+            radius 2.0
+            height 4.0
+          }
+        }
+      ]
+    }
+
+    # --- 13 Gold-Plated SIO Contact Pins ---
+    # Bottom Row (7 pins: 1, 3, 5, 7, 9, 11, 13) at Y = 1.25
+    Transform {
+      translation -6.0 1.25 5.0
+      children [
+        Shape {
+          appearance Appearance {
+            material DEF GOLD_PIN Material {
+              diffuseColor 0.85 0.70 0.15
+              specularColor 0.9 0.8 0.3
+              shininess 0.8
+            }
+          }
+          geometry Cylinder {
+            radius 0.45
+            height 8.0
+          }
+        }
+      ]
+    }
+    Transform {
+      translation -4.0 1.25 5.0
+      children [ Shape { appearance USE GOLD_PIN geometry Cylinder { radius 0.45 height 8.0 } } ]
+    }
+    Transform {
+      translation -2.0 1.25 5.0
+      children [ Shape { appearance USE GOLD_PIN geometry Cylinder { radius 0.45 height 8.0 } } ]
+    }
+    Transform {
+      translation 0.0 1.25 5.0
+      children [ Shape { appearance USE GOLD_PIN geometry Cylinder { radius 0.45 height 8.0 } } ]
+    }
+    Transform {
+      translation 2.0 1.25 5.0
+      children [ Shape { appearance USE GOLD_PIN geometry Cylinder { radius 0.45 height 8.0 } } ]
+    }
+    Transform {
+      translation 4.0 1.25 5.0
+      children [ Shape { appearance USE GOLD_PIN geometry Cylinder { radius 0.45 height 8.0 } } ]
+    }
+    Transform {
+      translation 6.0 1.25 5.0
+      children [ Shape { appearance USE GOLD_PIN geometry Cylinder { radius 0.45 height 8.0 } } ]
+    }
+
+    # Top Row (6 pins: 2, 4, 6, 8, 10, 12) at Y = -1.25
+    Transform {
+      translation -5.0 -1.25 5.0
+      children [ Shape { appearance USE GOLD_PIN geometry Cylinder { radius 0.45 height 8.0 } } ]
+    }
+    Transform {
+      translation -3.0 -1.25 5.0
+      children [ Shape { appearance USE GOLD_PIN geometry Cylinder { radius 0.45 height 8.0 } } ]
+    }
+    Transform {
+      translation -1.0 -1.25 5.0
+      children [ Shape { appearance USE GOLD_PIN geometry Cylinder { radius 0.45 height 8.0 } } ]
+    }
+    Transform {
+      translation 1.0 -1.25 5.0
+      children [ Shape { appearance USE GOLD_PIN geometry Cylinder { radius 0.45 height 8.0 } } ]
+    }
+    Transform {
+      translation 3.0 -1.25 5.0
+      children [ Shape { appearance USE GOLD_PIN geometry Cylinder { radius 0.45 height 8.0 } } ]
+    }
+    Transform {
+      translation 5.0 -1.25 5.0
+      children [ Shape { appearance USE GOLD_PIN geometry Cylinder { radius 0.45 height 8.0 } } ]
+    }
+
+  ]
+}

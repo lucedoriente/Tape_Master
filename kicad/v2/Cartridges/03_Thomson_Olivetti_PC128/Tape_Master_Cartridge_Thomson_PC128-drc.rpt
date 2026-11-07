@@ -1,0 +1,179 @@
+** Drc report for Tape_Master_Cartridge_Thomson_PC128.kicad_pcb **
+** Created on 2026-11-06T19:28:04+0100 **
+
+** Found 21 DRC violations **
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3500 mm; actual 0.2800 mm)
+    Rule: board setup constraints edge; error
+    @(6.0000 mm, 0.0000 mm): Segment on Edge.Cuts
+    @(17.9500 mm, 1.1300 mm): PTH pad 1 [+5V] of J1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3500 mm; actual 0.2800 mm)
+    Rule: board setup constraints edge; error
+    @(6.0000 mm, 0.0000 mm): Segment on Edge.Cuts
+    @(15.4100 mm, 1.1300 mm): PTH pad 2 [+5V] of J1
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(15.4100 mm, 16.5400 mm): Track [+3V3] on F.Cu, length 10.6700 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(15.4100 mm, 16.5400 mm): Track [+3V3] on B.Cu, length 2.5400 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(12.8700 mm, 14.0000 mm): Track [+5V] on F.Cu, length 1.1517 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(17.9500 mm, 14.0000 mm): Track [+5V] on F.Cu, length 1.6287 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(17.9500 mm, 14.0000 mm): Track [+5V] on B.Cu, length 1.6836 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(12.8700 mm, 16.5400 mm): Track [+5V] on B.Cu, length 2.5400 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(28.1100 mm, 14.0000 mm): Track [/AGND] on F.Cu, length 2.5400 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(23.0300 mm, 14.0000 mm): Track [/AGND] on F.Cu, length 2.5400 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(20.4900 mm, 16.5400 mm): Track [/AUDIO_RAW_L] on B.Cu, length 14.0630 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(30.7568 mm, 26.5932 mm): Track [/I2C_SCL] on F.Cu, length 14.2174 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(43.3500 mm, 14.0000 mm): Track [/I2C_SDA] on F.Cu, length 1.9634 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(33.1900 mm, 16.5400 mm): Track [/MOTOR_SENSE] on B.Cu, length 17.9041 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(30.6500 mm, 16.5400 mm): Track [/TAPE_EMU_OUT] on B.Cu, length 12.4937 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(33.1900 mm, 14.0000 mm): Track [/TAPE_REC_IN] on B.Cu, length 1.8844 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(40.8100 mm, 14.0000 mm): Track [GND] on F.Cu, length 1.6838 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(61.1300 mm, 16.5400 mm): Track [GND] on F.Cu, length 1.6838 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(19.2200 mm, 15.2700 mm): Track [GND] on F.Cu, length 1.7961 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(44.5406 mm, 15.3494 mm): Track [GND] on F.Cu, length 1.6838 mm
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(6.0000 mm, 0.0000 mm): Segment on Edge.Cuts
+    @(13.9500 mm, 2.4000 mm): Segment of J1 on F.Silkscreen
+
+** Found 25 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(15.4100 mm, -1.4100 mm): PTH pad 4 [+3V3] of J1
+    @(15.4100 mm, 16.5400 mm): Track [+3V3] on B.Cu, length 2.5400 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(15.4100 mm, 16.5400 mm): Track [+3V3] on B.Cu, length 2.5400 mm
+    @(15.4100 mm, 16.5400 mm): Track [+3V3] on F.Cu, length 10.6700 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.9500 mm, -1.4100 mm): PTH pad 3 [+3V3] of J1
+    @(15.4100 mm, -1.4100 mm): PTH pad 4 [+3V3] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(12.8700 mm, 14.0000 mm): Track [+5V] on F.Cu, length 1.1517 mm
+    @(12.8700 mm, 16.5400 mm): Track [+5V] on B.Cu, length 2.5400 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.9500 mm, 1.1300 mm): PTH pad 1 [+5V] of J1
+    @(15.4100 mm, 1.1300 mm): PTH pad 2 [+5V] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.9500 mm, 1.1300 mm): PTH pad 1 [+5V] of J1
+    @(17.9500 mm, -3.9500 mm): PTH pad 5 [+5V] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.9500 mm, 14.0000 mm): Track [+5V] on F.Cu, length 1.6287 mm
+    @(17.9500 mm, 14.0000 mm): Track [+5V] on B.Cu, length 1.6836 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.9500 mm, 14.0000 mm): Track [+5V] on B.Cu, length 1.6836 mm
+    @(17.9500 mm, 1.1300 mm): PTH pad 1 [+5V] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.9500 mm, -14.1100 mm): PTH pad 13 [/AGND] of J1
+    @(17.9500 mm, -11.5700 mm): PTH pad 11 [/AGND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.9500 mm, -11.5700 mm): PTH pad 11 [/AGND] of J1
+    @(17.9500 mm, -9.0300 mm): PTH pad 9 [/AGND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.9500 mm, -9.0300 mm): PTH pad 9 [/AGND] of J1
+    @(17.9500 mm, -6.4900 mm): PTH pad 7 [/AGND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.9500 mm, -6.4900 mm): PTH pad 7 [/AGND] of J1
+    @(23.0300 mm, 14.0000 mm): Track [/AGND] on F.Cu, length 2.5400 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(20.4900 mm, 16.5400 mm): Track [/AUDIO_RAW_L] on B.Cu, length 14.0630 mm
+    @(15.4100 mm, -6.4900 mm): PTH pad 8 [/AUDIO_RAW_L] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(30.7568 mm, 26.5932 mm): Track [/I2C_SCL] on F.Cu, length 14.2174 mm
+    @(15.4100 mm, -26.8100 mm): PTH pad 24 [/I2C_SCL] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.9500 mm, -29.3500 mm): PTH pad 25 [/I2C_SDA] of J1
+    @(40.2665 mm, 15.3883 mm): Track [/I2C_SDA] on F.Cu, length 1.1947 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(33.1900 mm, 16.5400 mm): Track [/MOTOR_SENSE] on B.Cu, length 17.9041 mm
+    @(15.4100 mm, -19.1900 mm): PTH pad 18 [/MOTOR_SENSE] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(30.6500 mm, 16.5400 mm): Track [/TAPE_EMU_OUT] on B.Cu, length 12.4937 mm
+    @(15.4100 mm, -16.6500 mm): PTH pad 16 [/TAPE_EMU_OUT] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(33.1900 mm, 14.0000 mm): Track [/TAPE_REC_IN] on B.Cu, length 1.8844 mm
+    @(17.9500 mm, -19.1900 mm): PTH pad 17 [/TAPE_REC_IN] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(15.4100 mm, -47.1300 mm): PTH pad 40 [GND] of J1
+    @(15.4100 mm, -29.3500 mm): PTH pad 26 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(15.4100 mm, -3.9500 mm): PTH pad 6 [GND] of J1
+    @(29.3800 mm, 15.2700 mm): Track [GND] on F.Cu, length 10.1600 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.9500 mm, -26.8100 mm): PTH pad 23 [GND] of J1
+    @(15.4100 mm, -29.3500 mm): PTH pad 26 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.9500 mm, -26.8100 mm): PTH pad 23 [GND] of J1
+    @(17.9500 mm, -16.6500 mm): PTH pad 15 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.9500 mm, -16.6500 mm): PTH pad 15 [GND] of J1
+    @(15.4100 mm, -3.9500 mm): PTH pad 6 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(40.8100 mm, 14.0000 mm): Track [GND] on F.Cu, length 1.6838 mm
+    @(43.3500 mm, 16.5400 mm): Track [GND] on B.Cu, length 3.5921 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(61.1300 mm, 16.5400 mm): Track [GND] on B.Cu, length 18.8300 mm
+    @(61.1300 mm, 16.5400 mm): Track [GND] on F.Cu, length 1.6838 mm
+
+** Found 1 Footprint errors **
+[footprint_symbol_mismatch]: PinSocket_2x20_P2.54mm_Horizontal_Cartridge doesn't match footprint given by symbol (Tape-Master:PinSocket_2x20_P2.54mm_Horizontal_Cartridge).
+    Local override; warning
+    @(12.8700 mm, 14.0000 mm): Footprint J1
+
+** End of Report **

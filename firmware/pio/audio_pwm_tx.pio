@@ -1,0 +1,20 @@
+;
+; Tape Master v2 - Precision Audio Waveform Toggler (TX)
+;
+; Generates audio half-periods for Sinclair ZX (.TZX), Kansas City / MSX (.CAS), Apple II.
+; Pulls half-period tick counts from TX FIFO and inverts output pin level on each cycle.
+;
+.program audio_pwm_tx
+
+.wrap_target
+    ; 1. Pull half-period tick count from FIFO
+    pull block
+    mov x, osr
+
+    ; 2. Invert current output pin level
+    mov pins, !pins
+
+    ; 3. Wait for half-period duration to expire
+wait_loop:
+    jmp x-- wait_loop
+.wrap

@@ -1,0 +1,39 @@
+(footprint "Jack_3.5mm_CUI_SJ1-3525N_Horizontal"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "TRS 3.5mm horizontal audio jack with double switches (Same Sky SJ1-3525N / RTLECS PJ-324M)")
+	(tags "audio jack 3.5mm stereo horizontal PJ-324 SJ1-3525N")
+	(property "Reference" "REF**" (at 0 -8.5 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+	(property "Value" "Jack_3.5mm_CUI_SJ1-3525N_Horizontal" (at 0 -10.5 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))))
+	(attr through_hole)
+
+	(fp_line (start -6.0 -7.5) (end 6.0 -7.5) (stroke (width 0.15) (type solid)) (layer "F.SilkS"))
+	(fp_line (start 6.0 -7.5) (end 6.0 3.5) (stroke (width 0.15) (type solid)) (layer "F.SilkS"))
+	(fp_line (start 6.0 3.5) (end -6.0 3.5) (stroke (width 0.15) (type solid)) (layer "F.SilkS"))
+	(fp_line (start -6.0 3.5) (end -6.0 -7.5) (stroke (width 0.15) (type solid)) (layer "F.SilkS"))
+
+	(fp_line (start -6.0 -7.5) (end 6.0 -7.5) (stroke (width 0.12) (type solid)) (layer "F.Fab"))
+	(fp_line (start 6.0 -7.5) (end 6.0 3.5) (stroke (width 0.12) (type solid)) (layer "F.Fab"))
+	(fp_line (start 6.0 3.5) (end -6.0 3.5) (stroke (width 0.12) (type solid)) (layer "F.Fab"))
+	(fp_line (start -6.0 3.5) (end -6.0 -7.5) (stroke (width 0.12) (type solid)) (layer "F.Fab"))
+	(fp_circle (center 0 5.5) (end 3.0 5.5) (stroke (width 0.12) (type solid)) (layer "F.Fab"))
+
+	(fp_rect (start -6.5 -8.0) (end 6.5 7.5) (stroke (width 0.05) (type solid)) (layer "F.CrtYd"))
+
+	(pad "" np_thru_hole circle (at -3.5 0.0) (size 1.60 1.60) (drill 1.60) (layers "F&B.Cu" "*.Mask"))
+	(pad "" np_thru_hole circle (at 3.5 0.0) (size 1.60 1.60) (drill 1.60) (layers "F&B.Cu" "*.Mask"))
+
+	(pad "S" thru_hole oval (at 0.0 0.0) (size 2.50 1.80) (drill oval 1.60 0.90) (layers "*.Cu" "*.Mask"))
+	(pad "T" thru_hole oval (at 5.0 -5.0) (size 1.80 2.50) (drill oval 0.90 1.60) (layers "*.Cu" "*.Mask"))
+	(pad "TN" thru_hole oval (at 2.5 -5.0) (size 1.80 2.50) (drill oval 0.90 1.60) (layers "*.Cu" "*.Mask"))
+	(pad "R" thru_hole oval (at -5.0 -5.0) (size 1.80 2.50) (drill oval 0.90 1.60) (layers "*.Cu" "*.Mask"))
+	(pad "RN" thru_hole oval (at -2.5 -5.0) (size 1.80 2.50) (drill oval 0.90 1.60) (layers "*.Cu" "*.Mask"))
+
+	(model "${KICAD9_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_3.5mm_CUI_SJ1-3525N_Horizontal.step"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
+)

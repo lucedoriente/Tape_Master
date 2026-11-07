@@ -1,0 +1,14 @@
+** Drc report for Tape_Master_Cartridge_Atari_SIO.kicad_pcb **
+** Created on 2026-11-07T01:21:17+0100 **
+
+** Found 1 DRC violations **
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1750 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 6.5000 mm): Track [GND] on F.Cu, length 3.9600 mm
+    @(43.3500 mm, 5.0800 mm): PTH pad 25 [/I2C_SDA] of J1
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

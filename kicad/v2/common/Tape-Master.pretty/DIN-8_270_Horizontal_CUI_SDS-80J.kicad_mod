@@ -1,0 +1,57 @@
+(footprint "DIN-8_270_Horizontal_CUI_SDS-80J"
+	(version 20241223)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "CUI SDS-80J standard DIN 8-pin 270° female right-angle socket (MSX Standard Cassette Port)")
+	(tags "DIN-8 270 SDS-80J female right-angle MSX Cassette")
+	(property "Reference" "REF**"
+		(at 0 8.0 0)
+		(layer "F.SilkS")
+		(uuid "e6a1b2c3-0001-4000-8000-000000000001")
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+	(property "Value" "DIN-8_270_Horizontal_CUI_SDS-80J"
+		(at 0 -15.0 0)
+		(layer "F.Fab")
+		(uuid "e6a1b2c3-0001-4000-8000-000000000002")
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+	(property "Footprint" "" (at 0 0 0) (layer "F.Cu") (hide yes) (uuid "e6a1b2c3-0001-4000-8000-000000000003"))
+	(property "Datasheet" "datasheets/MSX_Cassette_Interface.md" (at 0 0 0) (layer "F.Cu") (hide yes) (uuid "e6a1b2c3-0001-4000-8000-000000000004"))
+	(property "Description" "DIN 8-Pin 270° Female Right-Angle Socket for MSX Standard Cassette Port" (at 0 0 0) (layer "F.Cu") (hide yes) (uuid "e6a1b2c3-0001-4000-8000-000000000005"))
+
+	(fp_line (start -10.0 -12.5) (end 10.0 -12.5) (stroke (width 0.15) (type solid)) (layer "F.SilkS"))
+	(fp_line (start 10.0 -12.5) (end 10.0 6.0) (stroke (width 0.15) (type solid)) (layer "F.Fab"))
+	(fp_line (start 10.0 6.0) (end -10.0 6.0) (stroke (width 0.15) (type solid)) (layer "F.Fab"))
+	(fp_line (start -10.0 6.0) (end -10.0 -12.5) (stroke (width 0.15) (type solid)) (layer "F.Fab"))
+
+	(fp_line (start -10.0 -12.5) (end -10.0 -6.5) (stroke (width 0.15) (type solid)) (layer "F.SilkS"))
+	(fp_line (start 10.0 -12.5) (end 10.0 -6.5) (stroke (width 0.15) (type solid)) (layer "F.SilkS"))
+	(fp_line (start -10.0 6.0) (end 10.0 6.0) (stroke (width 0.15) (type solid)) (layer "F.SilkS"))
+
+	(fp_rect (start -10.5 -13.0) (end 10.5 6.5) (stroke (width 0.05) (type solid)) (layer "F.CrtYd"))
+
+	(pad "3" thru_hole circle (at -5.00 0.00) (size 2.20 2.20) (drill 1.30) (layers "*.Cu" "*.Mask"))
+	(pad "2" thru_hole circle (at 0.00 0.00) (size 2.20 2.20) (drill 1.30) (layers "*.Cu" "*.Mask"))
+	(pad "1" thru_hole circle (at 5.00 0.00) (size 2.20 2.20) (drill 1.30) (layers "*.Cu" "*.Mask"))
+
+	(pad "7" thru_hole circle (at -7.50 2.50) (size 2.20 2.20) (drill 1.30) (layers "*.Cu" "*.Mask"))
+	(pad "5" thru_hole circle (at -2.50 2.50) (size 2.20 2.20) (drill 1.30) (layers "*.Cu" "*.Mask"))
+	(pad "4" thru_hole circle (at 2.50 2.50) (size 2.20 2.20) (drill 1.30) (layers "*.Cu" "*.Mask"))
+	(pad "6" thru_hole circle (at 7.50 2.50) (size 2.20 2.20) (drill 1.30) (layers "*.Cu" "*.Mask"))
+
+	(pad "8" thru_hole circle (at 0.00 5.00) (size 2.20 2.20) (drill 1.30) (layers "*.Cu" "*.Mask"))
+
+	(pad "" thru_hole circle (at -2.50 -10.00) (size 2.20 2.20) (drill 1.40) (layers "*.Cu" "*.Mask"))
+	(pad "" thru_hole circle (at 2.50 -10.00) (size 2.20 2.20) (drill 1.40) (layers "*.Cu" "*.Mask"))
+
+	(pad "" thru_hole circle (at -7.50 -5.00) (size 3.20 3.20) (drill 2.40) (layers "*.Cu" "*.Mask"))
+	(pad "" thru_hole circle (at 7.50 -5.00) (size 3.20 3.20) (drill 2.40) (layers "*.Cu" "*.Mask"))
+
+	(model "${KIPRJMOD}/../../common/3dmodels/DIN-8_270_Horizontal_CUI_SDS-80J.wrl"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
+)

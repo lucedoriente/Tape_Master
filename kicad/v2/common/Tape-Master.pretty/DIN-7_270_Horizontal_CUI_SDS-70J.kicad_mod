@@ -1,0 +1,55 @@
+(footprint "DIN-7_270_Horizontal_CUI_SDS-70J"
+	(version 20241223)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "CUI SDS-70J standard DIN 7-pin 270° female right-angle socket (Acorn BBC Micro / Electron Cassette Port)")
+	(tags "DIN-7 270 SDS-70J female right-angle BBC Micro Electron Cassette")
+	(property "Reference" "REF**"
+		(at 0 8.0 0)
+		(layer "F.SilkS")
+		(uuid "f7a1b2c3-0001-4000-8000-000000000001")
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+	(property "Value" "DIN-7_270_Horizontal_CUI_SDS-70J"
+		(at 0 -15.0 0)
+		(layer "F.Fab")
+		(uuid "f7a1b2c3-0001-4000-8000-000000000002")
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+	(property "Footprint" "" (at 0 0 0) (layer "F.Cu") (hide yes) (uuid "f7a1b2c3-0001-4000-8000-000000000003"))
+	(property "Datasheet" "datasheets/BBC_Micro_Cassette_Interface.md" (at 0 0 0) (layer "F.Cu") (hide yes) (uuid "f7a1b2c3-0001-4000-8000-000000000004"))
+	(property "Description" "DIN 7-Pin 270° Female Right-Angle Socket for Acorn BBC Micro & Electron Cassette Port" (at 0 0 0) (layer "F.Cu") (hide yes) (uuid "f7a1b2c3-0001-4000-8000-000000000005"))
+
+	(fp_line (start -10.0 -12.5) (end 10.0 -12.5) (stroke (width 0.15) (type solid)) (layer "F.SilkS"))
+	(fp_line (start 10.0 -12.5) (end 10.0 6.0) (stroke (width 0.15) (type solid)) (layer "F.Fab"))
+	(fp_line (start 10.0 6.0) (end -10.0 6.0) (stroke (width 0.15) (type solid)) (layer "F.Fab"))
+	(fp_line (start -10.0 6.0) (end -10.0 -12.5) (stroke (width 0.15) (type solid)) (layer "F.Fab"))
+
+	(fp_line (start -10.0 -12.5) (end -10.0 -6.5) (stroke (width 0.15) (type solid)) (layer "F.SilkS"))
+	(fp_line (start 10.0 -12.5) (end 10.0 -6.5) (stroke (width 0.15) (type solid)) (layer "F.SilkS"))
+	(fp_line (start -10.0 6.0) (end 10.0 6.0) (stroke (width 0.15) (type solid)) (layer "F.SilkS"))
+
+	(fp_rect (start -10.5 -13.0) (end 10.5 6.5) (stroke (width 0.05) (type solid)) (layer "F.CrtYd"))
+
+	(pad "3" thru_hole circle (at -5.00 0.00) (size 2.20 2.20) (drill 1.30) (layers "*.Cu" "*.Mask"))
+	(pad "2" thru_hole circle (at 0.00 0.00) (size 2.20 2.20) (drill 1.30) (layers "*.Cu" "*.Mask"))
+	(pad "1" thru_hole circle (at 5.00 0.00) (size 2.20 2.20) (drill 1.30) (layers "*.Cu" "*.Mask"))
+
+	(pad "7" thru_hole circle (at -7.50 2.50) (size 2.20 2.20) (drill 1.30) (layers "*.Cu" "*.Mask"))
+	(pad "5" thru_hole circle (at -2.50 2.50) (size 2.20 2.20) (drill 1.30) (layers "*.Cu" "*.Mask"))
+	(pad "4" thru_hole circle (at 2.50 2.50) (size 2.20 2.20) (drill 1.30) (layers "*.Cu" "*.Mask"))
+	(pad "6" thru_hole circle (at 7.50 2.50) (size 2.20 2.20) (drill 1.30) (layers "*.Cu" "*.Mask"))
+
+	(pad "" thru_hole circle (at -2.50 -10.00) (size 2.20 2.20) (drill 1.40) (layers "*.Cu" "*.Mask"))
+	(pad "" thru_hole circle (at 2.50 -10.00) (size 2.20 2.20) (drill 1.40) (layers "*.Cu" "*.Mask"))
+
+	(pad "" thru_hole circle (at -7.50 -5.00) (size 3.20 3.20) (drill 2.40) (layers "*.Cu" "*.Mask"))
+	(pad "" thru_hole circle (at 7.50 -5.00) (size 3.20 3.20) (drill 2.40) (layers "*.Cu" "*.Mask"))
+
+	(model "${KIPRJMOD}/../../common/3dmodels/DIN-7_270_Horizontal_CUI_SDS-70J.wrl"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
+)

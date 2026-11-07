@@ -1,0 +1,54 @@
+name: Build Tape Master v2 Firmware
+
+on:
+  push:
+    paths:
+      - 'firmware/**'
+      - '.github/workflows/firmware.yml'
+  pull_request:
+    paths:
+      - 'firmware/**'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install Toolchain Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential cmake
+
+      - name: Setup Pico SDK
+        run: |
+          git clone --recurse-submodules https://github.com/raspberrypi/pico-sdk.git $HOME/pico-sdk
+          echo "PICO_SDK_PATH=$HOME/pico-sdk" >> $GITHUB_ENV
+
+      - name: Configure CMake
+        run: |
+          cd firmware
+          mkdir build
+          cd build
+          cmake ..
+
+      - name: Build Firmware
+        run: |
+          cd firmware/build
+          make -j$(nproc)
+
+      - name: Copy Artifact to bin/
+        run: |
+          mkdir -p firmware/bin
+          cp firmware/build/tape_master_v2.uf2 firmware/bin/
+
+      - name: Upload UF2 Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tape_master_v2_uf2
+          path: firmware/build/tape_master_v2.uf2

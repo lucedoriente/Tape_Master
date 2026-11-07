@@ -1,0 +1,42 @@
+;
+; Tape Master v2 - High-Precision Pulse Interval Timer (RX)
+;
+; Captures the time between consecutive active edges (falling or rising)
+; Resolution: 1 microsecond (at 1 MHz PIO clock frequency) or 100 ns (at 10 MHz)
+;
+.program pulse_timer_rx
+
+.wrap_target
+    ; 1. Wait for pin to be HIGH (idle level)
+    wait 1 pin 0
+
+    ; 2. Wait for falling edge (active transition trigger)
+    wait 0 pin 0
+
+    ; 3. Initialize counter X to maximum (0xFFFFFFFF)
+    set x, 0
+    mov x, ~x
+
+count_loop:
+    ; Check if pin has returned HIGH
+    jmp pin pin_is_high
+    ; While still LOW, decrement X and loop (each loop calibrated to exact clock cycles)
+    jmp x-- count_loop
+    jmp push_result
+
+pin_is_high:
+    ; Pin is HIGH now. Wait for NEXT falling edge while continuing to decrement X
+wait_next_falling:
+    jmp pin keep_waiting
+    ; Next falling edge detected! Full cycle complete.
+    jmp push_result
+
+keep_waiting:
+    jmp x-- wait_next_falling
+    ; Overflow guard
+
+push_result:
+    ; Push inverted count (~X gives elapsed counter ticks) to RX FIFO
+    mov isr, ~x
+    push noblock
+.wrap
