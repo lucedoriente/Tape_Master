@@ -9,6 +9,7 @@
  */
 
 #include "signal_digitizer.h"
+#include "host_protocol.h"
 #include "../config/hardware_pins.h"
 #include "../drivers/analog_frontend.h"
 #include "../drivers/tlc5916_leds.h"
@@ -149,6 +150,10 @@ void digitizer_update(void) {
     while (!cap_ring_is_empty()) {
         uint32_t interval_us = cap_ring_pop();
         s_digitizer_status.total_pulses++;
+
+        if (host_protocol_is_streaming()) {
+            host_protocol_stream_pulse(interval_us);
+        }
 
         if (interval_us < s_digitizer_status.min_pulse_us) {
             s_digitizer_status.min_pulse_us = (uint16_t)interval_us;

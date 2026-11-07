@@ -25,6 +25,7 @@ add_executable(tape_master_v2
     engine/virtual_deck.c
     engine/signal_digitizer.c
     engine/exerciser_engine.c
+    engine/host_protocol.c
     ui/ui_menu.c
 )
 

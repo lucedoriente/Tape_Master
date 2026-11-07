@@ -39,6 +39,7 @@
 #include "engine/virtual_deck.h"
 #include "engine/signal_digitizer.h"
 #include "engine/exerciser_engine.h"
+#include "engine/host_protocol.h"
 
 #include "ui/ui_menu.h"
 
@@ -90,6 +91,7 @@ int main(void) {
     virtual_deck_init();
     digitizer_init();
     exerciser_init();
+    host_protocol_init();
     ui_menu_init();
 
     // 5. Power-On Self Test (POST) LED animation
@@ -152,6 +154,9 @@ int main(void) {
 
         // Update UI Menu and OLED Display
         ui_menu_update();
+
+        // Process USB Serial host communication
+        host_protocol_poll();
 
         // Commit LED panel shifts
         led_panel_update();
