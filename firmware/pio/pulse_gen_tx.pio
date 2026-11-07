@@ -25,13 +25,7 @@ pulse_low_loop:
 
     ; 5. Decrement X counter for remainder of interval
 remainder_loop:
-    jmp x-- check_counter
-    jmp cycle_done
-
-check_counter:
-    jmp remainder_loop
-
-cycle_done:
+    jmp x-- remainder_loop
 .wrap
 
 % c-sdk {
