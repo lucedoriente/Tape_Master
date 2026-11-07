@@ -141,7 +141,7 @@ void digitizer_update(void) {
     }
 
     // Monitor Azimuth level via ADC0
-    uint8_t az_level = analog_read_azimuth_level();
+    uint8_t az_level = analog_get_azimuth_bar_level();
     s_digitizer_status.azimuth_level = az_level;
     led_set_azimuth_level(az_level, false);
 

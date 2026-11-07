@@ -56,7 +56,7 @@ void exerciser_start(exerciser_mode_t mode) {
             break;
 
         case EXERCISER_MOTOR_RUN:
-            motor_set_control(true);
+            motor_set_power(true);
             led_set_status(STATUS_LED_MOTOR, true);
             break;
 
@@ -79,7 +79,7 @@ void exerciser_start(exerciser_mode_t mode) {
 void exerciser_stop(void) {
     if (!s_status.active) return;
 
-    motor_set_control(false);
+    motor_set_power(false);
     led_set_status(STATUS_LED_MOTOR, false);
     led_set_status(STATUS_LED_SIGNAL, false);
     led_set_azimuth_level(0, false);
@@ -96,7 +96,7 @@ void exerciser_update(void) {
     s_status.duration_seconds = (uint32_t)(absolute_time_diff_us(s_start_time, get_absolute_time()) / 1000000);
 
     if (s_status.mode == EXERCISER_AZIMUTH_MONITOR || s_status.mode == EXERCISER_MOTOR_RUN) {
-        uint8_t lvl = analog_read_azimuth_level();
+        uint8_t lvl = analog_get_azimuth_bar_level();
         s_status.azimuth_peak_level = lvl;
         led_set_azimuth_level(lvl, false);
     }

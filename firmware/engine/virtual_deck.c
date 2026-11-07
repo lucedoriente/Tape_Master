@@ -198,7 +198,7 @@ void virtual_deck_update(void) {
     }
 
     // Check host motor sense
-    bool motor_on = motor_is_active();
+    bool motor_on = motor_host_is_requesting_run() || motor_is_manual_override_active();
     led_set_status(STATUS_LED_MOTOR, motor_on);
 
     if (!s_deck_status.ignore_motor_sense) {
