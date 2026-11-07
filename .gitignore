@@ -2,6 +2,10 @@
 __pycache__/
 *.pyc
 
+# PyInstaller builds
+tools/Tape_Master_Studio/build/
+tools/Tape_Master_Studio/dist/
+
 # KiCad temporary and backup files
 *-backups/
 *.bak

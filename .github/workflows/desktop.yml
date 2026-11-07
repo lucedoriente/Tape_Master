@@ -1,0 +1,42 @@
+name: Build Tape Master Studio Desktop Suite
+
+on:
+  push:
+    paths:
+      - 'tools/Tape_Master_Studio/**'
+      - '.github/workflows/desktop.yml'
+  pull_request:
+    paths:
+      - 'tools/Tape_Master_Studio/**'
+  workflow_dispatch:
+
+jobs:
+  build-windows-exe:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r tools/Tape_Master_Studio/requirements.txt
+          pip install pyinstaller
+
+      - name: Build Standalone Executable
+        run: |
+          cd tools/Tape_Master_Studio
+          pyinstaller --onefile --windowed --name="Tape_Master_Studio" tape_master_studio.py
+
+      - name: Upload Desktop App Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Tape_Master_Studio_Windows_x64
+          path: tools/Tape_Master_Studio/dist/Tape_Master_Studio.exe
