@@ -35,6 +35,7 @@ pico_generate_pio_header(tape_master_v2 ${CMAKE_CURRENT_LIST_DIR}/pio/audio_pwm_
 
 target_include_directories(tape_master_v2 PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}
+    ${CMAKE_CURRENT_BINARY_DIR}
     ${CMAKE_CURRENT_LIST_DIR}/config
     ${CMAKE_CURRENT_LIST_DIR}/drivers
     ${CMAKE_CURRENT_LIST_DIR}/formats
