@@ -8,6 +8,7 @@
 #include "fat_fs.h"
 #include "sd_card.h"
 #include <string.h>
+#include <strings.h>
 #include <ctype.h>
 
 #define ATTR_READ_ONLY      0x01

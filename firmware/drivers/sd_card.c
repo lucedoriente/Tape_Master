@@ -12,6 +12,7 @@
 
 // SD SPI Commands
 #define CMD0    0   // GO_IDLE_STATE
+#define CMD1    1   // SEND_OP_COND (MMC)
 #define CMD8    8   // SEND_IF_COND
 #define CMD9    9   // SEND_CSD
 #define CMD10   10  // SEND_CID

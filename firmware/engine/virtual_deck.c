@@ -20,6 +20,7 @@
 #include "pulse_gen_tx.pio.h"
 #include "audio_pwm_tx.pio.h"
 #include <string.h>
+#include <strings.h>
 
 #define PULSE_RING_SIZE     512
 #define FILE_CHUNK_SIZE     1024
