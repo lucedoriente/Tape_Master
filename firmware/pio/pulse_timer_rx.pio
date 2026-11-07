@@ -20,7 +20,7 @@
 count_loop:
     ; Check if pin has returned HIGH
     jmp pin pin_is_high
-    ; While still LOW, decrement X and loop (each loop calibrated to exact clock cycles)
+    ; While still LOW, decrement X and loop
     jmp x-- count_loop
     jmp push_result
 
@@ -40,3 +40,19 @@ push_result:
     mov isr, ~x
     push noblock
 .wrap
+
+% c-sdk {
+#include "hardware/clocks.h"
+
+static inline void pulse_timer_rx_program_init(PIO pio, uint sm, uint offset, uint pin) {
+    pio_sm_config c = pulse_timer_rx_program_get_default_config(offset);
+    sm_config_set_in_pins(&c, pin);
+    sm_config_set_jmp_pin(&c, pin);
+    pio_gpio_init(pio, pin);
+    pio_sm_set_consecutive_pindirs(pio, sm, pin, 1, false);
+    // Clock at 10 MHz (1 tick = 100 ns)
+    float div = (float)clock_get_hz(clk_sys) / 10000000.0f;
+    sm_config_set_clkdiv(&c, div);
+    pio_sm_init(pio, sm, offset, &c);
+}
+%}

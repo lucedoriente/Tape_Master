@@ -33,3 +33,18 @@ check_counter:
 
 cycle_done:
 .wrap
+
+% c-sdk {
+#include "hardware/clocks.h"
+
+static inline void pulse_gen_tx_program_init(PIO pio, uint sm, uint offset, uint pin) {
+    pio_sm_config c = pulse_gen_tx_program_get_default_config(offset);
+    sm_config_set_set_pins(&c, pin, 1);
+    pio_gpio_init(pio, pin);
+    pio_sm_set_consecutive_pindirs(pio, sm, pin, 1, true);
+    // Clock at 1 MHz (1 cycle = 1 us)
+    float div = (float)clock_get_hz(clk_sys) / 1000000.0f;
+    sm_config_set_clkdiv(&c, div);
+    pio_sm_init(pio, sm, offset, &c);
+}
+%}

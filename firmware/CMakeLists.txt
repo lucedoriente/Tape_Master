@@ -51,6 +51,7 @@ target_link_libraries(tape_master_v2
     hardware_i2c
     hardware_spi
     hardware_adc
+    hardware_clocks
 )
 
 # Enable USB serial output and disable UART stdio by default

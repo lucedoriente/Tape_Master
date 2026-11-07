@@ -223,10 +223,12 @@ void virtual_deck_update(void) {
             has_pulse = tap_parser_next_pulse(&s_tap_parser, &pulse_val);
             s_deck_status.bytes_processed = s_tap_parser.cursor;
         } else if (s_deck_status.format == DECK_FORMAT_TZX_SPECTRUM) {
-            has_pulse = tzx_parser_next_half_period(&s_tzx_parser, &pulse_val);
+            bool level_toggle = true;
+            has_pulse = tzx_parser_next_half_period(&s_tzx_parser, &pulse_val, &level_toggle);
             s_deck_status.bytes_processed = s_tzx_parser.cursor;
         } else if (s_deck_status.format == DECK_FORMAT_CSW_RAW) {
-            has_pulse = csw_parser_next_pulse(&s_csw_parser, &pulse_val);
+            bool polarity = false;
+            has_pulse = csw_parser_next_pulse(&s_csw_parser, &pulse_val, &polarity);
             s_deck_status.bytes_processed = s_csw_parser.cursor;
         }
 
