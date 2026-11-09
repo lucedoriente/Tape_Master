@@ -8,6 +8,13 @@ License: CC BY-NC-SA 4.0
 """
 
 import sys
+import os
+
+# Ensure project root is in sys.path
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
 from PyQt6.QtWidgets import QApplication
 from gui.main_window import MainWindow
 

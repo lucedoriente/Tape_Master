@@ -138,3 +138,32 @@ class DspEngine:
             "confidence": 100.0 if len(reads) >= 3 else 80.0
         }
         return bytes(merged), stats
+
+    @staticmethod
+    def merge_pulse_passes(pulse_passes: List[List[int]]) -> Tuple[List[int], Dict[str, Any]]:
+        """
+        Forensic multi-pass pulse-stream merger:
+        Merges multiple imperfect capture passes of the same cassette tape by taking
+        the element-wise median across passes, rejecting local dropouts, flaking gaps,
+        and reducing timing jitter and wow/flutter noise.
+        """
+        if not pulse_passes:
+            return [], {"passes_used": 0, "dropouts_fixed": 0, "confidence": 0.0}
+
+        min_len = min(len(p) for p in pulse_passes)
+        arr = np.array([p[:min_len] for p in pulse_passes], dtype=np.float32)
+
+        # Element-wise median across passes
+        reconstructed = np.median(arr, axis=0)
+        reconstructed_pulses = [max(20, int(round(x))) for x in reconstructed]
+
+        # Calculate how many dropout outliers (> 2000 us in any pass) were healed
+        dropouts_count = int(np.sum((arr > 2000) & (reconstructed <= 1000)))
+
+        stats = {
+            "passes_used": len(pulse_passes),
+            "pulses_reconstructed": len(reconstructed_pulses),
+            "dropouts_fixed": dropouts_count,
+            "confidence": min(99.9, 70.0 + len(pulse_passes) * 6.0)
+        }
+        return reconstructed_pulses, stats

@@ -1,12 +1,11 @@
 # -*- mode: python ; coding: utf-8 -*-
 
-
 a = Analysis(
     ['tape_master_studio.py'],
-    pathex=[],
+    pathex=['.'],
     binaries=[],
     datas=[],
-    hiddenimports=[],
+    hiddenimports=['core', 'gui', 'serial', 'serial.tools.list_ports', 'pyqtgraph', 'scipy', 'scipy.signal'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],

@@ -5,6 +5,7 @@ __pycache__/
 # PyInstaller builds
 tools/Tape_Master_Studio/build/
 tools/Tape_Master_Studio/dist/
+tools/Tape_Master_Studio/tape_master_config.json
 
 # KiCad temporary and backup files
 *-backups/

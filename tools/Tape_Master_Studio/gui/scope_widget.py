@@ -9,7 +9,7 @@ import numpy as np
 import pyqtgraph as pg
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QSplitter
 from PyQt6.QtCore import Qt, QTimer
-from ..core.dsp_engine import DspEngine
+from core.dsp_engine import DspEngine
 
 class ScopeWidget(QWidget):
     def __init__(self, parent=None):
